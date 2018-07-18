@@ -1,5 +1,272 @@
 {
-	"var": {
-		"bla": "text bla"
-		}
+    "slider": [
+        {
+            "rows": [
+                [
+                    {
+                        "className": "col-24",
+                        "content": ""
+                    },
+                    {
+                        "className": "col-32",
+                        "content": [
+                            {
+                                "title": "Creative Digital <br> Agency"
+                            }
+                        ]
+                    },
+                    {
+                        "className": "col-44",
+                        "content": [
+                            {
+                                "text": "We design world-class digital experiences for forward thinking startups, companies and ourselves."
+                            }
+                        ]
+                    }
+                ]
+            ]
+        },
+        {
+            "title": "project_1",
+            "className": "p-100",
+            "rows": [
+                [
+                    {
+                        "className": "col-24",
+                        "content": [
+                            {
+                                "title": "Studio Elforma. <br> Architectes  →"
+                            }
+                        ]
+                    },
+                    {
+                        "className": "col-32",
+                        "content": ""
+                    },
+                    {
+                        "className": "col-44",
+                        "content": [
+                            {
+                                "title": "All Projects"
+                            }
+                        ]
+                    }
+                ],
+                [
+                    {
+                        "className": "col-24",
+                        "content": ""
+                    },
+                    {
+                        "className": "col-32",
+                        "content": [
+                            {
+                                "text": "They are not afraid to defy time. Anticipating trends, they do not forget about the classical canons."
+                            }
+                        ]
+                    },
+                    {
+                        "className": "col-44",
+                        "content": [
+                            {
+                                "image": "1.jpg"
+                            }
+                        ]
+                    }
+                ],
+                [
+                    {
+                        "className": "col-24",
+                        "content": ""
+                    },
+                    {
+                        "className": "col-32",
+                        "content": [
+                            {
+                                "block": "block",
+                                "type": "feature list",
+                                "label": "Featured",
+                                "text": "Behance Graphic <br> Design"
+                            }
+                        ]
+                    },
+                    {
+                        "className": "col-44",
+                        "content": [
+                            {
+                                "block": "block",
+                                "type": "feture list",
+                                "label": "Project",
+                                "text": "UI/UX, Branding, <br> Websitte"
+                            }
+                        ]
+                    }
+                ]
+            ]
+        },
+        {
+            "title": "project_2",
+            "className": "p-100",
+            "rows": [
+                [
+                    {
+                        "className": "col-24",
+                        "content": [
+                            {
+                                "title": "Suzanne Furniture"
+                            }
+                        ]
+                    },
+                    {
+                        "className": "col-32",
+                        "content": ""
+                    },
+                    {
+                        "className": "col-44",
+                        "content": [
+                            {
+                                "title": "All Projects"
+                            }
+                        ]
+                    }
+                ],
+                [
+                    {
+                        "className": "col-50",
+                        "content": [
+                            {
+                                "image": "3.jpg"
+                            }
+                        ]
+                    },
+                    {
+                        "className": "col-50",
+                        "content": [
+                            {
+                                "text": "Suzanne Furniture is a small Australian based design and manufacturing firm, born in 2017 from designer Suzanne Angel exploration into the intersection between nature, craft, and the spirit of adventure."
+                            },
+                            {
+                                "block": "block",
+                                "type": "feature list",
+                                "label": "Featured",
+                                "text": "Architecture, UI/UX <br> Branding"
+                            }
+                        ]
+                    }
+                ]
+            ]
+        },
+        {
+            "title": "project_3",
+            "className": "p-100",
+            "rows": [
+                [
+                    {
+                        "className": "col-24",
+                        "content": [
+                            {
+                                "title": "Tiffany & Co."
+                            }
+                        ]
+                    },
+                    {
+                        "className": "col-32",
+                        "content": ""
+                    },
+                    {
+                        "className": "col-44",
+                        "content": [
+                            {
+                                "title": "All Projects"
+                            }
+                        ]
+                    }
+                ],
+                [
+                    {
+                        "className": "col-50",
+                        "content": [
+                            {
+                                "text": "Suzanne Furniture is a small Australian based design and manufacturing firm."
+                            },
+                            {
+                                "block": "block",
+                                "type": "feature list",
+                                "label": "Featured",
+                                "text": "Architecture, UI/UX <br> Branding"
+                            }
+                        ]
+                    },
+                    {
+                        "className": "col-50",
+                        "content": [
+                            {
+                                "image": "2.jpg"
+                            }
+                        ]
+                    }
+                ]
+            ]
+        },
+        {
+            "title": "contacts",
+            "rows": [
+                [
+                    {
+                        "className": "col-24",
+                        "content": ""
+                    },
+                    {
+                        "className": "col-32",
+                        "content": [
+                            {
+                                "text": "We bring the results while helping you achieve cost and time savings without taking on risk or management overhead.",
+                                "link": {
+                                    "text": "Find out more",
+                                    "link": "#"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "className": "col-44",
+                        "content": ""
+                    }
+                ],
+                [
+                    {
+                        "className": "col-24",
+                        "content": ""
+                    },
+                    {
+                        "className": "col-32",
+                        "content": [
+                            {
+                                "block": "block",
+                                "label": "General Inquiries",
+                                "email": "hey@klimov.agency",
+                                "phone": "+7 (915) 308-77-08"
+                            }
+                        ]
+                    },
+                    {
+                        "className": "col-44",
+                        "content": [
+                            {
+                                "block": "block",
+                                "label": "Location",
+                                "adress": "10, Niznia Siromyatnicheska st. Moscow, Russia ↗"
+                            },
+                            {
+                                "block": "block",
+                                "label": "New Business",
+                                "phone": "+7 (985) 171-76-32",
+                                "email": "partner@klimov.agency"
+                            }
+                        ]
+                    }
+                ]
+            ]
+        }
+    ]
 }

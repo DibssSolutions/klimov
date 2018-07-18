@@ -1,0 +1,57 @@
+=col($column, $sum, $gap: 10px, $align: top, $first: false, $last: false) 
+  flex: 0 0 percentage($column / $sum)
+//   font-size: 24px
+  // display: inline-block
+//   vertical-align: $align
+  box-sizing: border-box
+  padding-left: if($first, 0, $gap)
+  padding-right: if($last, 0, $gap)
+    
+.container-inner
+    width: 100%
+    padding: 0 36px
+    margin: 0 auto
+
+.row 
+    display: flex
+    flex-wrap: wrap
+
+.row>[class*="col"]:first-child
+    padding-left: 0
+
+.row>[class*="col"]:last-child
+    padding-right: 0
+
+.col1
+    +col(1,12)
+.col2
+    +col(2,12)
+.col3
+    +col(3,12)
+.col4
+    +col(4,12)
+.col5
+    +col(5,12)
+.col6
+    +col(6,12)
+.col7
+    +col(7,12)
+.col8
+    +col(8,12)
+.col9
+    +col(9,12)
+.col10
+    +col(10,12)
+.col11
+    +col(11,12)
+.col12
+    +col(12,12)
+
+.col-24   
+    flex: 0 0 24%
+
+.col-32   
+    flex: 0 0 32%   
+
+.col-44
+    flex: 0 0 44%  

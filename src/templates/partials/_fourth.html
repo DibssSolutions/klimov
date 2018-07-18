@@ -1,0 +1,40 @@
+{% for item in slider %}
+<div class="content">
+    <div class="container-inner">
+        <div class="wrapper">
+            {% for row in item.rows %}
+            <div class="row">
+                {% for col in row %}
+                <div class="{{col.className}}">
+                    {% if col.content %} 
+                        {% for content in col.content %}
+                            {% if content.title %}
+                                <div class="title">{{content.title | safe}}</div>
+                            {% elif content.image %}
+                                <div class="image">
+                                    <img src="img/{{content.image}}" alt="">
+                                </div>
+                            {% elif content.text %}
+                                <div class="text">{{content.text | safe}}</div>
+                            {% elif content.link %}
+                                <a class="link" href="{{content.link.link}}">{{content.link.text | safe}}</a>
+                            {% elif content.label %}
+                                <div class="label">{{content.label | safe}}</div>
+                            {% elif content.adress %}
+                                <div class="adress">{{content.adress | safe}}</div>
+                            {% elif content.email %}
+                                <div class="email">{{content.email | safe}}</div>
+                            {% elif content.phone %}
+                                <div class="phone">{{content.phone | safe}}</div>
+                            {% endif %}
+                        {% endfor %}
+                        {% endif %} 
+                </div>
+                    
+                {% endfor %}
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endfor %}

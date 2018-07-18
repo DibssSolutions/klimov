@@ -1,3 +1,24 @@
 {
-	"sitename": "Klimov"
+	"sitename": "Klimov", 
+	"top-menu": {
+		"logo": "logo",
+		"nav_items": [
+		  {
+			"item1": {
+			  "title": "Discover",
+			  "href": "#"
+			},
+			"item2": {
+			  "title": "Agency",
+			  "href": "#"
+			}
+		  },
+		  {
+			"item3": {
+			  "title": "Inspiration",
+			  "href": "#"
+			}
+		  }
+		]
+	  }
 }

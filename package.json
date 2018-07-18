@@ -27,6 +27,7 @@
     "browser-sync": "^2.10.0",
     "css-mqpacker": "^5.0.1",
     "del": "^2.2.0",
+    "do-slide": "^1.1.4",
     "eslint": "^4.3.0",
     "eslint-config-airbnb": "^15.1.0",
     "eslint-formatter-pretty": "^1.1.0",

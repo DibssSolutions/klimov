@@ -1,11 +1,18 @@
----
-title: index
----
-{% extends "layouts/_layout.html" %}
+--- title: index --- 
 
-{% block content %}  
-	
-	
+{% extends "layouts/_layout.html" %} 
+
+{% block content %}
+
+<!-- {% include "partials/_header.html" %} -->
+
+<div class="ds-parent">
+    <div class="ds-container">
+        {% include "partials/_fourth.html" %} 
+    </div>
+</div>
+
+<!-- {% include "partials/_footer.html" %} -->
+
 
 {% endblock %}
- 
