@@ -10,21 +10,29 @@
                         {% for content in col.content %}
                             {% if content.title %}
                                 <div class="title">{{content.title | safe}}</div>
-                            {% elif content.image %}
+                            {% endif %}
+                            {% if content.image %}
                                 <div class="image">
                                     <img src="img/{{content.image}}" alt="">
                                 </div>
-                            {% elif content.text %}
-                                <div class="text">{{content.text | safe}}</div>
-                            {% elif content.link %}
+                            {% endif %}
+                            
+                            {% if content.link %}
                                 <a class="link" href="{{content.link.link}}">{{content.link.text | safe}}</a>
-                            {% elif content.label %}
+                            {% endif %}
+                            {% if content.label %}
                                 <div class="label">{{content.label | safe}}</div>
-                            {% elif content.adress %}
+                            {% endif %}
+                            {% if content.text %}
+                                <div class="text">{{content.text | safe}}</div>
+                            {% endif %}
+                            {% if content.adress %}
                                 <div class="adress">{{content.adress | safe}}</div>
-                            {% elif content.email %}
+                            {% endif %}
+                            {% if content.email %}
                                 <div class="email">{{content.email | safe}}</div>
-                            {% elif content.phone %}
+                            {% endif %}
+                            {% if content.phone %}
                                 <div class="phone">{{content.phone | safe}}</div>
                             {% endif %}
                         {% endfor %}

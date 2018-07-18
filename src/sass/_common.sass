@@ -19,8 +19,6 @@ body
     margin: 0
     padding: 0
     overflow: hidden
-    
-
 
 .ds-container 
     position: absolute
@@ -29,7 +27,6 @@ body
     overflow: hidden
     z-index: 100
     transform: none !important
-    
 
 .ds-container > * 
     position: relative
@@ -57,12 +54,14 @@ h2
     position: absolute
     +vcenter
 
-nav 
-    position: absolute
+
+img 
+    max-width: 100%    
+// nav 
+//     position: absolute
 
 .content
     position: absolute
-    // position: static
     top: 0
     left: 0
     width: 100%
@@ -71,6 +70,10 @@ nav
     visibility: hidden
     z-index: 1
     transition: opacity 0.3s, visibility 0.3s, z-index 0.3s
+   
+    
+.wrapper
+    padding-top: 100px
     +vcenter
 
 .content.active 
@@ -91,5 +94,5 @@ ul
 	padding: 0
     list-style-type: none
 
-.row
-    padding: 50px 0 !important
+// .row
+//     padding: 50px 0 !important
