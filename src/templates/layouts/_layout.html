@@ -1,0 +1,29 @@
+{% import "partials/_mixins.html" as mixins %}
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <META NAME="GOOGLEBOT" CONTENT="NOARCHIVE">
+    <title>{% if title %}{{ title }}{% else %}Klimov{% endif %}</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fff">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" media="all" href="css/app.css">
+    {# {% include "../partials/_media-tags.html" %} #}
+    <script id="facebook-jssdk" src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script>
+  </head>
+  <body>
+
+    <!-- BEGIN content -->
+    <div class="out">
+      {% block content %}{% endblock %}
+    </div>
+    <!-- END content -->
+
+    <!-- BEGIN scripts -->
+    <script type="text/javascript" src="js/app.js" async></script>
+    <!-- END scripts -->
+
+  </body>
+</html>
