@@ -8,19 +8,22 @@
   padding-right: if($last, 0, $gap)
     
 .container-inner
-    width: 100%
+    max-width: 1430px
     padding: 0 36px
     margin: 0 auto
+    position: relative
 
 .row 
     display: flex
     flex-wrap: wrap
+    // width: 100%  
+    margin-right: -30px
 
-.row>[class*="col"]:first-child
-    padding-left: 0
+// .row>[class*="col"]:first-child
+//     padding-left: 0
 
-.row>[class*="col"]:last-child
-    padding-right: 0
+// .row>[class*="col"]:last-child
+//     padding-right: 0
 
 .col1
     +col(1,12)
@@ -47,14 +50,23 @@
 .col12
     +col(12,12)
 
+[class*="col"]
+    padding-right: 30px
+
 .col-24   
     flex: 0 0 24%
 
+.col-56  
+    flex: 0 0 55%
+
 .col-32   
-    flex: 0 0 32%   
+    flex: 0 0 31%   
 
 .col-44
-    flex: 0 0 44%  
+    flex: 0 0 45%  
+    padding-right: 50px
 
 .col-50
     flex: 0 0 50%
+    &:last-child
+        padding-right: 100px

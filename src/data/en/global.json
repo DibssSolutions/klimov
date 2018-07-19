@@ -1,24 +1,210 @@
 {
-	"sitename": "Klimov", 
-	"top-menu": {
-		"logo": "logo",
-		"nav_items": [
-		  {
-			"item1": {
-			  "title": "Discover",
-			  "href": "#"
-			},
-			"item2": {
-			  "title": "Agency",
-			  "href": "#"
-			}
-		  },
-		  {
-			"item3": {
-			  "title": "Inspiration",
-			  "href": "#"
-			}
-		  }
-		]
-	  }
+  "sitename": "Klimov",
+  "top-menu": {
+    "logo": "logo",
+    "nav_items": [
+      {
+        "item1": {
+          "title": "Discover",
+          "href": "#"
+        },
+        "item2": {
+          "title": "Agency",
+          "href": "#"
+        }
+      },
+      {
+        "item3": {
+          "title": "Inspiration",
+          "href": "#"
+        }
+      }
+    ]
+  },
+
+  "menu": {
+    "rows": [
+      [
+        { "rowClassName": "menu__top" },
+        {
+          "className": "col-24",
+          "content": [
+            {
+              "className": "logo",
+              "img": "logo-grey.svg"
+            }
+          ]
+        },
+        {
+          "className": "col-32",
+          "content": ""
+        },
+        {
+          "className": "col-44",
+          "content": ""
+        }
+      ],
+      [
+        {
+          "rowClassName": "menu__main"
+        },
+        {
+          "className": "col-24",
+          "content": ""
+        },
+        {
+          "className": "col-32",
+          "content": [
+            {
+              "className": "menu__item is-active",
+              "link_text": "Discover",
+              "link_link": "#"
+            },
+            {
+              "className": "menu__item",
+              "link_text": "All Projects",
+              "link_link": "#"
+            }
+          ]
+        },
+        {
+          "className": "col-44",
+          "content": ""
+        }
+      ],
+      [
+        {
+          "rowClassName": "menu__main margin-110"
+        },
+        {
+          "className": "col-24",
+          "content": ""
+        },
+        {
+          "className": "col-32",
+          "content": [
+            {
+              "className": "menu__item",
+              "link_text": "Agency",
+              "link_link": "#"
+            },
+            {
+              "className": "menu__item",
+              "link_text": "Inspirations",
+              "link_link": "#"
+            }
+          ]
+        },
+        {
+          "className": "col-44",
+          "content": [
+            {
+              "className": "menu__motto",
+              "text":
+                "We create digital services and interactive experiences that help your business thrive and delight your customers."
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "rowClassName": "menu__contacts margin-64"
+        },
+        {
+          "className": "col-24",
+          "content": ""
+        },
+        {
+          "className": "col-32",
+          "content": [
+            {
+              "className": "feature-list",
+              "block": "block",
+              "label": "General Inquiries",
+              "email": "hey@klimov.agency",
+              "phone": "+7 (915) 308-77-08"
+            }
+          ]
+        },
+        {
+          "className": "col-44",
+          "content": [
+            {
+              "className": "feature-list",
+              "block": "block",
+              "label": "Location",
+              "adress": "10, Niznia Siromyatnicheska st. <br> Moscow, Russia ↗"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "rowClassName": "menu__contacts"
+        },
+        {
+          "className": "col-24",
+          "content": ""
+        },
+        {
+          "className": "col-32",
+          "content": ""
+        },
+        {
+          "className": "col-44",
+          "content": [
+            {
+              "className": "feature-list",
+              "block": "block",
+              "label": "New Business",
+              "phone": "+7 (985) 171-76-32",
+              "email": "partner@klimov.agency"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "rowClassName": "menu__bottom"
+        },
+        {
+          "className": "col-24",
+          "content": [
+            {
+              "className": "lang",
+              "text": "<span class='active'>ENG/</span><span>RUS</span>"
+            }
+          ]
+        },
+        {
+          "className": "col-32 social",
+          "content": [
+            {
+              "className": "social__item",
+              "link_text": "Behance",
+              "link_link": "#"
+            },
+            {
+              "className": "social__item",
+              "link_text": "Facebook",
+              "link_link": "#"
+            }
+          ]
+        },
+        {
+          "className": "col-44 flex-between",
+          "content": [
+            {
+              "className": "email",
+              "email": "hero@klimov.agency"
+            },
+            {
+              "className": "time",
+              "text": "Since 2015"
+            }
+          ]
+        }
+      ]
+    ]
+  }
 }

@@ -1,31 +1,77 @@
 <header class="header">
-    <div class="container-inner toggler-container">
-        <nav class="nav">
-            <ul class="nav__list row">
-                <li class="col-24">
-                    <div class="logo">
-                        <a href="#" class="nav__link">{{mixins.icon('logo')}}</a>
+    <div class="container-inner">
+        <ul class="nav row">
+            <li class="col-24">
+                <div class="logo">
+                    <a href="#" class="nav__link">
+                        <img src="img/logo.svg" alt="logo">
+                    </a>
+                </div>
+            </li>
+            <li class="col-32">
+                <ul class="nav__group">
+                    <li class="nav__item nav__item--wider ">
+                        <a href="#" class="nav__link is-active">Discover</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Agency</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav__item col-44">
+                <a href="#" class="nav__link">Inspirations</a>
+            </li>
+        </ul>
+        <button class="menu-trigger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+    <div class="menu">
+        <div class="wrapper">
+            <div class="container-inner menu__container">
+                {% for row in menu.rows %}
+                <div class="row {{row[0].rowClassName}}">
+                    {% for col in row %} {% if not col.rowClassName %}
+                    <div class="{{col.className}}">
+                        {% if col.content %} {% for content in col.content %}
+                        <div class="{{content.className}}">
+                            {% if content.className === "logo" %}
+                                <img src="img/{{content.img}}" alt="{{content.img}}">
+                            {% endif %}
+
+                            {% if content.className === "menu__item" or content.className === "menu__item is-active" %}
+                                <a href="{{content.link_link}}">{{content.link_text}}</a>
+                            {% endif %}
+
+                            {% if content.className === "social__item" %}
+                            <a href="{{content.link_link}}">{{content.link_text}}
+                                <span class="social__arrow">↗</span>
+                            </a>
+                            {% endif %}
+
+                             {% if content.label %}
+                            <div class="label">{{content.label | safe}}</div>
+                            {% endif %} 
+                            {% if content.text %}
+                            <p>{{content.text | safe}}</p>
+                            {% endif %} {% if content.adress %}
+                            <div class="adress">{{content.adress | safe}}</div>
+                            {% endif %} {% if content.email %}
+                            <div class="email">
+                                <a href="{{content.email | safe}}">{{content.email | safe}}</a> 
+                            </div>
+                            {% endif %} {% if content.phone %}
+                            <div class="phone">{{content.phone | safe}}</div>
+                            {% endif %}
+                        </div>
+                        {% endfor %} {% endif %}
                     </div>
-                </li>
-                <li class="col-32">
-                    <ul class="nav__group">
-                        <li class="nav__item">
-                            <a href="#" class="nav__link">Discover</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#" class="nav__link">Agency</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="nav__item col-44">
-                    <a href="#" class="nav__link">Inspirations</a>
-                </li>
-            </ul>
-        </nav>
-        <div class="menu-trigger">
-            <span></span>
-            <span></span>
-            <span></span>
+                    {% endif %} {% endfor %}
+                </div>
+                {% endfor %}
+            </div>
         </div>
     </div>
 </header>
