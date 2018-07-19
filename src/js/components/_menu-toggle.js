@@ -10,6 +10,8 @@ $('.menu-trigger').click(function() {
     $('.menu')
       .removeClass('is-closed')
       .fadeIn(500);
+    $('.top-nav .col-31').fadeOut();
+    $('.top-nav .col-45').fadeOut();
     open = true;
   }
 });

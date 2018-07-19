@@ -1,49 +1,33 @@
 {
   "sitename": "Klimov",
-  "top-menu": {
-    "logo": "logo",
+  "top_menu": {
+    "logo": {
+      "src": "logo.svg",
+      "link": "#"
+    },
     "nav_items": [
-      {
-        "item1": {
+      [
+        {
           "title": "Discover",
           "href": "#"
         },
-        "item2": {
+        {
           "title": "Agency",
           "href": "#"
         }
-      },
+      ],
       {
-        "item3": {
-          "title": "Inspiration",
-          "href": "#"
-        }
+        "title": "Inspiration",
+        "href": "#"
       }
     ]
+  },
+  "footer_menu": {
+    "email": "hey@klimov.agency"
   },
 
   "menu": {
     "rows": [
-      [
-        { "rowClassName": "menu__top" },
-        {
-          "className": "col-24",
-          "content": [
-            {
-              "className": "logo",
-              "img": "logo-grey.svg"
-            }
-          ]
-        },
-        {
-          "className": "col-32",
-          "content": ""
-        },
-        {
-          "className": "col-44",
-          "content": ""
-        }
-      ],
       [
         {
           "rowClassName": "menu__main"
@@ -53,7 +37,7 @@
           "content": ""
         },
         {
-          "className": "col-32",
+          "className": "col-31",
           "content": [
             {
               "className": "menu__item is-active",
@@ -68,7 +52,7 @@
           ]
         },
         {
-          "className": "col-44",
+          "className": "col-45",
           "content": ""
         }
       ],
@@ -81,7 +65,7 @@
           "content": ""
         },
         {
-          "className": "col-32",
+          "className": "col-31",
           "content": [
             {
               "className": "menu__item",
@@ -96,7 +80,7 @@
           ]
         },
         {
-          "className": "col-44",
+          "className": "col-45",
           "content": [
             {
               "className": "menu__motto",
@@ -115,7 +99,7 @@
           "content": ""
         },
         {
-          "className": "col-32",
+          "className": "col-31",
           "content": [
             {
               "className": "feature-list",
@@ -127,7 +111,7 @@
           ]
         },
         {
-          "className": "col-44",
+          "className": "col-45",
           "content": [
             {
               "className": "feature-list",
@@ -147,11 +131,11 @@
           "content": ""
         },
         {
-          "className": "col-32",
+          "className": "col-31",
           "content": ""
         },
         {
-          "className": "col-44",
+          "className": "col-45",
           "content": [
             {
               "className": "feature-list",
@@ -162,49 +146,50 @@
             }
           ]
         }
-      ],
-      [
-        {
-          "rowClassName": "menu__bottom"
-        },
-        {
-          "className": "col-24",
-          "content": [
-            {
-              "className": "lang",
-              "text": "<span class='active'>ENG/</span><span>RUS</span>"
-            }
-          ]
-        },
-        {
-          "className": "col-32 social",
-          "content": [
-            {
-              "className": "social__item",
-              "link_text": "Behance",
-              "link_link": "#"
-            },
-            {
-              "className": "social__item",
-              "link_text": "Facebook",
-              "link_link": "#"
-            }
-          ]
-        },
-        {
-          "className": "col-44 flex-between",
-          "content": [
-            {
-              "className": "email",
-              "email": "hero@klimov.agency"
-            },
-            {
-              "className": "time",
-              "text": "Since 2015"
-            }
-          ]
-        }
       ]
+    ],
+
+    "menu_footer": [
+      {
+        "rowClassName": "menu__bottom"
+      },
+      {
+        "className": "col-24",
+        "content": [
+          {
+            "className": "lang",
+            "text": "<span class='active'>ENG/</span><span>RUS</span>"
+          }
+        ]
+      },
+      {
+        "className": "col-31 social",
+        "content": [
+          {
+            "className": "social__item",
+            "link_text": "Behance",
+            "link_link": "#"
+          },
+          {
+            "className": "social__item",
+            "link_text": "Facebook",
+            "link_link": "#"
+          }
+        ]
+      },
+      {
+        "className": "col-45 flex-between",
+        "content": [
+          {
+            "className": "email",
+            "email": "hero@klimov.agency"
+          },
+          {
+            "className": "time",
+            "text": "Since 2015"
+          }
+        ]
+      }
     ]
   }
 }

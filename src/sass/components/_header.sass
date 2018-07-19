@@ -4,29 +4,36 @@
     left: 0
     width: 100%
     z-index: 1000
+    // .container-inner
+    //     z-index: 10000
+    //     .col-31, 
+    //     .col-45
+    //         z-index: 100
+
     
 
 .nav 
-    &__group > 
-        .nav__item:first-child
-            margin-right: 38px
-        .nav__item--wider 
-            margin-right: 54px !important
-    &__item
+    &-item:first-child
+        margin-right: 38px
+    &-item--wider 
+        margin-right: 54px !important
+    &-item
         display: inline-block
-        list-style-type: none
-    &__link.is-active 
-            color: $orange
-    &__arrow
+    &-link.is-active 
+        color: $orange
+    &-arrow
         visibility: hidden
         opacity: 0
         transition: 0.8s opacity, 0.8s visibility
-    &__item:hover .nav__arrow
+    &-item:hover .nav-arrow
         visibility: visible
         opacity: 1
 
 .logo
-    width: 88px
+    display: block
+    max-width: 88px
+    position: relative
+    z-index: 10000
 
 .toggler-container
     position: relative

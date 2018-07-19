@@ -6,7 +6,8 @@
             <div class="row {{row[0].rowClassName}}">
                 {% for col in row %} {% if not col.rowClassName %}
                 <div class="{{col.className}}">
-                    {% if col.content %} {% for content in col.content %} {% if content.className %}
+                    {% if col.content %} {% for content in col.content %} 
+                    {% if content.className %}
                     <div class="{{content.className}}">
                         {% if content.titleLarge %}
                         <h2 class="titleLarge">{{content.titleLarge | safe}}</h2>

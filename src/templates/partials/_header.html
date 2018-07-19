@@ -1,27 +1,25 @@
 <header class="header">
     <div class="container-inner">
-        <ul class="nav row">
-            <li class="col-24">
-                <div class="logo">
-                    <a href="#" class="nav__link">
-                        <img src="img/logo.svg" alt="logo">
-                    </a>
+        <div class="row top-nav">
+            <div class="col-24">
+                <a href="{{top_menu.logo.link}}" class="logo">
+                    <img src="img/{{top_menu.logo.src}}" alt="logo">
+                </a>
+            </div>
+            <div class="col-31">
+                <div class="nav-item nav-item--wider ">
+                    <a href="{{top_menu.nav_items[0][0].href}}" class="nav-link is-active">{{top_menu.nav_items[0][0].title}}</a>
                 </div>
-            </li>
-            <li class="col-32">
-                <ul class="nav__group">
-                    <li class="nav__item nav__item--wider ">
-                        <a href="#" class="nav__link is-active">Discover</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#" class="nav__link">Agency</a>
-                    </li>
-                </ul>
-            </li>
-            <li class="nav__item col-44">
-                <a href="#" class="nav__link">Inspirations</a>
-            </li>
-        </ul>
+                <div class="nav-item">
+                     <a href="{{top_menu.nav_items[0][1].href}}" class="nav-link">{{top_menu.nav_items[0][1].title}}</a>
+                </div>
+            </div>
+            <div class="col-45">
+                <div class="nav-item">
+                    <a href="{{top_menu.nav_items[1].href}}" class="nav-link">{{top_menu.nav_items[1].title}}</a>
+                </div>
+            </div>
+        </div>
         <button class="menu-trigger">
             <span></span>
             <span></span>
