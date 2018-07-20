@@ -6,8 +6,8 @@
     display: inline-block
     vertical-align: bottom
 
-.content
-    position: absolute
+.section
+    position: absolute !important
     top: 0
     left: 0
     width: 100%
@@ -17,12 +17,11 @@
     z-index: 1
     transition: opacity 0.3s, visibility 0.3s, z-index 0.3s
     overflow: auto
-    +vertical
-    padding-top: 90px
-    padding-bottom: 60px
-    
+    .fp-tableCell
+        padding-top: 90px
+        padding-bottom: 60px
 
-.content.active 
+.section.active 
     opacity: 1
     visibility: visible
     z-index: 1    

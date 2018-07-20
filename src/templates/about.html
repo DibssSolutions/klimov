@@ -1,1 +1,44 @@
+--- title: about --- 
 
+{% extends "layouts/_layout.html" %} 
+
+{% block content %}
+
+{% include "partials/_header.html" %}
+<div class="about">
+    <div class="container-inner">
+        {% for row in about.rows %}
+            <div class="row {{row[0].rowClassName}}">
+                {% for col in row %} 
+                    {% if not col.rowClassName %}
+                        <div class="{{col.className}}">
+                            {% if col.content %} 
+                                {% for content in col.content %} 
+                                    <div class="{{content.className}}">
+                                        {% if content.text %}
+                                            <p>{{content.text}}</p>
+                                        {% endif %}
+                                        {% if content.title %}
+                                            <h3>{{content.title}}</h3>
+                                        {% endif %} 
+                                            {% if content.list %}
+                                                <ul>
+                                                    {% for li in content.list %}
+                                                        <li>{{li}}</li>
+                                                    {% endfor %}
+                                                </ul>
+                                        {% endif %}
+                                    </div>
+                                {% endfor %}
+                            {% endif %}
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        {% endfor %}
+    </div>
+</div>
+<div class="static">
+{% include "partials/_footer.html" %}
+</div>
+{% endblock %}

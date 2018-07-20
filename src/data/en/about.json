@@ -5,7 +5,7 @@
     "rows": [
       [
         {
-          "rowClassName": "m0"
+          "rowClassName": "margin-bottom-213"
         },
         {
           "className": "col-24",
@@ -24,7 +24,7 @@
           "className": "col-45",
           "content": [
             {
-              "className": "about__text",
+              "className": "about__text max-width-450",
               "text":
                 "Klimov® is a creative digital agency that creates the next generation of digital brands and experiences. Exploration through collaboration sits at the heart of our design process and we strive to create timeless work that surprises."
             }
@@ -33,7 +33,7 @@
       ],
       [
         {
-          "rowClassName": "m0"
+          "rowClassName": "margin-bottom-105"
         },
         {
           "className": "col-24",
@@ -60,7 +60,7 @@
       ],
       [
         {
-          "rowClassName": "m0"
+          "rowClassName": "margin-bottom-105"
         },
         {
           "className": "col-24",

@@ -1,2 +1,2 @@
-import './_fullpage.js';
 import './_menu-toggle.js';
+import './_fullpage.js';
