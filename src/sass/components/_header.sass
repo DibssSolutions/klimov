@@ -1,16 +1,16 @@
 .header
     position: absolute
-    top: 36px
+    top: 0
     left: 0
-    width: 100%
+    right: 0
+    padding-top: 36px
     z-index: 1000
-    // .container-inner
-    //     z-index: 10000
-    //     .col-31, 
-    //     .col-45
-    //         z-index: 100
+    background-color: #fff
 
-    
+
+
+.top-nav
+    align-items: center
 
 .nav 
     &-item:first-child
@@ -34,6 +34,9 @@
     max-width: 88px
     position: relative
     z-index: 10000
+    &.logo-grey
+        svg
+            fill: $main-menu-color
 
 .toggler-container
     position: relative

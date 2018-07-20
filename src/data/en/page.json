@@ -4,7 +4,7 @@
       "rows": [
         [
           {
-            "rowClassName": "margin-140"
+            "rowClassName": "margin-top-12vh"
           },
           {
             "className": "col-24",
@@ -54,7 +54,7 @@
       "rows": [
         [
           {
-            "rowClassName": "margin-32"
+            "rowClassName": "margin-bottom"
           },
           {
             "className": "col-24",
@@ -79,7 +79,7 @@
         ],
         [
           {
-            "rowClassName": "margin-80"
+            "rowClassName": "margin-bottom-7vh"
           },
           {
             "className": "col-24",
@@ -143,7 +143,7 @@
       "rows": [
         [
           {
-            "rowClassName": "margin-56"
+            "rowClassName": "margin-bottom-5vh"
           },
           {
             "className": "col-24",
@@ -183,7 +183,7 @@
             "className": "col-45 flex-column",
             "content": [
               {
-                "className": "center-text-p-90",
+                "className": "margin-y-10vh",
                 "text":
                   "Suzanne Furniture is a small Australian based design and manufacturing firm, born in 2017 from designer Suzanne Angel exploration into the intersection between nature, craft, and the spirit of adventure."
               },
@@ -202,7 +202,7 @@
       "rows": [
         [
           {
-            "rowClassName": "margin-112"
+            "rowClassName": "margin-bottom-10vh"
           },
           {
             "className": "col-24",
@@ -230,7 +230,7 @@
             "rowClassName": "m0"
           },
           {
-            "className": "col-50 flex-column",
+            "className": "col-46 flex-column padding-y-5",
             "content": [
               {
                 "className": "center-text-p47",
@@ -261,7 +261,7 @@
       "rows": [
         [
           {
-            "rowClassName": "m0"
+            "rowClassName": "margin-top-5vh"
           },
           {
             "className": "col-24",
@@ -271,7 +271,7 @@
             "className": "col-31",
             "content": [
               {
-                "className": "about_results margin-190",
+                "className": "about_results",
                 "text":
                   "We bring the results while helping you achieve cost and time savings without taking on risk or management overhead.",
                 "link": {
@@ -288,7 +288,7 @@
         ],
         [
           {
-            "rowClassName": "margin-42"
+            "rowClassName": "margin-top-20vh"
           },
           {
             "className": "col-24",
@@ -319,7 +319,7 @@
         ],
         [
           {
-            "rowClassName": "m0"
+            "rowClassName": "margin-top-5vh"
           },
           {
             "className": "col-24",

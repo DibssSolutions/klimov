@@ -14,11 +14,14 @@
                         {% endif %} {% if content.title %}
                         <h5 class="title">{{content.title | safe}}</h5>
                         {% endif %} {% if content.image %}
-                        <img src="img/{{content.image}}" alt=""> {% endif %} {% if content.label %}
+                        <img src="img/{{content.image}}" alt=""> {% endif %} 
+                        {% if content.label %}
                         <div class="label">{{content.label | safe}}</div>
-                        {% endif %} {% if content.text %}
+                        {% endif %} 
+                        {% if content.text %}
                         <p>{{content.text | safe}}</p>
-                        {% endif %} {% if content.adress %}
+                        {% endif %} 
+                        {% if content.adress %}
                         <div class="adress">{{content.adress | safe}}</div>
                         {% endif %}
                         {% if content.email %}
@@ -28,7 +31,8 @@
                         {% endif %}
                          {% if content.phone %}
                         <div class="phone">{{content.phone | safe}}</div>
-                        {% endif %} {% if content.link %}
+                        {% endif %}
+                         {% if content.link %}
                         <a class="link" href="{{content.link.link}}">{{content.link.text | safe}}</a>
                         {% endif %}
                     </div>

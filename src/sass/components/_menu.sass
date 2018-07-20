@@ -1,16 +1,13 @@
 .menu
     position: fixed
-    // display: block
     display: none
-    // opacity: 0
-    // visibility: hidden
     z-index: 1000
     left: 0
     top: 0
     width: 100%
     height: 100%
-    // background-color: #262626
-    color: #fff
+    background-color: #262626
+    color: $main-menu-color
     +vertical
     &__top
         margin-top: 38px
@@ -30,7 +27,7 @@
         max-width: 320px
         font-size: 17px
         line-height: 23px
-        color: $light-grey
+        color: $main-menu-color-muted
     &__main-bottom
         margin-bottom: 110px
     &__bottom
@@ -39,12 +36,69 @@
         width: calc(100% - 36px)
         margin: 0 auto
         bottom: 60px
+    .label
+        color: $main-menu-color-muted
+    .color-muted
+        color: $main-menu-color-muted
+ 
+
         
+// ===== MAIN MENU ROWS =====
+
+.menu .wrapper
+    min-height: 700px
+
+.margin-top-3vh
+    margin-top: 3vh
+
+.margin-top-8vh
+    margin-top: 8vh
+
+// ===== TOP / BOTTOM MENUS =====
+.menu-top
+    position: absolute
+    z-index: 10000
+    width: 100%
+
+.social 
+    &__item:first-child
+        margin-right: 38px
+    &-arrow
+        visibility: hidden
+        opacity: 0
+        transition: 0.8s opacity, 0.8s visibility
+    &__item:hover .social__arrow
+        visibility: visible
+        opacity: 1
+
+.menu-bottom
+    position: absolute
+    z-index: 3000
+    bottom: 0
+    padding-bottom: 22px
+    left: 0
+    right: 0
+    color: $light-grey
+    font-size: 20px
+    text-align: left
+    .email
+        text-decoration: underline
+
+.lang
+    font-size: 20px
+    color: $main-menu-color-muted
+    &__item.is-active 
+        color: $main-menu-color
+
+.time 
+    font-size: 17px
+    
 
 // .menu
 //     &.is-closed
 //         display: none
     
+
 
 .margin-110
     margin-bottom: 10vh
@@ -92,6 +146,8 @@
     &.menu-is-open
         span
             background-color: #fff
+            height: 8px
+            width: 8px
         span:nth-child(2),
         span:nth-child(3) 
             display: none   

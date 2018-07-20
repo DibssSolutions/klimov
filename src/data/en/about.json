@@ -1,0 +1,347 @@
+{
+  "sitename": "Klimov",
+  "pagename": "About",
+  "about": {
+    "rows": [
+      [
+        {
+          "rowClassName": "m0"
+        },
+        {
+          "className": "col-24",
+          "content": [
+            {
+              "className": "about__text",
+              "text": "We are a Creative Digital Agency for the Digital Era."
+            }
+          ]
+        },
+        {
+          "className": "col-31",
+          "content": ""
+        },
+        {
+          "className": "col-45",
+          "content": [
+            {
+              "className": "about__text",
+              "text":
+                "Klimov® is a creative digital agency that creates the next generation of digital brands and experiences. Exploration through collaboration sits at the heart of our design process and we strive to create timeless work that surprises."
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "rowClassName": "m0"
+        },
+        {
+          "className": "col-24",
+          "content": ""
+        },
+        {
+          "className": "col-31",
+          "content": [
+            {
+              "className": "about__title",
+              "title": "Our services"
+            },
+            {
+              "className": "about__text",
+              "text":
+                "We help brands shape their businesses and create unique design languages. We use a combination of our offerings to craft an approach that works best for each project. Independent of the output, we strive to offer new perspectives on established methods and solutions."
+            }
+          ]
+        },
+        {
+          "className": "col-45",
+          "content": ""
+        }
+      ],
+      [
+        {
+          "rowClassName": "m0"
+        },
+        {
+          "className": "col-24",
+          "content": ""
+        },
+        {
+          "className": "col-31",
+          "content": [
+            {
+              "className": "about__title",
+              "title": "Strategy"
+            },
+            {
+              "className": "about__list",
+              "list": [
+                "Brand Positioning",
+                "Consumer Understanding & Insights",
+                "Brainstorm & Research",
+                "Information & Content Architecture",
+                "Naming"
+              ]
+            }
+          ]
+        },
+        {
+          "className": "col-45",
+          "content": [
+            {
+              "className": "about__title",
+              "text": "Identity"
+            },
+            {
+              "className": "about__list",
+              "list": [
+                "Brand Strategy",
+                "Identity Systems",
+                "Integrated Campaign Development",
+                "Experiential Retail & Events"
+              ]
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "rowClassName": "m0"
+        },
+        {
+          "className": "col-24",
+          "content": ""
+        },
+        {
+          "className": "col-31",
+          "content": [
+            {
+              "className": "about__title",
+              "title": "Innovation"
+            },
+            {
+              "className": "about__list",
+              "list": [
+                "User Research",
+                "Product Strategy",
+                "Rapid Ideation & Prototyping",
+                "UX, Motion & Visual Design",
+                "Technical Consulting",
+                "Usability Testing"
+              ]
+            }
+          ]
+        },
+        {
+          "className": "col-45",
+          "content": [
+            {
+              "className": "about__title",
+              "title": "Print"
+            },
+            {
+              "className": "about__list",
+              "list": ["Books", "Posters", "Magazine", "Packaging", "Products"]
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "rowClassName": "m0"
+        },
+        {
+          "className": "col-24",
+          "content": ""
+        },
+        {
+          "className": "col-31",
+          "content": [
+            {
+              "className": "about__title",
+              "title": "Photo & Film"
+            },
+            {
+              "className": "about__list",
+              "list": ["Motion Design", "Campaigns", "Product Photography"]
+            }
+          ]
+        },
+        {
+          "className": "col-45",
+          "content": [
+            {
+              "className": "about__title",
+              "title": "Full-stack <br> Development"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "rowClassName": "m0"
+        },
+        {
+          "className": "col-100",
+          "content": [
+            {
+              "className": "about__title",
+              "title": "Process"
+            },
+            {
+              "className": "about__text",
+              "text":
+                "Wedge works on all kinds of projects, but our approach is always guided by the same careful process. We know that detailed planning is what makes each idea unique and each project a success."
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "rowClassName": "m0"
+        },
+        {
+          "className": "col-24",
+          "content": ""
+        },
+        {
+          "className": "col-31",
+          "content": [
+            {
+              "className": "about__title",
+              "title": "Plan"
+            },
+            {
+              "className": "about__text",
+              "text":
+                ["This is where it all begins. We start with a kick-off meeting to identify your needs. By gaining a clear understanding of project scope and costs from the very start, we’re able to see what needs to happen over the short, medium and long term.", "Our focus is on transforming your business objectives into communications objectives, and developing a clear action plan to get you where you want to go."]
+            }
+          ]
+        },
+        {
+          "className": "col-45",
+          "content": [
+            {
+              "className": "about__list--muted",
+              "list": [
+                "Meet with client",
+                "Define tasks",
+                "Listen, understand, ask"
+              ]
+            }
+          ]
+        }
+      ], 
+      [
+        {
+          "rowClassName": "m0"
+        },
+        {
+          "className": "col-24",
+          "content": ""
+        },
+        {
+          "className": "col-31",
+          "content": [
+            {
+              "className": "about__title",
+              "title": "Research & ideas"
+            },
+            {
+              "className": "about__text",
+              "text":
+                ["This is the backbone of our creative process. We deconstruct ideas into their simplest form, a process that helps us pinpoint the right positioning for the brand."]
+            }
+          ]
+        },
+        {
+          "className": "col-45",
+          "content": [
+            {
+              "className": "about__list--muted",
+              "list": [
+                "Discuss",
+                "Research",
+                "Sketch",
+                "Observe"
+              ]
+            }
+          ]
+        }
+      ], 
+      [
+        {
+          "rowClassName": "m0"
+        },
+        {
+          "className": "col-24",
+          "content": ""
+        },
+        {
+          "className": "col-31",
+          "content": [
+            {
+              "className": "about__title",
+              "title": "Creative development"
+            },
+            {
+              "className": "about__text",
+              "text":
+                ["This is when we transform ideas into prototypes. At this stage, we know which direction we’re going in, but we’re still just half-way there."]
+            }
+          ]
+        },
+        {
+          "className": "col-45",
+          "content": [
+            {
+              "className": "about__list--muted",
+              "list": [
+                "Develop wireframe & prototypes",
+                "Experiment",
+                "Present & adjust"
+              ]
+            }
+          ]
+        }
+      ], 
+      [
+        {
+          "rowClassName": "m0"
+        },
+        {
+          "className": "col-24",
+          "content": ""
+        },
+        {
+          "className": "col-31",
+          "content": [
+            {
+              "className": "about__title",
+              "title": "Implementation"
+            },
+            {
+              "className": "about__text",
+              "text":
+                ["Now things start taking shape. Once the concepts and mock-ups are approved, we bring together the best production team for the job."]
+            }
+          ]
+        },
+        {
+          "className": "col-45",
+          "content": [
+            {
+              "className": "about__list--muted",
+              "list": [
+                "Code",
+                "Print",
+                "Build",
+                "Write"
+              ]
+            }
+          ]
+        }
+      ]
+    ]
+  }
+}

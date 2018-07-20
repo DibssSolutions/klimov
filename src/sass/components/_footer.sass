@@ -1,10 +1,13 @@
 .footer 
     position: absolute
     z-index: 200
-    bottom: 42px
+    bottom: 0
     left: 0
+    padding-bottom: 22px
+    // right: 0
     width: 100%
     +gpu
+    background-color: #fff
 
 .is-hidden
     display: none
@@ -20,3 +23,26 @@
     font-size: 18px
     color: $light-grey
     
+.nav-email
+    position: relative
+    display: block
+    &:after
+        position: absolute
+        bottom: 100%
+        left: 50%
+        // width: 100%
+        opacity: 0
+        font-size: 16px
+        content: attr(data-email)
+        transform: translate(-50%, 100px)
+        transition: transform 0.2s, opacity 0.9s
+        background-color: rgba(0,0,0,.2)
+        border-radius: 5px 
+        padding: 10px 
+        
+
+.nav-email:hover:after
+        display: block
+        transform: translate(-50%, -10px)
+        opacity: 1
+        transition: transform 0.2s, opacity 0.9s
