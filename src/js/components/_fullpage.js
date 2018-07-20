@@ -34,11 +34,18 @@
 //   }
 // });
 
-import fullpage from '../libs/fullpage';
+import IScroll from 'iscroll';
+window.IScroll = IScroll;
+var fullpage = require ('../libs/jquery.fullpage.min.js');
 
-
+new IScroll('.section');
 $(document).ready(function() {
-  $('#fullpage').fullpage();
+  $('#fullpage').fullpage({
+  	responsiveWidth: 0,
+  	responsiveHeight: 0,
+  	sectionSelector: '.section',
+  	scrollOverflow: true
+  });
 
 });
 
