@@ -41,8 +41,9 @@ var fullpage = require ('../libs/jquery.fullpage.min.js');
 new IScroll('.section');
 $(document).ready(function() {
   $('#fullpage').fullpage({
-  	responsiveWidth: 0,
-  	responsiveHeight: 0,
+  	responsiveWidth: 10,
+  	responsiveHeight: 10,
+  	scrollingSpeed: 1000,
   	sectionSelector: '.section',
   	scrollOverflow: true
   });
