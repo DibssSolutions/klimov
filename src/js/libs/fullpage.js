@@ -1607,7 +1607,7 @@
       Pt = 0,
       qt = gt;
   }),
-  'undefined' !== typeof IScroll &&
+  'undefined' != typeof IScroll &&
       ((IScroll.prototype.wheelOn = function() {
         this.wrapper.addEventListener('wheel', this),
         this.wrapper.addEventListener('mousewheel', this),

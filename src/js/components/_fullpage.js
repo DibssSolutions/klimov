@@ -20,7 +20,7 @@
 
 //   // ===== PAGINATION =====
 //   var pg = $('.pagination');
-  
+
 //   if (curIndex === 0) {
 //     pg.text('Scroll');
 //   } else if (curIndex === $('.content').length - 1) {
@@ -34,11 +34,38 @@
 //   }
 // });
 
-import fullpage from '../libs/fullpage';
+// $(function() {
+//   $('#fullpage').fullpage({
+//     sectionSelector: '.section',
+//     scrollOverflow: true
+//   });
+// });
 
+// IScroll = require('../libs/isScroll');
+// import IScroll from '../libs/isScroll';
+import 'jquery';
+import '../libs/slimscroll';
+import '../libs/fullpage';
 
-$(document).ready(function() {
-  $('#fullpage').fullpage();
+// // import IScroll from '../libs/isScroll';
+// // require ('../libs/isScroll');
 
+// import fullpage from '../libs/fullpage';
+
+// // var scr = new IScroll('.section');
+
+// $(document).ready(function() {
+//   $('#fullpage').fullpage({scrollOverflow:true});
+//   var myScroll = new IScroll('.section');
+//   $('.wrapper').slimScroll({
+//     height: '550px'
+//     //   });
+//   });
+// });
+
+$(function() {
+  $('#fullpage').fullpage({
+    sectionSelector: '.section',
+    scrollOverflow: true
+  });
 });
-

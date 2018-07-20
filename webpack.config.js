@@ -41,6 +41,10 @@ function createConfig(env) {
           }
         }
       }),
+      // new webpack.ProvidePlugin({
+      //   IScroll: "./src/js/libs/scrolloverflow"
+        
+      // }),
       new webpack.ProvidePlugin({
         $: 'jquery',
         jQuery: 'jquery',
@@ -57,7 +61,7 @@ function createConfig(env) {
     resolve: {
       extensions: ['.js'],
       alias: {
-        TweenLite: path.resolve('node_modules', 'gsap/src/uncompressed/TweenLite.js'),
+        TweenLite: path.resolve('node_modules', 'js/libs/scrolloverflow.js'),
         TweenMax: path.resolve('node_modules', 'gsap/src/uncompressed/TweenMax.js'),
         TimelineLite: path.resolve('node_modules', 'gsap/src/uncompressed/TimelineLite.js'),
         TimelineMax: path.resolve('node_modules', 'gsap/src/uncompressed/TimelineMax.js'),
