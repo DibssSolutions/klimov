@@ -25,12 +25,12 @@
   @media (min-width: #{$max-width}#{$unit})
     #{$property}: #{$max-size}#{$unit}
 
-@mixin css-lock-height($min-size: 1, $max-size: 1.4, $min-width: 20, $max-width: 100, $property: font-size, $unit: px)
+@mixin css-lock-height($min-size: 1, $max-size: 1.4, $min-height: 20, $max-height: 100, $property: font-size, $unit: px)
   #{$property}: #{$max-size}#{$unit}
-  #{$property}: calc(#{$min-size}#{$unit} + (#{$max-size} - #{$min-size}) * ((100vh - #{$min-width}#{$unit}) / (#{$max-width} - #{$min-width})))
-  @media (max-height: #{$min-width}#{$unit})
+  #{$property}: calc(#{$min-size}#{$unit} + (#{$max-size} - #{$min-size}) * ((100vh - #{$min-height}#{$unit}) / (#{$max-height} - #{$min-height})))
+  @media (max-height: #{$min-height}#{$unit})
     #{$property}: #{$min-size}#{$unit}
-  @media (min-height: #{$max-width}#{$unit})
+  @media (min-height: #{$max-height}#{$unit})
     #{$property}: #{$max-size}#{$unit}
     
 =fs($sizeValue: 16)
