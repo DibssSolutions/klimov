@@ -6,6 +6,8 @@
     top: 0
     width: 100%
     height: 100%
+    padding-top: 60px
+    padding-bottom: 30px
     background-color: #262626
     color: $main-menu-color
     +vertical
@@ -18,7 +20,8 @@
     &__item 
         font-size: 50px
         line-height: 50px
-        margin-bottom: 30px
+        // margin-bottom: 30px
+        margin-bottom: 2vh
         &.is-active
             a
                 color: $orange
@@ -47,6 +50,10 @@
 
 .menu .wrapper
     min-height: 700px
+    vertical-align: middle
+    display: inline-block
+    
+    
 
 .margin-top-3vh
     margin-top: 3vh
@@ -55,10 +62,6 @@
     margin-top: 8vh
 
 // ===== TOP / BOTTOM MENUS =====
-// .menu-top
-//     position: absolute
-//     z-index: 10000
-//     width: 100%
 
 .social 
     &__item:first-child
@@ -93,13 +96,6 @@
 .time 
     font-size: 17px
     
-
-// .menu
-//     &.is-closed
-//         display: none
-    
-
-
 .margin-110
     margin-bottom: 10vh
 .margin-64
@@ -118,9 +114,6 @@
                 visibility: visible
                 opacity: 1
 
-.flex-between
-    display: flex
-    justify-content: space-between
     
 // ===== MENU-TRIGGER =====
 

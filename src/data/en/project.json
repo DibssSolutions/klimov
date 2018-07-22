@@ -1,0 +1,177 @@
+{
+  "page": "project",
+  "project": [
+    {
+      "project_header": [
+        [
+          {
+            "rowClassName": "m0"
+          },
+          {
+            "className": "col-24",
+            "content": [
+              {
+                "titleLarge": "Studio Elforma <br> Architectes"
+              }
+            ]
+          },
+          {
+            "className": "col-31",
+            "content": ""
+          },
+          {
+            "className": "col-45",
+            "content": [
+              {
+                "text": "Studio Elforma <br> Architectes",
+                "label": "UI/UX"
+              }
+            ]
+          }
+        ]
+      ],
+
+      "project_content": [
+        [
+          {
+            "rowClassName": "m0"
+          },
+          {
+            "className": "col",
+            "content": [
+              {
+                "img": "IMG_20170503_191412.jpg"
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "rowClassName": "m0"
+          },
+          {
+            "className": "col",
+            "content": [
+              {
+                "img": "IMG_20170503_191412.jpg"
+              }
+            ]
+          },
+          {
+            "className": "col",
+            "content": [
+              {
+                "img": "IMG_20170503_191412.jpg"
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "rowClassName": "m0"
+          },
+          {
+            "className": "col",
+            "content": [
+              {
+                "img": "IMG_20170503_191412.jpg"
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "rowClassName": "m0"
+          },
+          {
+            "className": "col",
+            "content": [
+              {
+                "img": "IMG_20170503_191412.jpg"
+              }
+            ]
+          },
+          {
+            "className": "col",
+            "content": [
+              {
+                "img": "IMG_20170503_191412.jpg"
+              }
+            ]
+          },
+          {
+            "className": "col",
+            "content": [
+              {
+                "img": "IMG_20170503_191412.jpg"
+              }
+            ]
+          }
+        ]
+      ],
+
+      "project_footer": [
+        [
+          {
+            "rowClassName": "m0"
+          },
+          {
+            "className": "col-24",
+            "content": [
+              {
+                "label": "Project",
+                "areas": [
+                  { "area": "UI/UX", "link": "#" },
+                  { "area": "Branding", "link": "#" },
+                  { "area": "Website", "link": "#" }
+                ]
+              }
+            ]
+          },
+          {
+            "className": "col-31",
+            "content": [
+              {
+                "img": "IMG_20170503_191412.jpg"
+              }
+            ]
+          },
+          {
+            "className": "col-45",
+            "content": [
+              {
+                "img": "IMG_20170503_191412.jpg"
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "rowClassName": "m0"
+          },
+          {
+            "className": "col-24",
+            "content": ""
+          },
+          {
+            "className": "col-31",
+            "content": [
+              {
+                "img": "IMG_20170503_191412.jpg"
+              }
+            ]
+          },
+          {
+            "className": "col-45",
+            "content": [
+              {
+                "label": "Next Project",
+                "ProjectTitle": "Susanne Furniture"
+              }
+            ]
+          }
+        ]
+      ]
+    }
+  ]
+}

@@ -90,7 +90,7 @@
           "content": [
             {
               "className": "about__title",
-              "text": "Identity"
+              "title": "Identity"
             },
             {
               "className": "about__list",
@@ -106,7 +106,7 @@
       ],
       [
         {
-          "rowClassName": "m0"
+          "rowClassName": "margin-bottom-105"
         },
         {
           "className": "col-24",
@@ -148,7 +148,7 @@
       ],
       [
         {
-          "rowClassName": "m0"
+          "rowClassName": "margin-bottom-105"
         },
         {
           "className": "col-24",
@@ -179,7 +179,7 @@
       ],
       [
         {
-          "rowClassName": "m0"
+          "rowClassName": "margin-bottom-105"
         },
         {
           "className": "col-100",
@@ -198,7 +198,7 @@
       ],
       [
         {
-          "rowClassName": "m0"
+          "rowClassName": "margin-bottom-105"
         },
         {
           "className": "col-24",
@@ -234,7 +234,7 @@
       ], 
       [
         {
-          "rowClassName": "m0"
+          "rowClassName": "margin-bottom-105"
         },
         {
           "className": "col-24",
@@ -271,7 +271,7 @@
       ], 
       [
         {
-          "rowClassName": "m0"
+          "rowClassName": "margin-bottom-105"
         },
         {
           "className": "col-24",

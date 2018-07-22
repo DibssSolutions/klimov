@@ -192,10 +192,7 @@
   ],
 
   "contacts": [
-    [
-      {
-        "rowClassName": "menu__contacts margin-64"
-      },
+    [      
       {
         "className": "col-24",
         "content": ""
@@ -223,9 +220,7 @@
       }
     ],
     [
-      {
-        "rowClassName": "menu__contacts"
-      },
+      
       {
         "className": "col-24",
         "content": ""

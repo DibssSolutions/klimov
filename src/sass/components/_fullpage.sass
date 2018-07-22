@@ -9,25 +9,21 @@
     transform: none !important
     min-height: 100% !important
 
-.top
-    display: inline-block
-    vertical-align: top
-
-.bottom 
-    display: inline-block
-    vertical-align: bottom
-
 .section
     position: absolute !important
     top: 0
     left: 0
     width: 100%
     height: 100% !important
+    
     opacity: 0
     visibility: hidden
     z-index: 1
     transition: opacity 0.3s, visibility 0.3s, z-index 0.3s
     overflow: auto
+    .fp-tableCell
+        padding-top: 90px
+        padding-bottom: 60px
 
 .section.active 
     opacity: 1
@@ -35,13 +31,11 @@
     z-index: 1    
 
 .wrapper
-    padding-top: 90px
-    padding-bottom: 60px
+    // padding-top: 90px
+    // padding-bottom: 60px
     width: 100%
     font-size: 20px
     position: relative
-    vertical-align: middle
-    display: inline-block
     text-align: left
     min-height: 570px
     +css-lock-height(14,20,550,700)
@@ -96,9 +90,6 @@
     padding-top: 5vh
     padding-bottom: 5vh
 
-
-    
-
 .about_results
     max-width: 350px
     .link
@@ -110,7 +101,7 @@
 
 .padding-top-5vh    
     padding-top: 3vh
-adding
+
 .margin-top-20vh
     margin-top: 20vh
     
@@ -130,9 +121,17 @@ adding
 .label-small .label
     font-size: 17px
 
-
 .flex-column
     display: flex
     flex-flow: column
+
+.flex-between    
+    display: flex
     justify-content: space-between
 
+.flex-end
+    display: flex
+    justify-content: flex-end
+
+.items-flex-end
+    align-self: flex-end

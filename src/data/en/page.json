@@ -168,10 +168,10 @@
         ],
         [
           {
-            "rowClassName": "s0"
+            "rowClassName": "m0"
           },
           {
-            "className": "col-56",
+            "className": "col-56 items-flex-end",
             "content": [
               {
                 "className": "image",
@@ -180,7 +180,7 @@
             ]
           },
           {
-            "className": "col-45 flex-column",
+            "className": "col-45 flex-column flex-end",
             "content": [
               {
                 "className": "margin-y-10vh",
@@ -230,7 +230,7 @@
             "rowClassName": "m0"
           },
           {
-            "className": "col-46 flex-column padding-y-5",
+            "className": "col-46 flex-column flex-between padding-y-5",
             "content": [
               {
                 "className": "center-text-p47",

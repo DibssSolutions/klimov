@@ -20,7 +20,7 @@
 
 //   // ===== PAGINATION =====
 //   var pg = $('.pagination');
-  
+
 //   if (curIndex === 0) {
 //     pg.text('Scroll');
 //   } else if (curIndex === $('.content').length - 1) {
@@ -36,17 +36,63 @@
 
 import IScroll from 'iscroll';
 window.IScroll = IScroll;
-var fullpage = require ('../libs/jquery.fullpage.min.js');
+var fullpage = require('../libs/jquery.fullpage.min.js');
 
-new IScroll('.section');
+var fp = document.getElementById('fullpage');
+
 $(document).ready(function() {
-  $('#fullpage').fullpage({
-  	responsiveWidth: 10,
-  	responsiveHeight: 10,
-  	scrollingSpeed: 1000,
-  	sectionSelector: '.section',
-  	scrollOverflow: true
-  });
+  if (fp !== null) {
 
+    // ===== PAGINATI0N =====
+    var pg = $('.pagination');
+
+    new IScroll('.section');
+    $('#fullpage').fullpage({
+      responsiveWidth: 10,
+      responsiveHeight: 10,
+      scrollingSpeed: 1000,
+      sectionSelector: '.section',
+	  scrollOverflow: true, 
+      //   afterLoad: function() {
+
+      //     var loadedSection = this;
+      //     var index = loadedSection.index();
+      //     var pg = $('.pagination');
+
+      //     if (index === 0) {
+      //       pg.text('Scroll');
+      //     } else if (index === $('.section').length - 1) {
+      //       pg.text('Up ↑');
+      //     } else {
+      //       if (index < 9) {
+      //         pg.text('0' + index + '/');
+      //       } else {
+      //         pg.text(index + '/');
+      //       }
+      //     }
+		
+      //   }
+      // });
+      onLeave: function(origin, destination, direction) {
+        var loadedSection = this;
+        console.log(origin);
+        console.log(destination);
+        console.log(direction);
+		
+        if (destination === 1) {
+          pg.text('Scroll');
+        } else if (destination === $('.section').length) {
+          pg.text('Up ↑');
+        } else {
+          if (destination < 9) {
+            pg.text('0' + destination + '/');
+          } else {
+            pg.text(destination + '/');
+          }
+        }
+
+        
+      }
+    });
+  }
 });
-

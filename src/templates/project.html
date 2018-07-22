@@ -1,0 +1,183 @@
+--- title: page --- 
+
+{% extends "layouts/_layout.html" %} 
+
+{% block content %}
+
+{% include "partials/_header.html" %}
+
+<div class="project">
+    <div class="container-inner">
+        {% for row in project[0].project_header %}
+            <div class="row {{row[0].rowClassName}}">
+                {% for col in row %} 
+                    {% if not col.rowClassName %}
+                        <div class="{{col.className}}">
+                        {% if col.content %} 
+                            {% for content in col.content %} 
+                                {% if content.className %}
+                                <div class="{{content.className}}">
+                                    {% if content.titleLarge %}
+                                        <h2 class="titleLarge">{{content.titleLarge | safe}}</h2>
+                                    {% endif %}
+                                    {% if content.title %}
+                                    <h5 class="title">{{content.title | safe}}</h5>
+                                    {% endif %}
+                                    {% if content.image %}
+                                    <img src="img/{{content.image}}" alt=""> 
+                                    {% endif %} 
+                                    {% if content.label %}
+                                    <div class="label">{{content.label | safe}}</div>
+                                    {% endif %} 
+                                    {% if content.text %}
+                                    <p>{{content.text | safe}}</p>
+                                    {% endif %} 
+                                </div>
+                                {% else %} 
+                                    {% if content.titleLarge %}
+                                        <h2 class="titleLarge">{{content.titleLarge | safe}}</h2>
+                                    {% endif %}
+                                    {% if content.title %}
+                                        <h5 class="title">{{content.title | safe}}</h5>
+                                    {% endif %}
+                                    {% if content.image %}
+                                        <img src="img/{{content.image}}" alt=""> 
+                                    {% endif %} 
+                                    {% if content.label %}
+                                        <div class="label">{{content.label | safe}}</div>
+                                    {% endif %}
+                                    {% if content.text %}
+                                    <p>{{content.text | safe}}</p>
+                                    {% endif %} 
+                                {% endif %} 
+                            {% endfor %}
+                        {% endif %} 
+                    </div>
+                {% endif %}
+            {% endfor %}
+            </div>
+        {% endfor %}
+
+        {% for row in project[0].project_content %}
+        <div class="row {{row[0].rowClassName}}">
+            {% for col in row %} 
+                {% if not col.rowClassName %}
+                    <div class="{{col.className}}">
+                    {% if col.content %} 
+                        {% for content in col.content %} 
+                            {% if content.className %}
+                            <div class="{{content.className}}">
+                                {% if content.titleLarge %}
+                                    <h2 class="titleLarge">{{content.titleLarge | safe}}</h2>
+                                {% endif %}
+                                {% if content.title %}
+                                <h5 class="title">{{content.title | safe}}</h5>
+                                {% endif %}
+                                {% if content.image %}
+                                <img src="img/{{content.image}}" alt=""> 
+                                {% endif %} 
+                                {% if content.label %}
+                                <div class="label">{{content.label | safe}}</div>
+                                {% endif %} 
+                                {% if content.text %}
+                                <p>{{content.text | safe}}</p>
+                                {% endif %} 
+                                {% if content.img %}
+                                <img src="img/{{content.img }}" alt="">
+                                {% endif %} 
+                            </div>
+                            {% else %} 
+                                {% if content.titleLarge %}
+                                    <h2 class="titleLarge">{{content.titleLarge | safe}}</h2>
+                                {% endif %}
+                                {% if content.title %}
+                                    <h5 class="title">{{content.title | safe}}</h5>
+                                {% endif %}
+                                {% if content.image %}
+                                    <img src="img/{{content.image}}" alt=""> 
+                                {% endif %} 
+                                {% if content.label %}
+                                    <div class="label">{{content.label | safe}}</div>
+                                {% endif %}
+                                {% if content.text %}
+                                <p>{{content.text | safe}}</p>
+                                {% endif %} 
+                                {% if content.img %}
+                                <img src="img/{{content.img }}" alt="">
+                                {% endif %} 
+                            {% endif %} 
+                        {% endfor %}
+                    {% endif %} 
+                </div>
+            {% endif %}
+        {% endfor %}
+        </div>
+    {% endfor %}
+
+    {% for row in project[0].project_footer %}
+    <div class="row {{row[0].rowClassName}}">
+        {% for col in row %} 
+            {% if not col.rowClassName %}
+                <div class="{{col.className}}">
+                {% if col.content %} 
+                    {% for content in col.content %} 
+                        {% if content.className %}
+                        <div class="{{content.className}}">
+                            {% if content.titleLarge %}
+                                <h2 class="titleLarge">{{content.titleLarge | safe}}</h2>
+                            {% endif %}
+                            {% if content.title %}
+                            <h5 class="title">{{content.title | safe}}</h5>
+                            {% endif %}
+                            {% if content.image %}
+                            <img src="img/{{content.image}}" alt=""> 
+                            {% endif %} 
+                            {% if content.label %}
+                            <div class="label">{{content.label | safe}}</div>
+                            {% endif %} 
+                            {% if content.text %}
+                            <p>{{content.text | safe}}</p>
+                            {% endif %} 
+                            {% if content.img %}
+                            <img src="img/{{content.img }}" alt="">
+                            {% endif %} 
+                        </div>
+                        {% else %} 
+                            {% if content.titleLarge %}
+                                <h2 class="titleLarge">{{content.titleLarge | safe}}</h2>
+                            {% endif %}
+                            {% if content.title %}
+                                <h5 class="title">{{content.title | safe}}</h5>
+                            {% endif %}
+                            {% if content.image %}
+                                <img src="img/{{content.image}}" alt=""> 
+                            {% endif %} 
+                            {% if content.label %}
+                                <div class="label">{{content.label | safe}}</div>
+                            {% endif %}
+                            {% if content.areas %}
+                                {% for area in content.areas %} 
+
+                                    <a href="{{area.link}}" class="link">{{area.area}} ,</a>    
+                                {% endfor %}
+                            {% endif %} 
+                            {% if content.text %}
+                            <p>{{content.text | safe}}</p>
+                            {% endif %} 
+                            {% if content.img %}
+                            <img src="img/{{content.img }}" alt="">
+                            {% endif %} 
+                        {% endif %} 
+                    {% endfor %}
+                {% endif %} 
+            </div>
+        {% endif %}
+    {% endfor %}
+    </div>
+{% endfor %}
+    </div>
+</div>
+<div class="static">
+{% include "partials/_footer.html" %}
+</div>
+{% endblock %}

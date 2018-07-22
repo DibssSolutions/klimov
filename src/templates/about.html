@@ -5,6 +5,7 @@
 {% block content %}
 
 {% include "partials/_header.html" %}
+
 <div class="about">
     <div class="container-inner">
         {% for row in about.rows %}
@@ -15,16 +16,16 @@
                             {% if col.content %} 
                                 {% for content in col.content %} 
                                     <div class="{{content.className}}">
-                                        {% if content.text %}
-                                            <p>{{content.text}}</p>
-                                        {% endif %}
                                         {% if content.title %}
-                                            <h3>{{content.title}}</h3>
+                                            <h3>{{content.title | safe}}</h3>
                                         {% endif %} 
-                                            {% if content.list %}
+                                        {% if content.text %}
+                                            <p>{{content.text | safe}}</p>
+                                        {% endif %}
+                                        {% if content.list %}
                                                 <ul>
                                                     {% for li in content.list %}
-                                                        <li>{{li}}</li>
+                                                        <li>{{li | safe}}</li>
                                                     {% endfor %}
                                                 </ul>
                                         {% endif %}
@@ -36,9 +37,42 @@
                 {% endfor %}
             </div>
         {% endfor %}
+    
+        {% for row in contacts %}
+        <div class="row about__contacts">
+            {% for col in row %}
+                <div class="{{col.className}}">
+                       
+                    {% if col.content %} 
+                        {% for content in col.content %}
+                            <div class="{{content.className}}">
+                                {% if content.label %}
+                                    <div class="label">{{content.label | safe}}</div>
+                                {% endif %} 
+                                {% if content.adress %}
+                                    <div class="adress">{{content.adress | safe}}</div>
+                                {% endif %}
+                                {% if content.email %}
+                                    <div class="email">
+                                        <a href="{{content.email | safe}}">{{content.email | safe}}</a>
+                                    </div>
+                                {% endif %}
+                                {% if content.phone %}
+                                    <div class="phone">{{content.phone | safe}}</div>
+                                {% endif %}
+                            </div>
+                            {% endfor %}
+                   {% endif %}
+                   
+                </div>
+            {% endfor %}
+        </div>
+        {% endfor %}
+        
     </div>
 </div>
-<div class="static">
+
+<div class="static"></div>
 {% include "partials/_footer.html" %}
 </div>
 {% endblock %}
