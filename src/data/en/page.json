@@ -57,10 +57,10 @@
             "rowClassName": "margin-bottom"
           },
           {
-            "className": "col-24",
+            "className": "col-24 main-title",
             "content": [
               {
-                "project_link_text": "Studio Elforma. <br> Architectes  <span class='project_link__arrow'> → </span>", 
+                "project_link_text": "Studio Elforma. <br> Architectes ", 
                 "project_link_link": "#"
               }
             ]
@@ -150,7 +150,7 @@
             "className": "col-24",
             "content": [
               {
-                "project_link_text": "Suzanne Furniture <span class='project_link__arrow'> → </span>", 
+                "project_link_text": "Suzanne Furniture", 
                 "project_link_link": "#"
               }
             ]
@@ -210,7 +210,7 @@
             "className": "col-24",
             "content": [
               {
-                "project_link_text": "Tiffany & Co. <span class='project_link__arrow'> → </span>",
+                "project_link_text": "Tiffany & Co.",
                 "project_link_link": "#"
               }
             ]

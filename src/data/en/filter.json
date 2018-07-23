@@ -1,0 +1,100 @@
+{
+  "title": "filter",
+  "filter_buttons": [
+    {
+      "button_text": "All",
+      "button_category": "*"
+    },
+
+    {
+      "button_text": "Branding",
+      "button_category": "branding"
+    },
+    {
+      "button_text": "Website",
+      "button_category": "website"
+    },
+    {
+      "button_text": "UI/UX",
+      "button_category": "uiux"
+    },
+    {
+      "button_text": "Photography",
+      "button_category": "photography"
+    },
+    {
+      "button_text": "Architecture",
+      "button_category": "architecture"
+    },
+    {
+      "button_text": "Typography",
+      "button_category": "typography"
+    },
+    {
+      "button_text": "Fashion",
+      "button_category": "fashion"
+    }
+  ],
+  "filter_images": [
+    {
+      "image": "filter_1.jpg",
+      "text": "Name",
+      "category": "branding"
+    },
+    {
+      "image": "filter_2.jpg",
+      "text": "Name",
+      "category": "branding typography"
+    },
+    {
+      "image": "filter_3.jpg",
+      "text": "Name",
+      "category": "architecture typography"
+    },
+    {
+      "image": "filter_4.jpg",
+      "text": "Name",
+      "category": "branding"
+    },
+    {
+      "image": "filter_5.jpg",
+      "text": "Name",
+      "category": "branding typography"
+    },
+    {
+      "image": "filter_6.jpg",
+      "text": "Name",
+      "category": "architecture typography"
+    },
+    {
+      "image": "filter_1.jpg",
+      "text": "Name",
+      "category": "branding"
+    },
+    {
+      "image": "filter_2.jpg",
+      "text": "Name",
+      "category": "branding typography"
+    },
+    {
+      "image": "filter_3.jpg",
+      "text": "Name",
+      "category": "architecture typography"
+    },
+    {
+      "image": "filter_4.jpg",
+      "text": "Name",
+      "category": "branding"
+    },
+    {
+      "image": "filter_5.jpg",
+      "text": "Name",
+      "category": "branding, typography"
+    },
+    {
+      "image": "filter_6.jpg",
+      "text": "Name",
+      "category": "architecture typography"
+    }
+  ]
+}

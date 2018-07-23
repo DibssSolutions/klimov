@@ -1,0 +1,25 @@
+<div class="container-inner">
+    
+    {# BUTTONS #}
+    <div class="filter__buttons">
+
+        {% for filter_button in filter_buttons %}
+            <a class="filter__btn" data-filter=".{{filter_button.button_category}}">
+                {{filter_button.button_text}}
+            </a>
+        {% endfor %}
+
+    </div>
+
+    {# ITEMS #}
+    <div class="filter__layout">
+        {% for filter_item in filter_images %}
+            <div class="filter__item {{filter_item.category}}">
+                <div class="filter__image" style="background-image: url('img/filtering/{{filter_item.image}}')"></div>
+                <div class="filter__text">{{filter_item.text}}</div>
+            </div>
+        {% endfor %}
+    </div>
+
+
+</div>

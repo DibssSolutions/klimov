@@ -9,3 +9,6 @@ PageList:
 
 - file: project.html
   ready: 100
+
+- file: filter.html
+  ready: 100
