@@ -11,7 +11,8 @@
             "className": "col-24",
             "content": [
               {
-                "titleLarge": "Studio Elforma <br> Architectes"
+                "project_link_text": "Studio Elforma. <br> Architectes ",
+                "project_link_link": "#"
               }
             ]
           },
@@ -23,7 +24,8 @@
             "className": "col-45",
             "content": [
               {
-                "text": "Studio Elforma <br> Architectes",
+                "text":
+                  "We bring the results while helping you achieve cost and time savings without taking on risk or management overhead.",
                 "label": "UI/UX"
               }
             ]
@@ -34,7 +36,7 @@
       "project_content": [
         [
           {
-            "rowClassName": "m0"
+            "rowClassName": "images-big"
           },
           {
             "className": "col",
@@ -47,7 +49,7 @@
         ],
         [
           {
-            "rowClassName": "m0"
+            "rowClassName": "images-middle"
           },
           {
             "className": "col",
@@ -68,7 +70,7 @@
         ],
         [
           {
-            "rowClassName": "m0"
+            "rowClassName": "images-big"
           },
           {
             "className": "col",
@@ -81,7 +83,7 @@
         ],
         [
           {
-            "rowClassName": "m0"
+            "rowClassName": "images-small"
           },
           {
             "className": "col",
@@ -113,18 +115,14 @@
       "project_footer": [
         [
           {
-            "rowClassName": "m0"
+            "rowClassName": "margin-bottom-30"
           },
           {
             "className": "col-24",
             "content": [
               {
                 "label": "Project",
-                "areas": [
-                  { "area": "UI/UX", "link": "#" },
-                  { "area": "Branding", "link": "#" },
-                  { "area": "Website", "link": "#" }
-                ]
+                "text": "UI/UX, Branding,<br>Website"
               }
             ]
           },
@@ -132,7 +130,13 @@
             "className": "col-31",
             "content": [
               {
-                "img": "IMG_20170503_191412.jpg"
+                "label": "Share on",
+                "social_links": [
+                  {
+                    "social_link_text": "Facebook",
+                    "social_link_link": "#"
+                  }
+                ]
               }
             ]
           },
@@ -140,7 +144,17 @@
             "className": "col-45",
             "content": [
               {
-                "img": "IMG_20170503_191412.jpg"
+                "label": "Look at",
+                "social_links": [
+                  {
+                    "social_link_text": "Behance",
+                    "social_link_link": "#"
+                  },
+                  {
+                    "social_link_text": "Site",
+                    "social_link_link": "#"
+                  }
+                ]
               }
             ]
           }
@@ -157,16 +171,41 @@
             "className": "col-31",
             "content": [
               {
-                "img": "IMG_20170503_191412.jpg"
+                "label": "Featured",
+                "text": "Behance Graphic <br> Design"
               }
             ]
           },
           {
             "className": "col-45",
+            "content": ""
+          }
+        ],
+        [
+          {
+            "rowClassName": "next-project"
+          },
+          {
+            "className": "col-24",
+            "content": ""
+          },
+          {
+            "className": "col-31",
             "content": [
               {
-                "label": "Next Project",
-                "ProjectTitle": "Susanne Furniture"
+                "img": "IMG_20170503_191412.jpg"
+              }
+            ]
+          },
+          {
+            "className": "col-45 next-project-text",
+            "content": [
+              {
+                "label": "Next Project"
+              },
+              {
+                "project_link_text": "Susanne Furniture",
+                "project_link_link": "#"
               }
             ]
           }

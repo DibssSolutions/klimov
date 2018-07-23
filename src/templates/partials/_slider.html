@@ -9,6 +9,9 @@
                     {% if col.content %} {% for content in col.content %} 
                     {% if content.className %}
                     <div class="{{content.className}}">
+                        {% if content.project_link_text %}
+                            <a class="project_link" href="{{content.project_link_text}}">{{content.project_link_text}}</a>
+                        {% endif %}
                         {% if content.titleLarge %}
                         <h2 class="titleLarge">{{content.titleLarge | safe}}</h2>
                         {% endif %} {% if content.title %}
@@ -36,24 +39,40 @@
                         <a class="link" href="{{content.link.link}}">{{content.link.text | safe}}</a>
                         {% endif %}
                     </div>
-                    {% else %} {% if content.titleLarge %}
-                    <h2 class="titleLarge">{{content.titleLarge | safe}}</h2>
-                    {% endif %} {% if content.title %}
-                    <h5 class="title">{{content.title | safe}}</h5>
-                    {% endif %} {% if content.image %}
-                    <img src="img/{{content.image}}" alt=""> {% endif %} {% if content.label %}
-                    <div class="label">{{content.label | safe}}</div>
-                    {% endif %} {% if content.text %}
-                    <p>{{content.text | safe}}</p>
-                    {% endif %} {% if content.adress %}
-                    <div class="adress">{{content.adress | safe}}</div>
-                    {% endif %} {% if content.email %}
-                    <div class="email">{{content.email | safe}}</div>
-                    {% endif %} {% if content.phone %}
-                    <div class="phone">{{content.phone | safe}}</div>
-                    {% endif %} {% if content.link %}
-                    <a class="link" href="{{content.link.link}}">{{content.link.text | safe}}</a>
-                    {% endif %} {% endif %} {% endfor %} {% endif %}
+                    {% else %} 
+                        {% if content.project_link_text %}
+                            <a class="project_link" href="{{content.project_link_link}}">{{content.project_link_text  | safe}}</a>
+                        {% endif %}
+                        {% if content.titleLarge %}
+                        <h2 class="titleLarge">{{content.titleLarge | safe}}</h2>
+                        {% endif %}
+                        {% if content.title %}
+                            <h5 class="title">{{content.title | safe}}</h5>
+                        {% endif %}
+                        {% if content.image %}
+                        <img src="img/{{content.image}}" alt="">
+                        {% endif %}
+                        {% if content.label %}
+                            <div class="label">{{content.label | safe}}</div>
+                        {% endif %} 
+                        {% if content.text %}
+                            <p>{{content.text | safe}}</p>
+                        {% endif %} 
+                        {% if content.adress %}
+                            <div class="adress">{{content.adress | safe}}</div>
+                        {% endif %}
+                        {% if content.email %}
+                            <div class="email">{{content.email | safe}}</div>
+                        {% endif %} 
+                        {% if content.phone %}
+                            <div class="phone">{{content.phone | safe}}</div>
+                        {% endif %}
+                         {% if content.link %}
+                            <a class="link" href="{{content.link.link}}">{{content.link.text | safe}}</a>
+                        {% endif %} 
+                    {% endif %}
+                    {% endfor %}
+                    {% endif %}
                 </div>
                 {% endif %} {% endfor %}
             </div>

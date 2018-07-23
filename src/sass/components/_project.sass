@@ -1,2 +1,72 @@
 .project
-    margin-top: 200px
+    margin-top: 157px
+    margin-bottom: 74px
+    &__top
+        margin-bottom: 350px
+        p 
+            max-width: 350px
+        .label 
+            margin-top: 24px
+            font-size: 20px
+    &__images
+        margin-bottom: 20px
+        .row
+            padding-bottom: 60px
+    &-picture
+        +cover
+
+.images-small
+    .project-picture
+        padding-bottom: 126%
+
+.images-middle
+    .project-picture
+        padding-bottom: 66%
+
+.images-big
+    .project-picture
+        padding-bottom: 52%
+
+.margin-bottom-30
+    margin-bottom: 30px
+
+.social
+    .label
+        font-size: 17px
+        line-height: 23px
+        color: $light-grey
+    &__link
+        display: block
+        line-height: 25px
+        color: $text-dark
+    p 
+        line-height: 28px
+
+.next-project
+    margin-top: 160px
+    .label
+        font-size: 20px
+        line-height: 28px
+        color: $text-dark
+
+.next-project-text
+    margin-top: 30px
+    
+
+.next-project-link
+    display: block
+    font-size: 35px
+    line-height: 30px
+    margin-top: 20px
+    &-arrow
+        visibility: hidden
+        opacity: 0
+        transition: 0.8s opacity, 0.8s visibility
+    &:hover .next-project-link-arrow
+        visibility: visible
+        opacity: 1
+
+.next-project-picture
+    padding-bottom: 64%
+    max-width: 340px
+    +cover

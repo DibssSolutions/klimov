@@ -45,7 +45,8 @@ $(document).ready(function() {
 
     // ===== PAGINATI0N =====
     var pg = $('.pagination');
-
+    pg.text('Scroll');
+    $('.footer').addClass('fixed');
     new IScroll('.section');
     $('#fullpage').fullpage({
       responsiveWidth: 10,
@@ -53,26 +54,7 @@ $(document).ready(function() {
       scrollingSpeed: 1000,
       sectionSelector: '.section',
 	  scrollOverflow: true, 
-      //   afterLoad: function() {
 
-      //     var loadedSection = this;
-      //     var index = loadedSection.index();
-      //     var pg = $('.pagination');
-
-      //     if (index === 0) {
-      //       pg.text('Scroll');
-      //     } else if (index === $('.section').length - 1) {
-      //       pg.text('Up ↑');
-      //     } else {
-      //       if (index < 9) {
-      //         pg.text('0' + index + '/');
-      //       } else {
-      //         pg.text(index + '/');
-      //       }
-      //     }
-		
-      //   }
-      // });
       onLeave: function(origin, destination, direction) {
         var loadedSection = this;
         console.log(origin);
@@ -81,9 +63,16 @@ $(document).ready(function() {
 		
         if (destination === 1) {
           pg.text('Scroll');
+          $('.js-footer-hidden').addClass('is-hidden');
+          $('.js-footer-visible').removeClass('is-hidden');
         } else if (destination === $('.section').length) {
+          $('.js-footer-hidden').removeClass('is-hidden');
+          $('.js-footer-visible').addClass('is-hidden');
+         
           pg.text('Up ↑');
         } else {
+          $('.js-footer-hidden').addClass('is-hidden');
+          $('.js-footer-visible').removeClass('is-hidden');
           if (destination < 9) {
             pg.text('0' + destination + '/');
           } else {

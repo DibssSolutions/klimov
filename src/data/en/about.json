@@ -5,13 +5,13 @@
     "rows": [
       [
         {
-          "rowClassName": "margin-bottom-213"
+          "rowClassName": "margin-bottom-200"
         },
         {
           "className": "col-24",
           "content": [
             {
-              "className": "about__text",
+              "className": "about__text--wide",
               "text": "We are a Creative Digital Agency for the Digital Era."
             }
           ]
@@ -24,7 +24,7 @@
           "className": "col-45",
           "content": [
             {
-              "className": "about__text max-width-450",
+              "className": "about__text--wide max-width-450",
               "text":
                 "Klimov® is a creative digital agency that creates the next generation of digital brands and experiences. Exploration through collaboration sits at the heart of our design process and we strive to create timeless work that surprises."
             }
@@ -33,21 +33,21 @@
       ],
       [
         {
-          "rowClassName": "margin-bottom-105"
+          "rowClassName": "margin-bottom-94"
         },
         {
           "className": "col-24",
           "content": ""
         },
         {
-          "className": "col-31",
+          "className": "col-76",
           "content": [
             {
               "className": "about__title",
               "title": "Our services"
             },
             {
-              "className": "about__text",
+              "className": "about__text--wide max-width-450",
               "text":
                 "We help brands shape their businesses and create unique design languages. We use a combination of our offerings to craft an approach that works best for each project. Independent of the output, we strive to offer new perspectives on established methods and solutions."
             }
@@ -60,7 +60,7 @@
       ],
       [
         {
-          "rowClassName": "margin-bottom-105"
+          "rowClassName": "margin-bottom-45"
         },
         {
           "className": "col-24",
@@ -106,7 +106,7 @@
       ],
       [
         {
-          "rowClassName": "margin-bottom-105"
+          "rowClassName": "margin-bottom-45"
         },
         {
           "className": "col-24",
@@ -148,7 +148,7 @@
       ],
       [
         {
-          "rowClassName": "margin-bottom-105"
+          "rowClassName": "margin-bottom-80"
         },
         {
           "className": "col-24",
@@ -179,17 +179,17 @@
       ],
       [
         {
-          "rowClassName": "margin-bottom-105"
+          "rowClassName": "margin-bottom-68"
         },
         {
-          "className": "col-100",
+          "className": "col-50",
           "content": [
             {
               "className": "about__title",
               "title": "Process"
             },
             {
-              "className": "about__text",
+              "className": "about__text--wide max-width-425",
               "text":
                 "Wedge works on all kinds of projects, but our approach is always guided by the same careful process. We know that detailed planning is what makes each idea unique and each project a success."
             }
@@ -198,7 +198,7 @@
       ],
       [
         {
-          "rowClassName": "margin-bottom-105"
+          "rowClassName": "margin-bottom-65"
         },
         {
           "className": "col-24",
@@ -212,9 +212,14 @@
               "title": "Plan"
             },
             {
-              "className": "about__text",
+              "className": "about__text padding-right-50 mb-30",
               "text":
-                ["This is where it all begins. We start with a kick-off meeting to identify your needs. By gaining a clear understanding of project scope and costs from the very start, we’re able to see what needs to happen over the short, medium and long term.", "Our focus is on transforming your business objectives into communications objectives, and developing a clear action plan to get you where you want to go."]
+                "This is where it all begins. We start with a kick-off meeting to identify your needs. By gaining a clear understanding of project scope and costs from the very start, we’re able to see what needs to happen over the short, medium and long term."
+            },
+            {
+              "className": "about__text padding-right-50",
+              "text":
+                "Our focus is on transforming your business objectives into communications objectives, and developing a clear action plan to get you where you want to go."
             }
           ]
         },
@@ -231,10 +236,10 @@
             }
           ]
         }
-      ], 
+      ],
       [
         {
-          "rowClassName": "margin-bottom-105"
+          "rowClassName": "margin-bottom-65"
         },
         {
           "className": "col-24",
@@ -248,9 +253,10 @@
               "title": "Research & ideas"
             },
             {
-              "className": "about__text",
-              "text":
-                ["This is the backbone of our creative process. We deconstruct ideas into their simplest form, a process that helps us pinpoint the right positioning for the brand."]
+              "className": "about__text padding-right-50",
+              "text": [
+                "This is the backbone of our creative process. We deconstruct ideas into their simplest form, a process that helps us pinpoint the right positioning for the brand."
+              ]
             }
           ]
         },
@@ -259,19 +265,14 @@
           "content": [
             {
               "className": "about__list--muted",
-              "list": [
-                "Discuss",
-                "Research",
-                "Sketch",
-                "Observe"
-              ]
+              "list": ["Discuss", "Research", "Sketch", "Observe"]
             }
           ]
         }
-      ], 
+      ],
       [
         {
-          "rowClassName": "margin-bottom-105"
+          "rowClassName": "margin-bottom-65"
         },
         {
           "className": "col-24",
@@ -285,9 +286,10 @@
               "title": "Creative development"
             },
             {
-              "className": "about__text",
-              "text":
-                ["This is when we transform ideas into prototypes. At this stage, we know which direction we’re going in, but we’re still just half-way there."]
+              "className": "about__text padding-right-50",
+              "text": [
+                "This is when we transform ideas into prototypes. At this stage, we know which direction we’re going in, but we’re still just half-way there."
+              ]
             }
           ]
         },
@@ -304,10 +306,10 @@
             }
           ]
         }
-      ], 
+      ],
       [
         {
-          "rowClassName": "m0"
+          "rowClassName": "margin-bottom-170"
         },
         {
           "className": "col-24",
@@ -322,8 +324,9 @@
             },
             {
               "className": "about__text",
-              "text":
-                ["Now things start taking shape. Once the concepts and mock-ups are approved, we bring together the best production team for the job."]
+              "text": [
+                "Now things start taking shape. Once the concepts and mock-ups are approved, we bring together the best production team for the job."
+              ]
             }
           ]
         },
@@ -332,12 +335,7 @@
           "content": [
             {
               "className": "about__list--muted",
-              "list": [
-                "Code",
-                "Print",
-                "Build",
-                "Write"
-              ]
+              "list": ["Code", "Print", "Build", "Write"]
             }
           ]
         }

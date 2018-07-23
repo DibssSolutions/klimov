@@ -7,6 +7,7 @@ $('.menu-trigger').click(function() {
     $('.top-nav .col-31').fadeIn();
     $('.top-nav .col-45').fadeIn();
     $('.logo').removeClass('logo-grey');
+    $('.header').removeClass('fixed');
     open = false;
   } else {
     $('.menu-trigger').addClass('menu-is-open');
@@ -16,6 +17,7 @@ $('.menu-trigger').click(function() {
     $('.top-nav .col-31').fadeOut();
     $('.top-nav .col-45').fadeOut();
     $('.logo').toggleClass('logo-grey');
+    $('.header').addClass('fixed');
     open = true;
   }
 });

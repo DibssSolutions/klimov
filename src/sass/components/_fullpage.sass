@@ -30,6 +30,8 @@
     visibility: visible
     z-index: 1    
 
+
+
 .wrapper
     // padding-top: 90px
     // padding-bottom: 60px
@@ -46,16 +48,31 @@
     
     
 
-.titleLarge
+.titleLarge, 
+.project_link
     font-size: 20px
     line-height: 30px
     font-weight: 400
+
+.project_link
+    display: block
+    &__arrow
+        visibility: hidden
+        opacity: 0
+        transition: 0.8s opacity, 0.8s visibility
+    &:hover .project_link__arrow
+        visibility: visible
+        opacity: 1
+        transition: 0.8s opacity, 0.8s visibility
+
+
 .title 
     font-size: 18px
     font-weight: 400
 
 .link
     color: $light-grey
+
 
 
 .margin-top-12vh

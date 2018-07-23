@@ -10,6 +10,7 @@
     padding-bottom: 30px
     background-color: #262626
     color: $main-menu-color
+    overflow: hidden
     +vertical
     &__top
         margin-top: 38px
@@ -19,9 +20,9 @@
         height: 100%
     &__item 
         font-size: 50px
-        line-height: 50px
-        // margin-bottom: 30px
+        line-height: 1
         margin-bottom: 2vh
+        +css-lock-height(24,50,550,700)
         &.is-active
             a
                 color: $orange
@@ -52,6 +53,7 @@
     min-height: 700px
     vertical-align: middle
     display: inline-block
+    +css-lock-height(14,20,550,700)
     
     
 
