@@ -1,5 +1,6 @@
 --- title: filter --- 
 
+
 {% extends "layouts/_layout.html" %} 
 
 {% block content %}
@@ -10,6 +11,6 @@
     {% include "partials/_filter.html" %} 
 </div>
 
-{# {% include "partials/_footer.html" %} #}
+{{ footer.fPosition('', true) }}
 
 {% endblock %}

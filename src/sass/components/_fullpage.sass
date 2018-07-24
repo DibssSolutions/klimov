@@ -20,20 +20,40 @@
     z-index: 1
     transition: opacity 0.3s, visibility 0.3s, z-index 0.3s
     overflow: auto
+    &.active 
+        opacity: 1
+        visibility: visible
+        z-index: 1    
     .fp-tableCell
         padding-top: 90px
         padding-bottom: 60px
+    +sm 
+        opacity: 1
+        visibility: visible
+        position: relative !important
 
-.section.active 
-    opacity: 1
-    visibility: visible
-    z-index: 1    
++sm 
+    #fullpage 
+        .section
+            .feature-list,
+            .title,
+            .fp-text,
+            .about_results
+                display: none
+        .section
+            .image
+                display: block
+            .project_link
+                display: block
+        .wrapper
+            min-height: inherit
+        [class$="vh"]
+            margin-bottom: 0
+            margin-top: 0
 
 
 
 .wrapper
-    // padding-top: 90px
-    // padding-bottom: 60px
     width: 100%
     font-size: 20px
     position: relative

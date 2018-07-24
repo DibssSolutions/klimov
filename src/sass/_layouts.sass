@@ -19,6 +19,9 @@
         max-width: 1100px
     +md 
         max-width: 800px
+    +sm 
+        max-width: 100%
+        padding: 0 15px
 
 
 .row 
@@ -78,9 +81,22 @@
 .col-76
     flex: 0 0 76%
 
+[class*="col-"]
+    +sm 
+        flex: 0 0 100%
+
 .col
     flex-basis: 0
     flex-grow: 1
     max-width: 100%
     padding-right: 10px
     padding-left: 10px
+
+.d-lg-none
+    display: none
+    +sm 
+        display: block
+
++sm 
+    .d-sm-none
+        display: none

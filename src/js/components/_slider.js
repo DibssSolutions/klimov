@@ -1,31 +1,46 @@
 import slick from 'slick-carousel';
 
 $(document).ready(function() {
-  $('.slider').slick({
-    slidesToShow: 3,
-    // infinite: true,
-    // arrows: false,
-    adaptiveHeight: true
-  });
+  var sliderTrigger = document.getElementById('slider');
 
-  $('.slider').on('wheel', function(e) {
-    e.preventDefault();
+  if (sliderTrigger !== null) {
+    $('.slider').on('init', function(event, slick) {
+      $('.slider').css({ opacity: '1', visibility: 'visible' });
+    });
 
-    if (e.originalEvent.deltaY < 0) {
-      $(this).slick('slickNext');
-    } else {
-      $(this).slick('slickPrev');
-    }
-  });
+    $('.slider').slick({
+      slidesToShow: 3,
+      adaptiveHeight: true,
+      responsive: [
+        {
+          breakpoint: 500,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+    });
 
-  $('.slider').on('keydown', function(e) {
-    e.preventDefault();
+    $('.slider').on('wheel', function(e) {
+      e.preventDefault();
 
-    if (e.keyCode === '39') {
-      $(this).slick('slickNext');
-    }
-    if (e.keyCode === '37') {
-      $(this).slick('slickPrev');
-    }
-  });
+      if (e.originalEvent.deltaY < 0) {
+        $(this).slick('slickNext');
+      } else {
+        $(this).slick('slickPrev');
+      }
+    });
+
+    $('.slider').on('keydown', function(e) {
+      e.preventDefault();
+
+      if (e.keyCode === '39') {
+        $(this).slick('slickNext');
+      }
+      if (e.keyCode === '37') {
+        $(this).slick('slickPrev');
+      }
+    });
+  }
 });

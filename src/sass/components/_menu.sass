@@ -12,6 +12,8 @@
     color: $main-menu-color
     overflow: hidden
     +vertical
+    +sm 
+        overflow: scroll
     &__top
         margin-top: 38px
         margin-bottom: 6vh
@@ -87,6 +89,8 @@
     text-align: left
     .email
         text-decoration: underline
+    +sm 
+        position: relative
 
 .lang
     font-size: 20px
@@ -137,6 +141,8 @@
         color: #fff
         &:nth-child(2)
             margin: 0 6px
+    &-text 
+        font-size: 20px
     &.menu-is-open
         span
             background-color: #fff

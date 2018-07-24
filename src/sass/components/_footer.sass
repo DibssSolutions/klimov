@@ -1,25 +1,19 @@
 .footer
     padding-bottom: 22px
     overflow: hidden
+    width: 100%
+    +gpu
+    background-color: #fff
     &.fixed
         position: absolute
         z-index: 200
         bottom: 0
         left: 0
+        right: 0
+        +sm 
+            position: relative
     
-// ===============================================================FIX !!!!
-#slider
-    .footer
-        position: fixed
-        z-index: 200
-        bottom: 0
-        left: 0
-        width: 100%
-        color: $light-grey
-
-    width: 100%
-    +gpu
-    background-color: #fff
+        
 
 .is-hidden
     display: none
