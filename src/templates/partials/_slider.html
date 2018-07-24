@@ -1,83 +1,23 @@
-{% for item in slider %}
-<div class="section" data-slide={{loop.index}}>
-    <div class="wrapper">
-        <div class="container-inner">
-            {% for row in item.rows %}
-            <div class="row {{row[0].rowClassName}}">
-                {% for col in row %} {% if not col.rowClassName %}
-                <div class="{{col.className}}">
-                    {% if col.content %} {% for content in col.content %} 
-                    {% if content.className %}
-                    <div class="{{content.className}}">
-                        {% if content.project_link_text %}
-                            <a class="project_link" href="{{content.project_link_text}}">{{content.project_link_text}}<span class='project_link__arrow'> → </span></a>
-                        {% endif %}
-                        {% if content.titleLarge %}
-                        <h2 class="titleLarge">{{content.titleLarge | safe}}</h2>
-                        {% endif %} {% if content.title %}
-                        <h5 class="title">{{content.title | safe}}</h5>
-                        {% endif %} {% if content.image %}
-                        <img src="img/{{content.image}}" alt=""> {% endif %} 
-                        {% if content.label %}
-                        <div class="label">{{content.label | safe}}</div>
-                        {% endif %} 
-                        {% if content.text %}
-                        <p>{{content.text | safe}}</p>
-                        {% endif %} 
-                        {% if content.adress %}
-                        <div class="adress">{{content.adress | safe}}</div>
-                        {% endif %}
-                        {% if content.email %}
-                        <div class="email">
-                            <a href="{{content.email | safe}}">{{content.email | safe}}</a>
-                        </div>
-                        {% endif %}
-                         {% if content.phone %}
-                        <div class="phone">{{content.phone | safe}}</div>
-                        {% endif %}
-                         {% if content.link %}
-                        <a class="link" href="{{content.link.link}}">{{content.link.text | safe}}</a>
-                        {% endif %}
-                    </div>
-                    {% else %} 
-                        {% if content.project_link_text %}
-                            <a class="project_link" href="{{content.project_link_link}}">{{content.project_link_text  | safe}}<span class='project_link__arrow'> → </span></a>
-                        {% endif %}
-                        {% if content.titleLarge %}
-                        <h2 class="titleLarge">{{content.titleLarge | safe}}</h2>
-                        {% endif %}
-                        {% if content.title %}
-                            <h5 class="title">{{content.title | safe}}</h5>
-                        {% endif %}
-                        {% if content.image %}
-                        <img src="img/{{content.image}}" alt="">
-                        {% endif %}
-                        {% if content.label %}
-                            <div class="label">{{content.label | safe}}</div>
-                        {% endif %} 
-                        {% if content.text %}
-                            <p>{{content.text | safe}}</p>
-                        {% endif %} 
-                        {% if content.adress %}
-                            <div class="adress">{{content.adress | safe}}</div>
-                        {% endif %}
-                        {% if content.email %}
-                            <div class="email">{{content.email | safe}}</div>
-                        {% endif %} 
-                        {% if content.phone %}
-                            <div class="phone">{{content.phone | safe}}</div>
-                        {% endif %}
-                         {% if content.link %}
-                            <a class="link" href="{{content.link.link}}">{{content.link.text | safe}}</a>
-                        {% endif %} 
-                    {% endif %}
-                    {% endfor %}
-                    {% endif %}
-                </div>
-                {% endif %} {% endfor %}
-            </div>
-            {% endfor %}
+<div class="container-inner">
+    <div class="row">
+        <div class="col-24"></div>
+        <div class="col-31"></div>
+        <div class="col-45">
+            <h2 class="slider-title">
+                {{slider_heading}}
+            </h2>
         </div>
+        
     </div>
 </div>
-{% endfor %}
+
+<div class="container-inner slider__container">
+    <div class="slider">
+        {% for slide in slides %}
+        <div class="slide">
+            <div class="slide__img" style="background-image: url('img/slider/{{slide.img}}')"></div>
+            <a href="{{slide.project_link}}" class="slide__text">{{slide.project_name}}↗</a>
+        </div>
+        {% endfor %}
+    </div>
+</div>

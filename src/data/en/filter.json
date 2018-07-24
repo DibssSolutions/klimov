@@ -35,66 +35,77 @@
       "button_category": "fashion"
     }
   ],
+
   "filter_images": [
     {
       "image": "filter_1.jpg",
       "text": "Name",
-      "category": "branding"
+      "category": "branding",
+      "size": "middle", 
+      "link": "#"
     },
     {
       "image": "filter_2.jpg",
       "text": "Name",
-      "category": "branding typography"
+      "category": "branding typography",
+      "size": "middle",
+      "link": "#"
     },
     {
       "image": "filter_3.jpg",
       "text": "Name",
-      "category": "architecture typography"
+      "category": "architecture typography",
+      "size": "middle",
+      "link": "#"
     },
     {
       "image": "filter_4.jpg",
       "text": "Name",
-      "category": "branding"
+      "category": "branding",
+      "size": "big",
+      "link": "#"
     },
     {
       "image": "filter_5.jpg",
       "text": "Name",
-      "category": "branding typography"
+      "category": "branding typography",
+      "size": "small",
+      "link": "#"
     },
     {
       "image": "filter_6.jpg",
       "text": "Name",
-      "category": "architecture typography"
+      "category": "architecture typography",
+      "size": "middle",
+      "link": "#"
     },
     {
       "image": "filter_1.jpg",
       "text": "Name",
-      "category": "branding"
+      "category": "branding",
+      "size": "middle",
+      "link": "#"
     },
     {
       "image": "filter_2.jpg",
       "text": "Name",
-      "category": "branding typography"
-    },
-    {
-      "image": "filter_3.jpg",
-      "text": "Name",
-      "category": "architecture typography"
-    },
-    {
-      "image": "filter_4.jpg",
-      "text": "Name",
-      "category": "branding"
+      "category": "branding typography",
+      "size": "middle",
+      "link": "#"
     },
     {
       "image": "filter_5.jpg",
       "text": "Name",
-      "category": "branding, typography"
+      "category": "architecture typography",
+      "size": "small",
+      "link": "#"
     },
     {
-      "image": "filter_6.jpg",
+      "image": "filter_5.jpg",
       "text": "Name",
-      "category": "architecture typography"
+      "category": "branding",
+      "size": "small",
+      "link": "#"
     }
   ]
 }

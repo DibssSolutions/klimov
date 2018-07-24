@@ -1,0 +1,54 @@
+{
+    "title": "slider",
+    "slider_heading": "All projects",
+    "slides": [
+        {
+            "slide": "1", 
+            "img": "slide_1.jpg",
+            "project_name": "Moraray", 
+            "project_link": "#"
+        }, 
+        {
+            "slide": "2", 
+            "img": "slide_2.jpg",
+            "project_name": "Moraray", 
+            "project_link": "#"
+        },
+        {
+            "slide": "3", 
+            "img": "slide_3.jpg",
+            "project_name": "Moraray", 
+            "project_link": "#"
+        },
+        {
+            "slide": "4", 
+            "img": "slide_4.jpg",
+            "project_name": "Moraray", 
+            "project_link": "#"
+        },
+        {
+            "slide": "5", 
+            "img": "slide_1.jpg",
+            "project_name": "Moraray", 
+            "project_link": "#"
+        }, 
+        {
+            "slide": "6", 
+            "img": "slide_2.jpg",
+            "project_name": "Moraray", 
+            "project_link": "#"
+        },
+        {
+            "slide": "7", 
+            "img": "slide_3.jpg",
+            "project_name": "Moraray", 
+            "project_link": "#"
+        },
+        {
+            "slide": "8", 
+            "img": "slide_4.jpg",
+            "project_name": "Moraray", 
+            "project_link": "#"
+        }
+    ]
+}

@@ -12,3 +12,6 @@ PageList:
 
 - file: filter.html
   ready: 100
+
+- file: slider.html
+  ready: 100

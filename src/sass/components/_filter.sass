@@ -1,26 +1,56 @@
 .filter
-    margin: 100px auto
+    margin: 200px auto
     &__layout 
         text-align: center
+    &__label
+        font-size: 17px
+        color: $light-grey
     &__buttons
         position: absolute
-        top: 100px
-        left: -36px
+        top: 0
+        left: 36px
         display: flex
         flex-flow: column
+        z-index: 3
     &__btn
-        font-size: 14px
-        background-color: #0f0
-        margin-bottom: 12px
-        padding: 10px
-        border: solid 1px #000
-        border-radius: 3px
+        font-size: 20px
+        color: $light-grey
+        text-align: left
+        line-height: 1.4
     &__item
         display: inline-block
-        padding: 30px
+        padding: 0 80px 45px
         position: static !important
-        min-width: 100px
+        // transition-property: transform, opacity !important
+        // transition-duration: 0s, 0.3s !important
+        // transition-delay: 0s, 0.3s !important 
+        top: auto !important
+        left: auto !important
+        
+
     &__image
         +cover
-        padding-bottom: 100%
-        
+        padding-bottom: 247px
+        position: relative
+        z-index: 3
+        transition: 0.5s transform
+        &:hover
+            transform: translateY(42px)
+            transition: 0.7s transform
+        &--small
+            width: 164px
+            // padding-bottom: 150%
+        &--middle
+            width: 342px
+        &--big 
+            width: 439px
+    &__text
+        position: relative
+        top: -247px
+        left: 50%
+        transform: translateX(-50%)
+        z-index: 1
+            
+@keyframes fadeIn 
+    from {opacity: 0}
+    to{opacity: 1}

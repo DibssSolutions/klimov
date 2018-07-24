@@ -1,0 +1,19 @@
+--- title: page --- 
+
+{% extends "layouts/_layout.html" %} 
+
+{% block content %}
+
+<div id="slider">
+    {% include "partials/_header.html" %}
+
+    <div class="slider-wrapper">
+        {% include "partials/_slider.html" %} 
+    </div>
+
+    
+    {{ footer.constructor('f') }}
+   
+</div>
+
+{% endblock %}
