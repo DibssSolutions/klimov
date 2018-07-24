@@ -1,32 +1,37 @@
-<div class="container-inner">
-    
-    {# BUTTONS #}
-
-    <div class="filter__buttons">
-        <div class="filter__label">
-            Filter by
+<div class="filter__main ">
+    <div class="container-inner">
+        <div class="filter__buttons filter__buttons--main">
+            <button class="filter__label">
+                Filter by
+            </button>
+            <button class="filter__btn js-filter-category-selected">
+                All
+            </button>
         </div>
-        {% for filter_button in filter_buttons %}
-            {% if filter_button.button_category === "*" %}
-                <button class="filter__btn" data-filter="*">
-            {% else %}
-                <button class="filter__btn" data-filter=".{{filter_button.button_category}}">
-            {% endif %}
-                {{filter_button.button_text}}
-                </button>
-        {% endfor %}
-
-    </div>
-
-    {# ITEMS #}
-    <div class="filter__layout">
-        {% for filter_item in filter_images %}
+        {# ITEMS #}
+        <div class="filter__layout">
+            {% for filter_item in filter_images %}
             <a href="{{filter_item.link}}" class="filter__item {{filter_item.category}}">
                 <div class="filter__image filter__image--{{filter_item.size}}" style="background-image: url('img/filtering/{{filter_item.image}}')"></div>
                 <div class="filter__text">{{filter_item.text}}</div>
             </a>
-        {% endfor %}
+            {% endfor %}
+        </div>
     </div>
-
-
+</div>
+<div class="filter__filter">
+    <div class="container-inner">
+        <div class="filter__buttons filter__buttons--filter">
+            <button class="filter__label">
+                Filter by
+            </button>
+            {% for filter_button in filter_buttons %} {% if filter_button.button_category === "*" %}
+            <button class="filter__btn" data-filter="*">
+                {% else %}
+                <button class="filter__btn" data-filter=".{{filter_button.button_category}}">
+                    {% endif %} {{filter_button.button_text}}
+                </button>
+                {% endfor %}
+        </div>
+    </div>
 </div>

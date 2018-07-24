@@ -7,11 +7,16 @@
         color: $light-grey
     &__buttons
         position: absolute
-        top: 0
-        left: 36px
         display: flex
         flex-flow: column
-        z-index: 3
+        z-index: 5
+        &--main
+            top: 0
+            left: 36px
+        &--filter
+            top: 50vh
+            left: 36px
+            transform: translateY(-50%)
     &__btn
         font-size: 20px
         color: $light-grey
@@ -21,13 +26,8 @@
         display: inline-block
         padding: 0 80px 45px
         position: static !important
-        // transition-property: transform, opacity !important
-        // transition-duration: 0s, 0.3s !important
-        // transition-delay: 0s, 0.3s !important 
         top: auto !important
         left: auto !important
-        
-
     &__image
         +cover
         padding-bottom: 247px
@@ -50,7 +50,26 @@
         left: 50%
         transform: translateX(-50%)
         z-index: 1
+
+    // ===== BUTTONS POPUP =====
+    &__filter
+        opacity: 0
+        visibility: hidden
+        transition: opacity 1s, visibility 1s
+
+    .filter__filter.is-active
+        opacity: 1
+        visibility: visible
+        position: fixed
+        top: 0
+        left: 0
+        height: 100%
+        width: 100%
+        z-index: 10
+        background-color: $text-dark
+        overflow: hidden
+        transition: opacity 1s, visibility 1s
+    
+
+
             
-@keyframes fadeIn 
-    from {opacity: 0}
-    to{opacity: 1}
