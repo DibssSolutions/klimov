@@ -4,29 +4,36 @@
     left: 0
     right: 0
     padding-top: 36px
-    z-index: 5
+    z-index: 1005
     background-color: #fff
+    .dark-theme &
+        background-color: transparent
     &.fixed
-        position: 
-        
-#slider
-    .header
-        background-color: $text-dark
-        color: $light-grey
+        position: fixed
+    +sm 
+        padding-top: 0
 
+.menu-top
+    position: relative
+    z-index: 10
+    // background-color: $text-dark
 
-.top
+.menu-top-container
     align-items: center
 
 .nav 
     &-item:first-child
         margin-right: 38px
+        +sm 
+            margin-right: 20px
     &-item--wider 
         margin-right: 54px !important
     &-item
         display: inline-block
     &-link.is-active 
         color: $orange
+        .dark-theme &
+            color: $main-menu-color-muted
     &-arrow
         visibility: hidden
         opacity: 0
@@ -45,6 +52,12 @@
         svg
             fill: $main-menu-color
             display: inline-block
+    .dark-theme &
+        svg
+            fill: $main-menu-color
+    +sm 
+        padding-top: $heading-top-padding-sm
+
 
 
   

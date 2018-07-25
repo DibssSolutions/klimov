@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <META NAME="GOOGLEBOT" CONTENT="NOARCHIVE">
-    <title>slider</title>
+    <title>Klimov | slider</title>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#fff">
@@ -16,13 +16,13 @@
   <body>
     <!-- BEGIN content -->
     <div class="out">
-      <div id="slider">
+      <div id="slider" class="dark-theme">
         <header class="header">
           <div class="menu-top">
             <div class="container-inner">
-              <div class="row top">
+              <div class="row menu-top-container">
                 <div class="col-24">
-                  <a href="#" class="logo">
+                  <a href="page.html" class="logo">
                     <?xml version="1.0" encoding="utf-8"?> <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" fill: "#262626" viewBox="0 0 88.3 25" style="enable-background:new 0 0 88.3 25;" xml:space="preserve">
 
                             <path class="st0" d="M65.8,9.5c-0.9,0.3-1.2-0.1-1.2-0.6c0-1,1.1-1.3,1.7-0.2c1.1,2.1,0.5,10-2.1,10c-3.4,0-3.1-10.1-0.3-10.7
@@ -45,20 +45,21 @@
                         </svg> </a>
                 </div>
                 <div class="col-31">
-                  <div class="nav-item nav-item--wider d-sm-none"> <a href="#" class="nav-link is-active">Discover</a> </div>
-                  <div class="nav-item"> <a href="#" class="nav-link d-sm-none">Agency</a> </div>
+                  <div class="nav-item nav-item--wider d-sm-none"> <a href="slider.html" class="nav-link is-active">Discover</a> </div>
+                  <div class="nav-item"> <a href="about.html" class="nav-link d-sm-none">Agency</a> </div>
                 </div>
                 <div class="col-45">
-                  <div class="nav-item d-sm-none"> <a href="#" class="nav-link">Inspiration</a> </div>
+                  <div class="nav-item d-sm-none"> <a href="filter.html" class="nav-link">Inspiration</a> </div>
                 </div>
               </div> <button class="menu-trigger">
                 <div class="d-sm-none">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                    <span class="menu-circle"></span>
+                    <span class="menu-circle"></span>
+                    <span class="menu-circle"></span>
                 </div>
                 <div class="d-lg-none menu-trigger-text">
-                    Menu                    
+                    <span class='text-close'>Menu</span>
+                    <span class='text-open'>Close</span>         
                 </div>
             </button> </div>
           </div>
@@ -78,9 +79,10 @@
                   <div class="col-31">
                     <div class="menu__item"> <a href="#">Agency</a> </div>
                     <div class="menu__item color-muted"> <a href="#">Inspirations</a> </div>
+                    <div class="lang lang--mob d-lg-none"> <a href="#" class="is-active lang__item">Eng</a> / <a href="#" class="lang__item">Rus</a> </div>
                   </div>
                   <div class="col-45">
-                    <div class="menu__motto">
+                    <div class="menu__motto d-sm-none">
                       <p>We create digital services and interactive experiences that help your business thrive and delight your customers.</p>
                     </div>
                   </div>
@@ -110,6 +112,11 @@
                       <div class="email"> <a href="partner@klimov.agency">partner@klimov.agency</a> </div>
                       <div class="phone">+7 (985) 171-76-32</div>
                     </div>
+                    <div class="jobs d-lg-none">
+                      <h5>Jobs</h5> <a href="hero@klimov.agency" class="jobs-email">hero@klimov.agency</a> </div>
+                    <div class="menu__motto d-lg-none">
+                      <p>We create digital services and interactive experiences that help your business thrive and delight your customers.</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -118,16 +125,16 @@
               <div class="container-inner">
                 <div class="row">
                   <div class="col-24">
-                    <div class="lang"> <a href="#" class="is-active lang__item">Eng</a> / <a href="#" class="lang__item">Rus</a> </div>
+                    <div class="lang d-sm-none"> <a href="#" class="is-active lang__item">Eng</a> / <a href="#" class="lang__item">Rus</a> </div>
                   </div>
                   <div class="col-31 social">
                     <div class="social__item"> <a href="#">Behance</a> <span class="social__arrow">↗</span> </div>
                     <div class="social__item"> <a href="#">Facebook</a> <span class="social__arrow">↗</span> </div>
                   </div>
                   <div class="col-45 flex-between">
-                    <div class="email"> <a href="hero@klimov.agency">hero@klimov.agency</a> </div>
+                    <div class="email d-sm-none"> <a href="hero@klimov.agency">hero@klimov.agency</a> </div>
                     <div class="time">
-                      <p>Since 2015</p>
+                      <p class="d-sm-none">Since 2015</p>
                     </div>
                   </div>
                 </div>
@@ -146,23 +153,23 @@
             </div>
           </div>
           <div class="container-inner slider__container">
-            <div class="slider">
+            <div class="slider owl-carousel">
               <div class="slide">
-                <div class="slide__img" style="background-image: url('img/slider/slide_1.jpg')"></div> <a href="#" class="slide__text">Moraray↗</a> </div>
+                <div class="slide__img" style="background-image: url('img/slider/slide_1.jpg')"></div> <a href="#" class="slide__text">Moraray<span class="arrow">↗</span></a> </div>
               <div class="slide">
-                <div class="slide__img" style="background-image: url('img/slider/slide_2.jpg')"></div> <a href="#" class="slide__text">Moraray↗</a> </div>
+                <div class="slide__img" style="background-image: url('img/slider/slide_2.jpg')"></div> <a href="#" class="slide__text">Moraray<span class="arrow">↗</span></a> </div>
               <div class="slide">
-                <div class="slide__img" style="background-image: url('img/slider/slide_3.jpg')"></div> <a href="#" class="slide__text">Moraray↗</a> </div>
+                <div class="slide__img" style="background-image: url('img/slider/slide_3.jpg')"></div> <a href="#" class="slide__text">Moraray<span class="arrow">↗</span></a> </div>
               <div class="slide">
-                <div class="slide__img" style="background-image: url('img/slider/slide_4.jpg')"></div> <a href="#" class="slide__text">Moraray↗</a> </div>
+                <div class="slide__img" style="background-image: url('img/slider/slide_4.jpg')"></div> <a href="#" class="slide__text">Moraray<span class="arrow">↗</span></a> </div>
               <div class="slide">
-                <div class="slide__img" style="background-image: url('img/slider/slide_1.jpg')"></div> <a href="#" class="slide__text">Moraray↗</a> </div>
+                <div class="slide__img" style="background-image: url('img/slider/slide_1.jpg')"></div> <a href="#" class="slide__text">Moraray<span class="arrow">↗</span></a> </div>
               <div class="slide">
-                <div class="slide__img" style="background-image: url('img/slider/slide_2.jpg')"></div> <a href="#" class="slide__text">Moraray↗</a> </div>
+                <div class="slide__img" style="background-image: url('img/slider/slide_2.jpg')"></div> <a href="#" class="slide__text">Moraray<span class="arrow">↗</span></a> </div>
               <div class="slide">
-                <div class="slide__img" style="background-image: url('img/slider/slide_3.jpg')"></div> <a href="#" class="slide__text">Moraray↗</a> </div>
+                <div class="slide__img" style="background-image: url('img/slider/slide_3.jpg')"></div> <a href="#" class="slide__text">Moraray<span class="arrow">↗</span></a> </div>
               <div class="slide">
-                <div class="slide__img" style="background-image: url('img/slider/slide_4.jpg')"></div> <a href="#" class="slide__text">Moraray↗</a> </div>
+                <div class="slide__img" style="background-image: url('img/slider/slide_4.jpg')"></div> <a href="#" class="slide__text">Moraray<span class="arrow">↗</span></a> </div>
             </div>
           </div>
         </div>

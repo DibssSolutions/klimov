@@ -3,22 +3,22 @@
   "menu_top": {
     "logo": {
       "src": "logo.svg",
-      "link": "#"
+      "link": "page.html"
     },
     "nav_items": [
       [
         {
           "title": "Discover",
-          "href": "#"
+          "href": "slider.html"
         },
         {
           "title": "Agency",
-          "href": "#"
+          "href": "about.html"
         }
       ],
       {
         "title": "Inspiration",
-        "href": "#"
+        "href": "filter.html"
       }
     ]
   },
@@ -77,6 +77,12 @@
               "className": "menu__item color-muted",
               "link_text": "Inspirations",
               "link_link": "#"
+            },
+
+            {
+              "className": "lang lang--mob d-lg-none",
+              "lang1": "Eng",
+              "lang2": "Rus"
             }
           ]
         },
@@ -84,7 +90,7 @@
           "className": "col-45",
           "content": [
             {
-              "className": "menu__motto",
+              "className": "menu__motto d-sm-none",
               "text":
                 "We create digital services and interactive experiences that help your business thrive and delight your customers."
             }
@@ -143,6 +149,17 @@
               "label": "New Business",
               "phone": "+7 (985) 171-76-32",
               "email": "partner@klimov.agency"
+            },
+            {
+              "className": "jobs d-lg-none",
+              "jobs_title": "Jobs",
+              "jobs_link_text": "hero@klimov.agency",
+              "jobs_link_link": "hero@klimov.agency"
+            }, 
+            {
+              "className": "menu__motto d-lg-none",
+              "text":
+                "We create digital services and interactive experiences that help your business thrive and delight your customers."
             }
           ]
         }
@@ -155,7 +172,7 @@
       "className": "col-24",
       "content": [
         {
-          "className": "lang",
+          "className": "lang d-sm-none",
           "lang1": "Eng",
           "lang2": "Rus"
         }
@@ -180,7 +197,7 @@
       "className": "col-45 flex-between",
       "content": [
         {
-          "className": "email",
+          "className": "email d-sm-none",
           "email": "hero@klimov.agency"
         },
         {
@@ -192,7 +209,7 @@
   ],
 
   "contacts": [
-    [      
+    [
       {
         "className": "col-24",
         "content": ""
@@ -220,7 +237,6 @@
       }
     ],
     [
-      
       {
         "className": "col-24",
         "content": ""

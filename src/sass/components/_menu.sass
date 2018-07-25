@@ -1,7 +1,7 @@
 .menu
     position: fixed
     display: none
-    z-index: 1000
+    z-index: 5
     left: 0
     top: 0
     width: 100%
@@ -14,6 +14,7 @@
     +vertical
     +sm 
         overflow: scroll
+        height: 100vh
     &__top
         margin-top: 38px
         margin-bottom: 6vh
@@ -24,7 +25,9 @@
         font-size: 50px
         line-height: 1
         margin-bottom: 2vh
-        +css-lock-height(24,50,550,700)
+        +css-lock(35,50,767,1400)
+        +sm 
+            font-size: 35px
         &.is-active
             a
                 color: $orange
@@ -44,9 +47,14 @@
         bottom: 60px
     .label
         color: $main-menu-color-muted
+        +sm 
+            font-size: 17px
     .color-muted
         color: $main-menu-color-muted
- 
+    .feature-list
+        +sm 
+            margin-bottom: 44px
+    
 
 // ===== MAIN MENU ROWS =====
 
@@ -54,10 +62,8 @@
     min-height: 700px
     vertical-align: middle
     display: inline-block
-    +css-lock-height(14,20,550,700)
+    // +css-lock-height(14,20,550,700)
     
-    
-
 .margin-top-3vh
     margin-top: 3vh
 
@@ -69,6 +75,8 @@
 .social 
     &__item:first-child
         margin-right: 38px
+        +sm 
+            margin-right: 20px
     &-arrow
         visibility: hidden
         opacity: 0
@@ -87,16 +95,22 @@
     color: $light-grey
     font-size: 20px
     text-align: left
+    // +css-lock(14,20,767,1400)
     .email
         text-decoration: underline
     +sm 
         position: relative
+        padding-bottom: 0
+        
 
 .lang
     font-size: 20px
     color: $main-menu-color-muted
+    // +css-lock(14,20,767,1400)
     &__item.is-active 
         color: $main-menu-color
+    &--mob 
+        padding-bottom: 30px
 
 .time 
     font-size: 17px
@@ -129,7 +143,11 @@
     cursor: pointer
     z-index: 10000
     padding: 20px
-    span 
+    +sm 
+        margin-right: -$heading-top-padding-sm 
+        padding: $heading-top-padding-sm 
+        top: 0
+    .menu-circle
         display: inline-block
         height: 4px
         width: 4px
@@ -139,26 +157,36 @@
         position: relative
         z-index: 10000
         color: #fff
+        .dark-theme &
+            background-color: $light-grey
         &:nth-child(2)
             margin: 0 6px
     &-text 
         font-size: 20px
+    
     &.menu-is-open
-        span
+        .menu-circle
             background-color: #fff
             height: 8px
             width: 8px
-        span:nth-child(2),
-        span:nth-child(3) 
+        .menu-circle:nth-child(2),
+        .menu-circle:nth-child(3) 
             display: none   
+        .text-close
+            display: none
+        .text-open
+            display: block
+
+.text-open
+    display: none
 
 .menu-trigger:hover
-    span:nth-child(1)
+    .menu-circle:nth-child(1)
         animation: bounce 0.7s
-    span:nth-child(2)
+    .menu-circle:nth-child(2)
         animation: bounce 0.7s
         animation-delay: 0.2s
-    span:nth-child(3)
+    .menu-circle:nth-child(3)
         animation: bounce 0.7s
         animation-delay: 0.2s
 

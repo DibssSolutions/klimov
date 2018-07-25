@@ -6,7 +6,7 @@
     width: 100%
     height: 100%
     overflow: hidden
-    
+
 .slider-title
     font-size: 20px
     color: $orange
@@ -14,21 +14,26 @@
 
 .slider
     position: relative
-    width: 2102px
+    width: 140%
     margin: 0 -65px 0 -65px 
+    z-index: 4
     opacity: 0
     visibility: hidden
     transition: opacity 2s, visibility 2s
     +sm 
-        width: auto
+        width: calc(100% + 15px)
         margin: 0
     &-wrapper
-        margin-top: 200px
+        margin-top: 140px
+        +sm
+            margin-top: $main-margin-top-sm
+    &__container 
+        margin-top: 140px
     &:before
         position: absolute
         top: 0
         bottom: 0
-        right: calc(100% - 73px)
+        right: calc(100% - 65px)
         background-color: $text-dark
         z-index: 100
         content: ''
@@ -36,18 +41,17 @@
         +sm 
             display: none
 
-
-        
-    
-
 .slide
-    transition: transform 0.8s
-    .slick-current &
+    transition: transform 1.4s
+    +sm 
+        padding: 0 8px
+    .active.center &
         transform: translateY(42px) 
-
+        transition: transform 1.4s
+        +sm 
+            transform: translateY(0)
     &__img
         padding-bottom: 410px
-        width: 617px
         +cover
         z-index: 3
         transition: transform 0.8s
@@ -61,22 +65,22 @@
         left: 0
         z-index: -1
         color: $light-grey
+        &:hover .arrow
+            visibility: visible
+            opacity: 1
+        .active.center &
+            transform: translateY(-35px)
+            transition: transform 1.4s
+            +sm 
+                transform: translateY(0)
         +sm 
             top: 0
 
-
-
-
-.slick-slide
-    padding: 0 65px 
-    width: auto !important
-    transition: transform 1.4s
+.owl-item
+    max-width: 613px
     +sm 
-        margin: 0 8px !important
+        max-width: 250px
+    
 
-.slick-current
-    .slide__text
-        transform: translateY(-35px)
-        transition: transform 1.4s
-        +sm 
-            transform: translateY(0)
+
+

@@ -4,10 +4,10 @@ body
     +font-smoothing
     font-family: $faktPro   
     font-size: 20px   
-    line-height: 1.4
+    line-height: 1.5
     color: #000 
     letter-spacing: -0.2px
-    // min-width: 1430px
+    // +css-lock(14,20,767,1400)
 
 img
 	max-width: 100%	
@@ -25,6 +25,14 @@ ul
 button
     background-color: transparent 
     font-size: 0
+    font-family: $faktPro
 
 .out
     overflow: hidden
+    min-height: 100vh
+    position: relative
+
+.arrow
+    visibility: hidden
+    opacity: 0
+    transition: 0.8s opacity, 0.8s visibility

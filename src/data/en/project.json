@@ -118,18 +118,20 @@
             "rowClassName": "margin-bottom-30"
           },
           {
-            "className": "col-24",
+            "className": "col-24 order-sm-1",
             "content": [
               {
+                "className": "project__links-group",
                 "label": "Project",
                 "text": "UI/UX, Branding,<br>Website"
               }
             ]
           },
           {
-            "className": "col-31",
+            "className": "col-31 order-sm-4",
             "content": [
               {
+                "className": "project__links-group",
                 "label": "Share on",
                 "social_links": [
                   {
@@ -141,9 +143,10 @@
             ]
           },
           {
-            "className": "col-45",
+            "className": "col-45 order-sm-3",
             "content": [
               {
+                "className": "project__links-group",
                 "label": "Look at",
                 "social_links": [
                   {
@@ -157,20 +160,16 @@
                 ]
               }
             ]
-          }
-        ],
-        [
-          {
-            "rowClassName": "m0"
           },
           {
             "className": "col-24",
             "content": ""
           },
           {
-            "className": "col-31",
+            "className": "col-31 order-sm-2",
             "content": [
               {
+                "className": "project__links-group",
                 "label": "Featured",
                 "text": "Behance Graphic <br> Design"
               }
@@ -204,7 +203,7 @@
                 "label": "Next Project"
               },
               {
-                "project_link_text": "Susanne Furniture",
+                "project_link_text": "Suzanne Furniture",
                 "project_link_link": "#"
               }
             ]

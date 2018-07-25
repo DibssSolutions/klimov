@@ -1,46 +1,43 @@
-import slick from 'slick-carousel';
+import owlCarousel from 'owl.carousel';
 
 $(document).ready(function() {
   var sliderTrigger = document.getElementById('slider');
 
   if (sliderTrigger !== null) {
-    $('.slider').on('init', function(event, slick) {
-      $('.slider').css({ opacity: '1', visibility: 'visible' });
-    });
+    var slider = $('.slider');
 
-    $('.slider').slick({
-      slidesToShow: 3,
-      adaptiveHeight: true,
-      responsive: [
-        {
-          breakpoint: 500,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
+    slider.owlCarousel({
+      onInitialized: sliderVisible,
+      loop: true,
+      dots: false,
+      smartSpeed: 1000,
+      responsive: {
+        0: {
+          center: false,
+          items: 1,
+          margin: 16
+        },
+        1000: {
+          center: true,
+          items: 3,
+          margin: 130
         }
-      ]
+      }
     });
 
-    $('.slider').on('wheel', function(e) {
-      e.preventDefault();
+    function sliderVisible() {
+      $('.slider').css({ opacity: '1', visibility: 'visible' });
+    }
 
-      if (e.originalEvent.deltaY < 0) {
-        $(this).slick('slickNext');
+    slider.on('mousewheel', '.owl-stage', function(e) {
+      if (e.originalEvent.deltaY > 0) {
+        console.log(2);
+        slider.trigger('next.owl');
       } else {
-        $(this).slick('slickPrev');
+        console.log(1);
+        slider.trigger('prev.owl');
       }
-    });
-
-    $('.slider').on('keydown', function(e) {
       e.preventDefault();
-
-      if (e.keyCode === '39') {
-        $(this).slick('slickNext');
-      }
-      if (e.keyCode === '37') {
-        $(this).slick('slickPrev');
-      }
     });
   }
 });

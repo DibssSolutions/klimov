@@ -54,7 +54,7 @@
       "rows": [
         [
           {
-            "rowClassName": "margin-bottom"
+            "rowClassName": "margin-bottom-3vh"
           },
           {
             "className": "col-24 main-title",
@@ -233,7 +233,7 @@
             "rowClassName": "m0"
           },
           {
-            "className": "col-46 flex-column flex-between padding-y-5",
+            "className": "col-46 flex-column flex-between padding-y-5vh",
             "content": [
               {
                 "className": "center-text-p47",

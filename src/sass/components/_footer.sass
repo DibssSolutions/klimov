@@ -4,16 +4,16 @@
     width: 100%
     +gpu
     background-color: #fff
-    &.fixed
-        position: absolute
-        z-index: 200
-        bottom: 0
-        left: 0
-        right: 0
-        +sm 
-            position: relative
-    
-        
+    position: absolute
+    z-index: 200
+    bottom: 0
+    left: 0
+    right: 0
+    .dark-theme &
+        color: $light-grey
+        background-color: $text-dark
+    +sm 
+        padding-bottom: 10px
 
 .is-hidden
     display: none
