@@ -70,6 +70,7 @@
     "require-yaml": "^0.0.1",
     "run-sequence": "^1.1.5",
     "slick-carousel": "^1.8.1",
+    "split-html-to-chars": "^1.0.5",
     "svg4everybody": "^2.1.9",
     "through2": "^2.0.1",
     "underscore": "^1.8.3",

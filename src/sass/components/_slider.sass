@@ -27,8 +27,7 @@
         width: calc(100% + 15px)
         margin: 0
     &__container
-        // margin-top: 140px
-        // margin-bottom: 140px
+        padding-top: 140px
         +vertical
         height: 400px
         position: absolute
@@ -37,12 +36,12 @@
         height: 100%
         width: 100%
         +sm
-            margin-top: $main-margin-top-sm
+            padding-top: 0
     &__wrapper
         display: inline-block
         vertical-align: middle
         position: relative
-        max-width: 100%
+        max-width: 100% !important
     &:before
         position: absolute
         top: 0
@@ -96,6 +95,7 @@
 
 .owl-item
     // width: auto !important
+    min-width: 200px
     max-width: 613px
     +sm 
         max-width: 250px

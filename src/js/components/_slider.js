@@ -11,6 +11,7 @@ $(document).ready(function() {
       loop: true,
       dots: false,
       smartSpeed: 2000,
+      // autoWidth: true,
       responsive: {
         0: {
           center: true,
@@ -27,7 +28,7 @@ $(document).ready(function() {
           items: 3,
           margin: 70
         },
-        1024: {
+        1429: {
           center: true,
           items: 3,
           margin: 130
