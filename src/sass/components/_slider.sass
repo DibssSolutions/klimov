@@ -12,29 +12,37 @@
     color: $orange
     text-decoration: underline
     font-weight: 400
+    margin-top: 140px
     +sm 
         display: none
 
 .slider
-    position: relative
     width: 140%
     margin: 0 -65px 0 -65px 
     z-index: 4
     opacity: 0
     visibility: hidden
     transition: opacity 2s, visibility 2s
-    +sm 
+    +sm
         width: calc(100% + 15px)
         margin: 0
-    &-wrapper
-        margin-top: 150px
-        +sm
-            // margin-top: $main-margin-top-sm
-            margin-top: 0
-    &__container 
-        margin-top: 140px
+    &__container
+        // margin-top: 140px
+        // margin-bottom: 140px
+        +vertical
+        height: 400px
+        position: absolute
+        top: 0
+        left: 0
+        height: 100%
+        width: 100%
         +sm
             margin-top: $main-margin-top-sm
+    &__wrapper
+        display: inline-block
+        vertical-align: middle
+        position: relative
+        max-width: 100%
     &:before
         position: absolute
         top: 0
@@ -49,6 +57,7 @@
 
 .slide
     transition: transform 1.4s
+    font-size: 20px
     +sm 
         padding: 0 8px 40px
     .active.center &

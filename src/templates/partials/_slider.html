@@ -11,14 +11,16 @@
     </div>
 </div>
 
-<div class="container-inner slider__container">
-    <div class="slider owl-carousel">
-        {% for slide in slides %}
-        <div class="slide">
-            <div class="slide__img" style="background-image: url('img/slider/{{slide.img}}')"></div>
-            <a href="{{slide.project_link}}" class="slide__text">{{slide.project_name}}<span class="arrow">↗</span></a>
+<div class="slider__container">
+    <div class="slider__wrapper container-inner">
+        <div class="slider owl-carousel">
+            {% for slide in slides %}
+            <div class="slide">
+                <div class="slide__img" style="background-image: url('img/slider/{{slide.img}}')"></div>
+                <a href="{{slide.project_link}}" class="slide__text">{{slide.project_name}}<span class="arrow">↗</span></a>
+            </div>
+            {% endfor %}
         </div>
-        {% endfor %}
     </div>
 </div>
 

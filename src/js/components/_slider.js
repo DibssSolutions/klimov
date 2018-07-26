@@ -26,7 +26,7 @@ $(document).ready(function() {
           center: true,
           items: 3,
           margin: 70
-        }, 
+        },
         1024: {
           center: true,
           items: 3,
@@ -41,10 +41,8 @@ $(document).ready(function() {
 
     slider.on('mousewheel', '.owl-stage', function(e) {
       if (e.originalEvent.deltaY > 0) {
-        console.log(2);
         slider.trigger('next.owl');
       } else {
-        console.log(1);
         slider.trigger('prev.owl');
       }
       e.preventDefault();
