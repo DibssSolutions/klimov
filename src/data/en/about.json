@@ -5,19 +5,19 @@
     "rows": [
       [
         {
-          "rowClassName": "margin-bottom-200"
+          "rowClassName": "margin-bottom-200 margin-bottom-lg-100 m-sm-10"
         },
         {
-          "className": "col-24",
+          "className": "col-24 col-lg-55",
           "content": [
             {
-              "className": "about__text--wide",
+              "className": "about__text--wide about__main-title",
               "text": "We are a Creative Digital Agency for the Digital Era."
             }
           ]
         },
         {
-          "className": "col-31",
+          "className": "col-31 d-lg-none",
           "content": ""
         },
         {
@@ -33,10 +33,10 @@
       ],
       [
         {
-          "rowClassName": "margin-bottom-94"
+          "rowClassName": "margin-bottom-94 d-sm-none"
         },
         {
-          "className": "col-24",
+          "className": "col-24 d-lg-none",
           "content": ""
         },
         {
@@ -63,11 +63,11 @@
           "rowClassName": "margin-bottom-45"
         },
         {
-          "className": "col-24",
+          "className": "col-24 d-lg-none",
           "content": ""
         },
         {
-          "className": "col-31",
+          "className": "col-31 col-lg-55",
           "content": [
             {
               "className": "about__title",
@@ -109,11 +109,11 @@
           "rowClassName": "margin-bottom-45"
         },
         {
-          "className": "col-24",
+          "className": "col-24 d-lg-none",
           "content": ""
         },
         {
-          "className": "col-31",
+          "className": "col-31 col-lg-55",
           "content": [
             {
               "className": "about__title",
@@ -151,11 +151,11 @@
           "rowClassName": "margin-bottom-80"
         },
         {
-          "className": "col-24",
+          "className": "col-24 d-lg-none",
           "content": ""
         },
         {
-          "className": "col-31",
+          "className": "col-31 col-lg-55",
           "content": [
             {
               "className": "about__title",
@@ -171,7 +171,7 @@
           "className": "col-45",
           "content": [
             {
-              "className": "about__title",
+              "className": "about__title about__title--high",
               "title": "Full-stack <br> Development"
             }
           ]
@@ -179,7 +179,7 @@
       ],
       [
         {
-          "rowClassName": "margin-bottom-68"
+          "rowClassName": "margin-bottom-68 d-sm-none"
         },
         {
           "className": "col-50",
@@ -198,21 +198,21 @@
       ],
       [
         {
-          "rowClassName": "margin-bottom-65"
+          "rowClassName": "margin-bottom-65 d-sm-none"
         },
         {
-          "className": "col-24",
+          "className": "col-24 d-lg-none",
           "content": ""
         },
         {
-          "className": "col-31",
+          "className": "col-31 col-lg-55",
           "content": [
             {
               "className": "about__title",
               "title": "Plan"
             },
             {
-              "className": "about__text padding-right-50 mb-30",
+              "className": "about__text padding-right-50 margin-bottom-30",
               "text":
                 "This is where it all begins. We start with a kick-off meeting to identify your needs. By gaining a clear understanding of project scope and costs from the very start, we’re able to see what needs to happen over the short, medium and long term."
             },
@@ -239,14 +239,14 @@
       ],
       [
         {
-          "rowClassName": "margin-bottom-65"
+          "rowClassName": "margin-bottom-65 d-sm-none"
         },
         {
-          "className": "col-24",
+          "className": "col-24 d-lg-none",
           "content": ""
         },
         {
-          "className": "col-31",
+          "className": "col-31 col-lg-55",
           "content": [
             {
               "className": "about__title",
@@ -272,14 +272,14 @@
       ],
       [
         {
-          "rowClassName": "margin-bottom-65"
+          "rowClassName": "margin-bottom-65 d-sm-none"
         },
         {
-          "className": "col-24",
+          "className": "col-24 d-lg-none",
           "content": ""
         },
         {
-          "className": "col-31",
+          "className": "col-31 col-lg-55",
           "content": [
             {
               "className": "about__title",
@@ -309,14 +309,14 @@
       ],
       [
         {
-          "rowClassName": "margin-bottom-170"
+          "rowClassName": "margin-bottom-170 margin-bottom-lg-100 d-sm-none"
         },
         {
-          "className": "col-24",
+          "className": "col-24 d-lg-none",
           "content": ""
         },
         {
-          "className": "col-31",
+          "className": "col-31 col-lg-55",
           "content": [
             {
               "className": "about__title",

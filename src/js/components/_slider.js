@@ -10,14 +10,24 @@ $(document).ready(function() {
       onInitialized: sliderVisible,
       loop: true,
       dots: false,
-      smartSpeed: 1000,
+      smartSpeed: 2000,
       responsive: {
         0: {
-          center: false,
+          center: true,
           items: 1,
           margin: 16
         },
-        1000: {
+        678: {
+          center: true,
+          items: 2,
+          margin: 50
+        },
+        1024: {
+          center: true,
+          items: 3,
+          margin: 70
+        }, 
+        1024: {
           center: true,
           items: 3,
           margin: 130

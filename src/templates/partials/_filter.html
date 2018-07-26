@@ -1,10 +1,10 @@
-<div class="filter__main ">
-    <div class="container-inner">
+<div class="container-inner filter__inner">
+    <div class="filter__main">
         <div class="filter__buttons filter__buttons--main">
             <button class="filter__label">
                 Filter by
             </button>
-            <button class="filter__btn js-filter-category-selected">
+            <button class="filter__btn filter__btn--selected js-filter-category-selected">
                 All
             </button>
         </div>
@@ -17,15 +17,20 @@
             </a>
             {% endfor %}
         </div>
+        <div class="filter__next">
+            {{mixins.icon('loading')}}
+        </div>
     </div>
 </div>
+
 <div class="filter__filter">
     <div class="container-inner">
         <div class="filter__buttons filter__buttons--filter">
-            <button class="filter__label">
+            <button class="filter__label filter__label--dark">
                 Filter by
             </button>
-            {% for filter_button in filter_buttons %} {% if filter_button.button_category === "*" %}
+            {% for filter_button in filter_buttons %} 
+            {% if filter_button.button_category === "*" %}
             <button class="filter__btn" data-filter="*">
                 {% else %}
                 <button class="filter__btn" data-filter=".{{filter_button.button_category}}">

@@ -4,9 +4,9 @@
     margin: 0 auto
     position: relative
     +lg
-        max-width: 1100px
+        max-width: 1200px
     +md 
-        max-width: 800px
+        max-width: 1000px
     +sm 
         max-width: 100%
         padding: 0 15px
@@ -44,7 +44,7 @@
 [class*="col-"]
     padding-right: 15px
     padding-left: 15px
-    +sm 
+    +sm
         flex: 0 0 100%
         padding-right: 0
         padding-left: 0
@@ -59,12 +59,36 @@
         padding-right: 0
         padding-left: 0
 
-.d-lg-none
+.d-sm-block
     display: none
     +sm 
         display: block
 
-+sm 
+.d-md-block 
+    display: none
+    +md 
+        display: block
+
++lg 
+    .d-lg-none
+        display: none
+    .col-lg-55
+        flex: 0 0 55%
+    .col-lg-76
+        flex: 0 0 76%
+
++md 
+    .d-md-none
+        display: none
+    .col-md-100
+        flex: 0 0 100%
+    .col-md-76
+        flex: 0 0 76%
+    .col-md-55
+        flex: 0 0 55%
+
+
++sm
     .d-sm-none
         display: none
     [class$="vh"]
@@ -72,3 +96,4 @@
         margin-bottom: 0
         padding-top: 0
         padding-bottom: 0
+

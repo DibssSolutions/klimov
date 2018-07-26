@@ -8,7 +8,7 @@ if (filter !== null) {
   /*
   CALLING POPUP
    */
-  $('.filter__label').click(() => {
+  $('.filter__buttons--main').click(() => {
     $('.filter__filter').addClass('is-active');
   });
 
@@ -21,7 +21,7 @@ if (filter !== null) {
     transitionDuration: '0'
   });
 
-  $('.filter__btn').click(function() {
+  $('[data-filter]').click(function() {
 
     /*
     FILTERING

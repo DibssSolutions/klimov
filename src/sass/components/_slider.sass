@@ -11,6 +11,9 @@
     font-size: 20px
     color: $orange
     text-decoration: underline
+    font-weight: 400
+    +sm 
+        display: none
 
 .slider
     position: relative
@@ -24,11 +27,14 @@
         width: calc(100% + 15px)
         margin: 0
     &-wrapper
+        margin-top: 150px
+        +sm
+            // margin-top: $main-margin-top-sm
+            margin-top: 0
+    &__container 
         margin-top: 140px
         +sm
             margin-top: $main-margin-top-sm
-    &__container 
-        margin-top: 140px
     &:before
         position: absolute
         top: 0
@@ -44,7 +50,7 @@
 .slide
     transition: transform 1.4s
     +sm 
-        padding: 0 8px
+        padding: 0 8px 40px
     .active.center &
         transform: translateY(42px) 
         transition: transform 1.4s
@@ -65,18 +71,22 @@
         left: 0
         z-index: -1
         color: $light-grey
+        transition: transform 1.4s
         &:hover .arrow
             visibility: visible
             opacity: 1
         .active.center &
-            transform: translateY(-35px)
+            transform: translateY(-42px)
             transition: transform 1.4s
             +sm 
                 transform: translateY(0)
         +sm 
-            top: 0
+            top: 16px
+            z-index: 100
+            
 
 .owl-item
+    // width: auto !important
     max-width: 613px
     +sm 
         max-width: 250px

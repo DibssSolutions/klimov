@@ -1,11 +1,15 @@
 .project
     margin-top: 157px
-    margin-bottom: 74px
+    margin-bottom: 134px
     +sm 
         margin-top: $main-margin-top-sm
-        margin-bottom: 116px
+        margin-bottom: 130px
     &__top
         margin-bottom: 350px
+        +lg 
+            margin-bottom: 250px
+        +md 
+            margin-bottom: 150px
         +sm 
             margin-bottom: 66px
         p 
@@ -31,9 +35,10 @@
             line-height: 1.4
         +sm
             margin-bottom: 34px
-
     .project_link
         margin-bottom: 40px
+    .mt-30
+        margin-top: 30px
 
 
 // ===== IMAGES =====
@@ -72,6 +77,7 @@
         color: $text-dark
     p 
         line-height: 1.4
+    
 
 +sm 
     .order-sm-1
@@ -84,12 +90,17 @@
         order: 4
 
 
+
 // ===== NEXT-PROJECT =====
 
 .next-project
     margin-top: 160px
+    +lg 
+        margin-top: 100px
+    +md 
+        margin-top: 60px
     +sm 
-        margin-top: 0
+        margin-top: 10px
     .label
         font-size: 20px
         line-height: 28px
@@ -97,23 +108,22 @@
 
 .next-project-text
     margin-top: 30px
-
+    
 .next-project-link
     display: block
     font-size: 35px
-    line-height: 30px
-    margin-top: 20px
+    line-height: 1.42
+    margin-top: 6px
+    padding-right: 15px
     +sm 
-        margin-top: 14px
-    &-arrow
-        visibility: hidden
-        opacity: 0
-        transition: 0.8s opacity, 0.8s visibility
-    &:hover .next-project-link-arrow
+        margin-top: 5px
+    &:hover .arrow
         visibility: visible
         opacity: 1
 
 .next-project-picture
-    padding-bottom: 64%
     max-width: 340px
+    padding-bottom: 61%
     +cover
+    +sm 
+        padding-bottom: 70%

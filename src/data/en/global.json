@@ -9,7 +9,7 @@
       [
         {
           "title": "Discover",
-          "href": "slider.html"
+          "href": "project.html"
         },
         {
           "title": "Agency",
@@ -34,21 +34,21 @@
           "rowClassName": "menu__main margin-top-3vh"
         },
         {
-          "className": "col-24",
+          "className": "col-24 d-md-none",
           "content": ""
         },
         {
-          "className": "col-31",
+          "className": "col-31 col-md-55",
           "content": [
             {
               "className": "menu__item is-active",
               "link_text": "Discover",
-              "link_link": "#"
+              "link_link": "project.html"
             },
             {
               "className": "menu__item",
               "link_text": "All Projects",
-              "link_link": "#"
+              "link_link": "slider.html"
             }
           ]
         },
@@ -62,25 +62,25 @@
           "rowClassName": "menu__main"
         },
         {
-          "className": "col-24",
+          "className": "col-24 d-md-none",
           "content": ""
         },
         {
-          "className": "col-31",
+          "className": "col-31 col-md-55",
           "content": [
             {
               "className": "menu__item",
               "link_text": "Agency",
-              "link_link": "#"
+              "link_link": "about.html"
             },
             {
               "className": "menu__item color-muted",
               "link_text": "Inspirations",
-              "link_link": "#"
+              "link_link": "filter.html"
             },
 
             {
-              "className": "lang lang--mob d-lg-none",
+              "className": "lang lang--mob d-sm-block",
               "lang1": "Eng",
               "lang2": "Rus"
             }
@@ -102,11 +102,11 @@
           "rowClassName": "menu__contacts  margin-top-8vh"
         },
         {
-          "className": "col-24",
+          "className": "col-24 d-md-none",
           "content": ""
         },
         {
-          "className": "col-31",
+          "className": "col-31 col-md-55",
           "content": [
             {
               "className": "feature-list",
@@ -151,13 +151,13 @@
               "email": "partner@klimov.agency"
             },
             {
-              "className": "jobs d-lg-none",
+              "className": "jobs d-sm-block",
               "jobs_title": "Jobs",
               "jobs_link_text": "hero@klimov.agency",
               "jobs_link_link": "hero@klimov.agency"
             }, 
             {
-              "className": "menu__motto d-lg-none",
+              "className": "menu__motto d-sm-block",
               "text":
                 "We create digital services and interactive experiences that help your business thrive and delight your customers."
             }
@@ -179,7 +179,7 @@
       ]
     },
     {
-      "className": "col-31 social",
+      "className": "col-31 col-md-76 social",
       "content": [
         {
           "className": "social__item",
@@ -194,7 +194,7 @@
       ]
     },
     {
-      "className": "col-45 flex-between",
+      "className": "col-45 d-md-none flex-between",
       "content": [
         {
           "className": "email d-sm-none",

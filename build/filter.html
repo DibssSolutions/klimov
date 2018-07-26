@@ -44,7 +44,7 @@
                         </svg> </a>
               </div>
               <div class="col-31">
-                <div class="nav-item nav-item--wider d-sm-none"> <a href="slider.html" class="nav-link is-active">Discover</a> </div>
+                <div class="nav-item nav-item--wider d-sm-none"> <a href="project.html" class="nav-link is-active">Discover</a> </div>
                 <div class="nav-item"> <a href="about.html" class="nav-link d-sm-none">Agency</a> </div>
               </div>
               <div class="col-45">
@@ -56,7 +56,7 @@
                     <span class="menu-circle"></span>
                     <span class="menu-circle"></span>
                 </div>
-                <div class="d-lg-none menu-trigger-text">
+                <div class="d-sm-block menu-trigger-text">
                     <span class='text-close'>Menu</span>
                     <span class='text-open'>Close</span>         
                 </div>
@@ -66,19 +66,19 @@
           <div class="wrapper">
             <div class="container-inner menu__container">
               <div class="row menu__main margin-top-3vh">
-                <div class="col-24"> </div>
-                <div class="col-31">
-                  <div class="menu__item is-active"> <a href="#">Discover</a> </div>
-                  <div class="menu__item"> <a href="#">All Projects</a> </div>
+                <div class="col-24 d-md-none"> </div>
+                <div class="col-31 col-md-55">
+                  <div class="menu__item is-active"> <a href="project.html">Discover</a> </div>
+                  <div class="menu__item"> <a href="slider.html">All Projects</a> </div>
                 </div>
                 <div class="col-45"> </div>
               </div>
               <div class="row menu__main">
-                <div class="col-24"> </div>
-                <div class="col-31">
-                  <div class="menu__item"> <a href="#">Agency</a> </div>
-                  <div class="menu__item color-muted"> <a href="#">Inspirations</a> </div>
-                  <div class="lang lang--mob d-lg-none"> <a href="#" class="is-active lang__item">Eng</a> / <a href="#" class="lang__item">Rus</a> </div>
+                <div class="col-24 d-md-none"> </div>
+                <div class="col-31 col-md-55">
+                  <div class="menu__item"> <a href="about.html">Agency</a> </div>
+                  <div class="menu__item color-muted"> <a href="filter.html">Inspirations</a> </div>
+                  <div class="lang lang--mob d-sm-block"> <a href="#" class="is-active lang__item">Eng</a> / <a href="#" class="lang__item">Rus</a> </div>
                 </div>
                 <div class="col-45">
                   <div class="menu__motto d-sm-none">
@@ -87,8 +87,8 @@
                 </div>
               </div>
               <div class="row menu__contacts  margin-top-8vh">
-                <div class="col-24"> </div>
-                <div class="col-31">
+                <div class="col-24 d-md-none"> </div>
+                <div class="col-31 col-md-55">
                   <div class="feature-list">
                     <div class="label">General Inquiries</div>
                     <div class="email"> <a href="hey@klimov.agency">hey@klimov.agency</a> </div>
@@ -111,9 +111,9 @@
                     <div class="email"> <a href="partner@klimov.agency">partner@klimov.agency</a> </div>
                     <div class="phone">+7 (985) 171-76-32</div>
                   </div>
-                  <div class="jobs d-lg-none">
+                  <div class="jobs d-sm-block">
                     <h5>Jobs</h5> <a href="hero@klimov.agency" class="jobs-email">hero@klimov.agency</a> </div>
-                  <div class="menu__motto d-lg-none">
+                  <div class="menu__motto d-sm-block">
                     <p>We create digital services and interactive experiences that help your business thrive and delight your customers.</p>
                   </div>
                 </div>
@@ -126,11 +126,11 @@
                 <div class="col-24">
                   <div class="lang d-sm-none"> <a href="#" class="is-active lang__item">Eng</a> / <a href="#" class="lang__item">Rus</a> </div>
                 </div>
-                <div class="col-31 social">
-                  <div class="social__item"> <a href="#">Behance</a> <span class="social__arrow">↗</span> </div>
-                  <div class="social__item"> <a href="#">Facebook</a> <span class="social__arrow">↗</span> </div>
+                <div class="col-31 col-md-76 social">
+                  <div class="social__item"> <a href="#">Behance</a> <span class="arrow">↗</span> </div>
+                  <div class="social__item"> <a href="#">Facebook</a> <span class="arrow">↗</span> </div>
                 </div>
-                <div class="col-45 flex-between">
+                <div class="col-45 d-md-none flex-between">
                   <div class="email d-sm-none"> <a href="hero@klimov.agency">hero@klimov.agency</a> </div>
                   <div class="time">
                     <p class="d-sm-none">Since 2015</p>
@@ -142,19 +142,19 @@
         </div>
       </header>
       <div class="filter" id="filter">
-        <div class="filter__main ">
-          <div class="container-inner">
+        <div class="container-inner filter__inner">
+          <div class="filter__main">
             <div class="filter__buttons filter__buttons--main"> <button class="filter__label">
                 Filter by
-            </button> <button class="filter__btn js-filter-category-selected">
+            </button> <button class="filter__btn filter__btn--selected js-filter-category-selected">
                 All
             </button> </div>
             <div class="filter__layout">
-              <a href="#" class="filter__item branding">
+              <a href="#" class="filter__item uiux website">
                 <div class="filter__image filter__image--middle" style="background-image: url('img/filtering/filter_1.jpg')"></div>
                 <div class="filter__text">Name</div>
               </a>
-              <a href="#" class="filter__item branding typography">
+              <a href="#" class="filter__item branding uiux typography">
                 <div class="filter__image filter__image--middle" style="background-image: url('img/filtering/filter_2.jpg')"></div>
                 <div class="filter__text">Name</div>
               </a>
@@ -174,7 +174,7 @@
                 <div class="filter__image filter__image--middle" style="background-image: url('img/filtering/filter_6.jpg')"></div>
                 <div class="filter__text">Name</div>
               </a>
-              <a href="#" class="filter__item branding">
+              <a href="#" class="filter__item branding photography">
                 <div class="filter__image filter__image--middle" style="background-image: url('img/filtering/filter_1.jpg')"></div>
                 <div class="filter__text">Name</div>
               </a>
@@ -186,16 +186,17 @@
                 <div class="filter__image filter__image--small" style="background-image: url('img/filtering/filter_5.jpg')"></div>
                 <div class="filter__text">Name</div>
               </a>
-              <a href="#" class="filter__item branding">
+              <a href="#" class="filter__item fashion">
                 <div class="filter__image filter__image--small" style="background-image: url('img/filtering/filter_5.jpg')"></div>
                 <div class="filter__text">Name</div>
               </a>
             </div>
+            <div class="filter__next"> <svg class="icon icon-loading"><use xlink:href="img/sprite.svg#icon-loading"></use></svg> </div>
           </div>
         </div>
         <div class="filter__filter">
           <div class="container-inner">
-            <div class="filter__buttons filter__buttons--filter"> <button class="filter__label">
+            <div class="filter__buttons filter__buttons--filter"> <button class="filter__label filter__label--dark">
                 Filter by
             </button> <button class="filter__btn" data-filter="*">
                  All
@@ -217,20 +218,20 @@
           </div>
         </div>
       </div>
-      <footer class="footer">
+      <footer class="footer d-sm-none">
         <div class="container-inner">
           <div class="row">
-            <div class="col-24"> <a href="hey@klimov.agency" class="d-sm-none email-footer js-footer-visible ">hey@klimov.agency</a> <a href="#" class="js-footer-hidden is-hidden d-sm-none">Russia</a> </div>
-            <div class="col-31">
+            <div class="col-24 d-md-none"> <a href="hey@klimov.agency" class=" email-footer js-footer-visible ">hey@klimov.agency</a> <a href="#" class="js-footer-hidden is-hidden ">Russia</a> </div>
+            <div class="col-31 col-md-100">
               <div class="nav-item"> <a href="#" class="nav-link">Behance
-                        <span class="nav-arrow">↗</span>
+                        <span class="arrow">↗</span>
                     </a> </div>
               <div class="nav-item"> <a href="#" class="nav-link">Facebook
-                        <span class="nav-arrow">↗</span>
+                        <span class="arrow">↗</span>
                     </a> </div>
             </div>
-            <div class="col-45">
-              <div class="nav-item d-sm-none"> <a href="mailto:hero@klimov.agency" class="nav-link nav-email" data-email="hero@klimov.agency">Jobs</a> </div>
+            <div class="col-45 d-md-none">
+              <div class="nav-item"> <a href="mailto:hero@klimov.agency" class="nav-link nav-email" data-email="hero@klimov.agency">Jobs</a> </div>
             </div>
           </div>
           <div class="pagination d-sm-none"> <button class="up" id="up">Up↑</button> </div>

@@ -40,14 +40,14 @@
     {
       "image": "filter_1.jpg",
       "text": "Name",
-      "category": "branding",
+      "category": "uiux website",
       "size": "middle", 
       "link": "#"
     },
     {
       "image": "filter_2.jpg",
       "text": "Name",
-      "category": "branding typography",
+      "category": "branding uiux typography",
       "size": "middle",
       "link": "#"
     },
@@ -82,7 +82,7 @@
     {
       "image": "filter_1.jpg",
       "text": "Name",
-      "category": "branding",
+      "category": "branding photography",
       "size": "middle",
       "link": "#"
     },
@@ -103,7 +103,7 @@
     {
       "image": "filter_5.jpg",
       "text": "Name",
-      "category": "branding",
+      "category": "fashion",
       "size": "small",
       "link": "#"
     }

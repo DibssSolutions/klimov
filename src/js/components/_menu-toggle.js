@@ -5,8 +5,8 @@ $('.menu-trigger').click(function() {
 
     $('.menu-trigger').removeClass('menu-is-open');
     $('.menu').fadeOut(500);
-    $('.top-nav .col-31').fadeIn();
-    $('.top-nav .col-45').fadeIn();
+    $('.menu-top .col-31').fadeIn();
+    $('.menu-top .col-45').fadeIn();
     $('.logo').removeClass('logo-grey');
     $('.header').removeClass('fixed');
     open = false;
@@ -16,8 +16,8 @@ $('.menu-trigger').click(function() {
     $('.menu')
       .removeClass('is-closed')
       .fadeIn(500);
-    $('.top-nav .col-31').fadeOut();
-    $('.top-nav .col-45').fadeOut();
+    $('.menu-top .col-31').fadeOut();
+    $('.menu-top .col-45').fadeOut();
     $('.logo').toggleClass('logo-grey');
     $('.header').addClass('fixed');
     open = true;

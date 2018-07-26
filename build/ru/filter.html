@@ -56,7 +56,7 @@
                     <span class="menu-circle"></span>
                     <span class="menu-circle"></span>
                 </div>
-                <div class="d-lg-none menu-trigger-text">
+                <div class="d-sm-block menu-trigger-text">
                     <span class='text-close'>Menu</span>
                     <span class='text-open'>Close</span>         
                 </div>
@@ -74,38 +74,39 @@
         </div>
       </header>
       <div class="filter" id="filter">
-        <div class="filter__main ">
-          <div class="container-inner">
+        <div class="container-inner filter__inner">
+          <div class="filter__main">
             <div class="filter__buttons filter__buttons--main"> <button class="filter__label">
                 Filter by
-            </button> <button class="filter__btn js-filter-category-selected">
+            </button> <button class="filter__btn filter__btn--selected js-filter-category-selected">
                 All
             </button> </div>
             <div class="filter__layout"> </div>
+            <div class="filter__next"> <svg class="icon icon-loading"><use xlink:href="img/sprite.svg#icon-loading"></use></svg> </div>
           </div>
         </div>
         <div class="filter__filter">
           <div class="container-inner">
-            <div class="filter__buttons filter__buttons--filter"> <button class="filter__label">
+            <div class="filter__buttons filter__buttons--filter"> <button class="filter__label filter__label--dark">
                 Filter by
             </button> </div>
           </div>
         </div>
       </div>
-      <footer class="footer">
+      <footer class="footer d-sm-none">
         <div class="container-inner">
           <div class="row">
-            <div class="col-24"> <a href="hey@klimov.agency" class="d-sm-none email-footer js-footer-visible ">hey@klimov.agency</a> <a href="#" class="js-footer-hidden is-hidden d-sm-none">Russia</a> </div>
-            <div class="col-31">
+            <div class="col-24 d-md-none"> <a href="hey@klimov.agency" class=" email-footer js-footer-visible ">hey@klimov.agency</a> <a href="#" class="js-footer-hidden is-hidden ">Russia</a> </div>
+            <div class="col-31 col-md-100">
               <div class="nav-item"> <a href="#" class="nav-link">Behance
-                        <span class="nav-arrow">↗</span>
+                        <span class="arrow">↗</span>
                     </a> </div>
               <div class="nav-item"> <a href="#" class="nav-link">Facebook
-                        <span class="nav-arrow">↗</span>
+                        <span class="arrow">↗</span>
                     </a> </div>
             </div>
-            <div class="col-45">
-              <div class="nav-item d-sm-none"> <a href="mailto:hero@klimov.agency" class="nav-link nav-email" data-email="hero@klimov.agency">Jobs</a> </div>
+            <div class="col-45 d-md-none">
+              <div class="nav-item"> <a href="mailto:hero@klimov.agency" class="nav-link nav-email" data-email="hero@klimov.agency">Jobs</a> </div>
             </div>
           </div>
           <div class="pagination d-sm-none"> <button class="up" id="up">Up↑</button> </div>

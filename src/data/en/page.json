@@ -39,8 +39,8 @@
             "className": "col-45",
             "content": [
               {
-                "className": "start-right",
-                "text":
+                "className": "start-right motto",
+                "motto":
                   "We design world-class digital experiences for forward thinking startups, companies and ourselves."
               }
             ]
@@ -60,7 +60,7 @@
             "className": "col-24 main-title",
             "content": [
               {
-                "project_link_text": "Studio Elforma. <br> Architectes ", 
+                "project_link_text": "Studio Elforma. <br> Architectes ",
                 "project_link_link": "#"
               }
             ]
@@ -70,10 +70,11 @@
             "content": ""
           },
           {
-            "className": "col-45",
+            "className": "col-45 d-sm-none",
             "content": [
               {
-                "title": "All Projects"
+                "project_link_text": "All projects",
+                "project_link_link": "slider.html"
               }
             ]
           }
@@ -83,11 +84,11 @@
             "rowClassName": "margin-bottom-7vh"
           },
           {
-            "className": "col-24",
+            "className": "col-24 d-lg-none",
             "content": ""
           },
           {
-            "className": "col-31",
+            "className": "col-31 col-lg-55",
             "content": [
               {
                 "className": "max-width-290",
@@ -111,11 +112,11 @@
             "rowClassName": "s0"
           },
           {
-            "className": "col-24",
+            "className": "col-24 d-lg-none",
             "content": ""
           },
           {
-            "className": "col-31",
+            "className": "col-31 col-lg-55",
             "content": [
               {
                 "className": "feature-list",
@@ -150,7 +151,7 @@
             "className": "col-24",
             "content": [
               {
-                "project_link_text": "Suzanne Furniture", 
+                "project_link_text": "Suzanne Furniture",
                 "project_link_link": "#"
               }
             ]
@@ -160,10 +161,11 @@
             "content": ""
           },
           {
-            "className": "col-45",
+            "className": "col-45 d-sm-none",
             "content": [
               {
-                "title": "All Projects"
+                "project_link_text": "All projects",
+                "project_link_link": "slider.html"
               }
             ]
           }
@@ -220,10 +222,11 @@
             "content": ""
           },
           {
-            "className": "col-45",
+            "className": "col-45 d-sm-none",
             "content": [
               {
-                "title": "All Projects"
+                "project_link_text": "All projects",
+                "project_link_link": "slider.html"
               }
             ]
           }
@@ -255,6 +258,15 @@
                 "image": "2.jpg"
               }
             ]
+          }, 
+          {
+            "className": "col-100 d-sm-block all-projects-sm",
+            "content": [
+              {
+                "project_link_text": "All projects",
+                "project_link_link": "slider.html"
+              }
+            ]
           }
         ]
       ]
@@ -267,11 +279,11 @@
             "rowClassName": "margin-top-5vh"
           },
           {
-            "className": "col-24",
+            "className": "col-24 d-lg-none",
             "content": ""
           },
           {
-            "className": "col-31",
+            "className": "col-31 col-lg-55",
             "content": [
               {
                 "className": "about_results",
@@ -294,11 +306,11 @@
             "rowClassName": "margin-top-20vh"
           },
           {
-            "className": "col-24",
+            "className": "col-24 d-lg-none",
             "content": ""
           },
           {
-            "className": "col-31",
+            "className": "col-31 col-lg-55",
             "content": [
               {
                 "className": "feature-list label-small",

@@ -143,7 +143,7 @@
             ]
           },
           {
-            "className": "col-45 order-sm-3",
+            "className": "col-45 order-sm-2",
             "content": [
               {
                 "className": "project__links-group",
@@ -166,10 +166,10 @@
             "content": ""
           },
           {
-            "className": "col-31 order-sm-2",
+            "className": "col-31 order-sm-3",
             "content": [
               {
-                "className": "project__links-group",
+                "className": "project__links-group mt-30",
                 "label": "Featured",
                 "text": "Behance Graphic <br> Design"
               }

@@ -13,50 +13,7 @@
     +sm 
         padding-top: 0
 
-.menu-top
-    position: relative
-    z-index: 10
-    // background-color: $text-dark
 
-.menu-top-container
-    align-items: center
-
-.nav 
-    &-item:first-child
-        margin-right: 38px
-        +sm 
-            margin-right: 20px
-    &-item--wider 
-        margin-right: 54px !important
-    &-item
-        display: inline-block
-    &-link.is-active 
-        color: $orange
-        .dark-theme &
-            color: $main-menu-color-muted
-    &-arrow
-        visibility: hidden
-        opacity: 0
-        transition: 0.8s opacity, 0.8s visibility
-    &-item:hover .nav-arrow
-        visibility: visible
-        opacity: 1
-
-.logo
-    display: block
-    max-width: 88px
-    position: relative
-    z-index: 10000
-    +vertical
-    &.logo-grey
-        svg
-            fill: $main-menu-color
-            display: inline-block
-    .dark-theme &
-        svg
-            fill: $main-menu-color
-    +sm 
-        padding-top: $heading-top-padding-sm
 
 
 

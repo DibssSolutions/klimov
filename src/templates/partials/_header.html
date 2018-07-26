@@ -50,7 +50,7 @@
                     <span class="menu-circle"></span>
                     <span class="menu-circle"></span>
                 </div>
-                <div class="d-lg-none menu-trigger-text">
+                <div class="d-sm-block menu-trigger-text">
                     <span class='text-close'>Menu</span>
                     <span class='text-open'>Close</span>         
                 </div>
@@ -77,7 +77,7 @@
                                 <a href="{{content.link_link}}">{{content.link_text}}</a>
                                 {% endif %}
                                 
-                                {% if content.className === "lang lang--mob d-lg-none" %}
+                                {% if "lang " in content.className %}
                                 <a href="#" class="is-active lang__item">{{content.lang1}}</a> /
                                 <a href="#" class="lang__item">{{content.lang2}}</a>
                                 {% endif %} 
@@ -105,7 +105,7 @@
                                 <div class="phone">{{content.phone | safe}}</div>
                                 {% endif %}
 
-                                {% if content.className === "jobs d-lg-none" %}
+                                {% if "jobs" in content.className %}
                                 <h5>{{content.jobs_title}}</h5>
                                 <a href="{{content.jobs_link_link}}" class="jobs-email">{{content.jobs_link_text}}</a>
                                 {% endif %} 
@@ -114,7 +114,8 @@
                             {% endfor %} 
                         {% endif %}
                     </div>
-                    {% endif %} {% endfor %}
+                    {% endif %}
+                    {% endfor %}
                 </div>
                 {% endfor %}
             </div>
@@ -127,17 +128,19 @@
                     <div class="{{item.className}}">
                         {% for content in item.content %}
                         <div class="{{content.className}}">
-                                {% if content.className === "lang d-sm-none" %}
+                            
+                            {% if content.className === "lang d-sm-none" %}
                                 <a href="#" class="is-active lang__item">{{content.lang1}}</a> /
                                 <a href="#" class="lang__item">{{content.lang2}}</a>
-                                {% endif %} 
+                            {% endif %} 
+
                             {% if content.className === "social__item" %}
-                            <a href="{{content.link_link}}">{{content.link_text}}</a>
-                            <span class="social__arrow">↗</span>
+                                <a href="{{content.link_link}}">{{content.link_text}}</a>
+                                <span class="arrow">↗</span>
                             {% endif %} 
                             
                             {% if "email" in content.className %}
-                            <a href="{{content.email}}">{{content.email}}</a>
+                                <a href="{{content.email}}">{{content.email}}</a>
                             {% endif %}
                             
                             {% if "time" in content.className %}
@@ -153,4 +156,5 @@
 
         </div>
     </div>
+
 </header>

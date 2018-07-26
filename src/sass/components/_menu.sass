@@ -15,6 +15,8 @@
     +sm 
         overflow: scroll
         height: 100vh
+        padding-top: $main-margin-top-sm
+        padding-bottom: 0
     &__top
         margin-top: 38px
         margin-bottom: 6vh
@@ -53,7 +55,7 @@
         color: $main-menu-color-muted
     .feature-list
         +sm 
-            margin-bottom: 44px
+            margin-bottom: 30px
     
 
 // ===== MAIN MENU ROWS =====
@@ -72,18 +74,53 @@
 
 // ===== TOP / BOTTOM MENUS =====
 
-.social 
-    &__item:first-child
+.menu-top
+    position: relative
+    z-index: 10
+    transition: background-color 0.5
+    +sm 
+        .header.fixed &
+            background-color: $text-dark
+            transition: background-color 0.5s
+            padding-bottom: 16px
+
+.menu-top-container
+    align-items: center
+
+.nav 
+    &-item:first-child
         margin-right: 38px
         +sm 
             margin-right: 20px
-    &-arrow
-        visibility: hidden
-        opacity: 0
-        transition: 0.8s opacity, 0.8s visibility
-    &__item:hover .social__arrow
+    &-item--wider 
+        margin-right: 54px !important
+        +md 
+            margin-right: 30px !important
+    &-item
+        display: inline-block
+    &-link.is-active 
+        color: $orange
+        .dark-theme &
+            color: $main-menu-color-muted
+    &-item:hover .arrow
         visibility: visible
         opacity: 1
+
+.logo
+    display: block
+    max-width: 88px
+    position: relative
+    z-index: 10000
+    +vertical
+    &.logo-grey
+        svg
+            fill: $main-menu-color
+            display: inline-block
+    .dark-theme &
+        svg
+            fill: $main-menu-color
+    +sm 
+        padding-top: $header-top-padding-sm
 
 .menu-bottom
     position: absolute
@@ -100,8 +137,8 @@
         text-decoration: underline
     +sm 
         position: relative
-        padding-bottom: 0
-        
+        padding-bottom: 10px
+        padding-top: 105px
 
 .lang
     font-size: 20px
@@ -110,30 +147,35 @@
     &__item.is-active 
         color: $main-menu-color
     &--mob 
-        padding-bottom: 30px
+        padding-bottom: 64px
+        padding-top: 10px
 
 .time 
     font-size: 17px
     
 .margin-110
     margin-bottom: 10vh
+
 .margin-64
     margin-bottom: 64px
+
+.jobs
+    margin-bottom: 54px
 
 .social
     &__item
         display: inline-block
-        margin-right: 60px
-    &__arrow
-        visibility: hidden
-        opacity: 0
-        transition: 0.8s opacity, 0.8s visibility    
-        &:hover
-            .social__arrow
-                visibility: visible
-                opacity: 1
-
+        margin-right: 
+        &:hover .arrow
+            visibility: visible
+            opacity: 1
+        +sm 
+            margin-right: 20px
+    &__item:first-child
+        margin-right: 38px
+        
     
+
 // ===== MENU-TRIGGER =====
 
 .menu-trigger
@@ -144,8 +186,8 @@
     z-index: 10000
     padding: 20px
     +sm 
-        margin-right: -$heading-top-padding-sm 
-        padding: $heading-top-padding-sm 
+        margin-right: -$header-top-padding-sm 
+        padding: $header-top-padding-sm 
         top: 0
     .menu-circle
         display: inline-block
@@ -163,7 +205,6 @@
             margin: 0 6px
     &-text 
         font-size: 20px
-    
     &.menu-is-open
         .menu-circle
             background-color: #fff
