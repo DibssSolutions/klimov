@@ -1,0 +1,13 @@
+[data-image*="parent"]
+    overflow: hidden
+    [data-image*="child"]
+        display: block
+        transition: transform 1s cubic-bezier(0.8,0,0.2,1), opacity 1.1s ease 167ms
+    [data-animation-direction*="from_right"]
+        transform: translate3d(100%,0,0)
+    [data-animation-direction*="from_left"]
+        transform: translate3d(-100%,0,0)
+    &.is-active
+        [data-image*="child"]
+            transition-delay: -0.3s
+            +gpu

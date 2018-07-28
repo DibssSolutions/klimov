@@ -27,6 +27,7 @@ export default class SplitIntoRows {
       //create line with text value minus current word
       if (row.offsetWidth > parentWidth) {
         let newLine = document.createElement('span');
+        newLine.className = 'text-row';
         newLine.textContent = oldTextValue;
         container.insertBefore(newLine, row);
         //reset row text value to current words with space
@@ -37,7 +38,10 @@ export default class SplitIntoRows {
           newLine.parentNode.removeChild(newLine);
       }
       //if it's last word - remove white space and use this span for last line
-      if (i === wordsLength - 1) row.removeAttribute('style');
+      if (i === wordsLength - 1) {
+        row.removeAttribute('style');
+        row.className = 'text-row';
+      } 
     }
   }
 

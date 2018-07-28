@@ -42,18 +42,23 @@
         position: relative !important
         height: auto !important
 
+.image 
+    display: inline-block
+    font-size: 0
+
 +sm 
     #fullpage 
         .section
             margin-bottom: 70px
             .feature-list,
+            .contacts-list,
             .title,
             .fp-text,
             .about_results
                 display: none
         .section
-            .image
-                display: block
+            // .image
+            //     display: block
             .project_link
                 display: block
                 margin-bottom: 18px
@@ -86,6 +91,7 @@
 .titleLarge
     font-size: 30px
     line-height: 1.5
+    max-width: 220px
     +sm 
         font-size: 20px
         font-weight: 400
@@ -98,14 +104,30 @@
 
 .project_link
     display: block
-    &:hover .arrow
-        visibility: visible
-        opacity: 1
+    max-width: 200px
+
+.project_link .text-row:last-child,
+.adress .text-row:last-child
+    position: relative
+    &:after
+        content: '→'
+        position: absolute
+        top: 50%
+        left: calc(100% + 4px)
+        transform: translateY(-50%)
+        visibility: hidden
+        opacity: 0
         transition: 0.8s opacity, 0.8s visibility
+    &:hover 
+        &:after
+            visibility: visible
+            opacity: 1
+            transition: 0.8s opacity, 0.8s visibility
 
 .motto
     +sm 
         margin-bottom: 30px
+        display: block !important
 
 .title 
     font-size: 18px
@@ -113,6 +135,14 @@
 
 .link
     color: $light-grey
+
+.fp-list-text
+    max-width: 180px
+
+.adress 
+    max-width: 280px
+
+// ===== MARGINS =====
 
 .margin-top-12vh
     margin-bottom: 16vh
@@ -167,14 +197,15 @@
 .start-right
     max-width: 277px
 
-.feature-list
+.feature-list,
+.contacts-list
     line-height: 1.5
 
 .label
     color: $light-grey
     font-size: 18px
 
-.label-small .label
+.contacts-list .label
     font-size: 17px
 
 .flex-column

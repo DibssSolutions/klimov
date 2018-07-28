@@ -19,7 +19,7 @@
             ]
           },
           {
-            "className": "col-45",
+            "className": "col-45 ",
             "content": ""
           }
         ],
@@ -36,10 +36,10 @@
             "content": ""
           },
           {
-            "className": "col-45",
+            "className": "col-45 ",
             "content": [
               {
-                "className": "start-right motto",
+                "className": "start-right motto fp-text",
                 "motto":
                   "We design world-class digital experiences for forward thinking startups, companies and ourselves."
               }
@@ -102,7 +102,8 @@
             "content": [
               {
                 "className": "image",
-                "image": "1.jpg"
+                "image": "1.jpg",
+                "animation_direction": "from_right"
               }
             ]
           }
@@ -122,18 +123,17 @@
                 "className": "feature-list",
                 "block": "block",
                 "label": "Featured",
-                "text": "Behance Graphic <br> Design"
+                "list_text": "Behance Graphic <br> Design"
               }
             ]
           },
           {
-            "className": "col-45",
+            "className": "col-45 ",
             "content": [
               {
                 "className": "feature-list",
-                "block": "block",
                 "label": "Project",
-                "text": "UI/UX, Branding, <br> Websitte"
+                "list_text": "UI/UX, Branding, <br> Websitte"
               }
             ]
           }
@@ -175,11 +175,12 @@
             "rowClassName": "m0"
           },
           {
-            "className": "col-56 items-flex-end",
+            "className": "col-56 items-flex-end ",
             "content": [
               {
                 "className": "image",
-                "image": "3.jpg"
+                "image": "2.jpg", 
+                "animation_direction": "from_left"
               }
             ]
           },
@@ -194,7 +195,7 @@
               {
                 "className": "feature-list",
                 "label": "Featured",
-                "text": "Architecture, UI/UX <br> Branding"
+                "list_text": "Architecture, UI/UX <br> Branding"
               }
             ]
           }
@@ -246,7 +247,7 @@
               {
                 "className": "feature-list",
                 "label": "Featured",
-                "text": "Architecture, UI/UX <br> Branding"
+                "list_text": "Architecture, UI/UX <br> Branding"
               }
             ]
           },
@@ -255,10 +256,11 @@
             "content": [
               {
                 "className": "image",
-                "image": "2.jpg"
+                "image": "3.jpg", 
+                "animation_direction": "from_right"
               }
             ]
-          }, 
+          },
           {
             "className": "col-100 d-sm-block all-projects-sm",
             "content": [
@@ -297,7 +299,7 @@
             ]
           },
           {
-            "className": "col-45",
+            "className": "col-45 ",
             "content": ""
           }
         ],
@@ -313,7 +315,7 @@
             "className": "col-31 col-lg-55",
             "content": [
               {
-                "className": "feature-list label-small",
+                "className": "contacts-list",
                 "label": "General Inquiries",
                 "email": "hey@klimov.agency",
                 "phone": "+7 (915) 308-77-08"
@@ -321,13 +323,13 @@
             ]
           },
           {
-            "className": "col-45",
+            "className": "col-45 ",
             "content": [
               {
-                "className": "feature-list label-small",
+                "className": "contacts-list",
                 "label": "Location",
                 "adress":
-                  "10, Niznia Siromyatnicheska st. <br> Moscow, Russia ↗"
+                  "10, Niznia Siromyatnicheska st. <br> Moscow, Russia"
               }
             ]
           }
@@ -348,7 +350,7 @@
             "className": "col-31",
             "content": [
               {
-                "className": "feature-list label-small",
+                "className": "contacts-list",
                 "label": "New Business",
                 "phone": "+7 (985) 171-76-32",
                 "email": "partner@klimov.agency"

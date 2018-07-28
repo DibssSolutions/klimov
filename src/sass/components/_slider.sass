@@ -18,15 +18,15 @@
 
 .slider
     width: 140%
-    margin: 0 -65px 0 -65px 
     z-index: 4
     opacity: 0
+    margin-left: -65px 
     visibility: hidden
     transition: opacity 2s, visibility 2s
     +sm
         width: calc(100% + 15px)
         margin: 0
-    &__container
+    &-container
         padding-top: 140px
         +vertical
         height: 400px
@@ -37,11 +37,13 @@
         width: 100%
         +sm
             padding-top: 0
-    &__wrapper
+    &-wrapper
         display: inline-block
         vertical-align: middle
         position: relative
-        max-width: 100% !important
+        max-width: 1430px
+        +r(1429)
+            max-width: 100% !important
     &:before
         position: absolute
         top: 0
