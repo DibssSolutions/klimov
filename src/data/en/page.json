@@ -39,7 +39,7 @@
             "className": "col-45 ",
             "content": [
               {
-                "className": "start-right motto fp-text",
+                "className": "start-right motto js-text-block",
                 "motto":
                   "We design world-class digital experiences for forward thinking startups, companies and ourselves."
               }
@@ -120,8 +120,7 @@
             "className": "col-31 col-lg-55",
             "content": [
               {
-                "className": "feature-list",
-                "block": "block",
+                "className": "feature-list js-text-block",
                 "label": "Featured",
                 "list_text": "Behance Graphic <br> Design"
               }
@@ -131,7 +130,7 @@
             "className": "col-45 ",
             "content": [
               {
-                "className": "feature-list",
+                "className": "feature-list js-text-block",
                 "label": "Project",
                 "list_text": "UI/UX, Branding, <br> Websitte"
               }
@@ -193,7 +192,7 @@
                   "Suzanne Furniture is a small Australian based design and manufacturing firm, born in 2017 from designer Suzanne Angel exploration into the intersection between nature, craft, and the spirit of adventure."
               },
               {
-                "className": "feature-list",
+                "className": "feature-list js-text-block",
                 "label": "Featured",
                 "list_text": "Architecture, UI/UX <br> Branding"
               }
@@ -245,7 +244,7 @@
                   "Suzanne Furniture is a small Australian based design and manufacturing firm."
               },
               {
-                "className": "feature-list",
+                "className": "feature-list js-text-block",
                 "label": "Featured",
                 "list_text": "Architecture, UI/UX <br> Branding"
               }
@@ -288,7 +287,7 @@
             "className": "col-31 col-lg-55",
             "content": [
               {
-                "className": "about_results",
+                "className": "about_results js-text-block",
                 "text":
                   "We bring the results while helping you achieve cost and time savings without taking on risk or management overhead.",
                 "link": {
@@ -315,7 +314,7 @@
             "className": "col-31 col-lg-55",
             "content": [
               {
-                "className": "contacts-list",
+                "className": "contacts-list js-text-block",
                 "label": "General Inquiries",
                 "email": "hey@klimov.agency",
                 "phone": "+7 (915) 308-77-08"
@@ -326,7 +325,7 @@
             "className": "col-45 ",
             "content": [
               {
-                "className": "contacts-list",
+                "className": "contacts-list js-text-block",
                 "label": "Location",
                 "adress":
                   "10, Niznia Siromyatnicheska st. <br> Moscow, Russia"
@@ -350,7 +349,7 @@
             "className": "col-31",
             "content": [
               {
-                "className": "contacts-list",
+                "className": "contacts-list js-text-block",
                 "label": "New Business",
                 "phone": "+7 (985) 171-76-32",
                 "email": "partner@klimov.agency"

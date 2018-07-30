@@ -22,13 +22,14 @@
     height: 100% !important
     opacity: 0
     visibility: hidden
-    z-index: 1
-    transition: opacity 0.3s, visibility 0.3s, z-index 0.3s
+    // z-index: 1
+    transition: opacity 0.8s ease-out, visibility 0.8s ease-out
+
     overflow: auto
     &.active 
         opacity: 1
         visibility: visible
-        z-index: 1    
+        // z-index: 1    
     .fp-tableCell
         padding-top: 90px
         padding-bottom: 60px
@@ -74,7 +75,13 @@
         margin-bottom: 30px
 
 
-
+.letter 
+    display: inline-block
+    position: relative
+    min-width: 5px
+    vertical-align: top
+.text-row
+    display: block
 
 .wrapper
     width: 100%
@@ -200,6 +207,9 @@
 .feature-list,
 .contacts-list
     line-height: 1.5
+
+.feature-list
+    max-width: 180px
 
 .label
     color: $light-grey

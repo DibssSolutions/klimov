@@ -191,15 +191,14 @@
         top: 0
     .menu-circle
         display: inline-block
-        height: 4px
-        width: 4px
+        height: 6px
+        width: 6px
         border-radius: 50%
         background-color: #000
-        transition: 0.8s transform
         position: relative
         z-index: 10000
         color: #fff
-        transition: transform 0.8s ease-in-out
+        transition: transform 0.2s ease-out
         .dark-theme &
             background-color: $light-grey
         &:nth-child(2)
@@ -207,13 +206,14 @@
     &-text 
         font-size: 20px
     &.menu-is-open
-        .menu-circle
+        .menu-circle 
             background-color: #fff
-            height: 8px
-            width: 8px
-        .menu-circle:nth-child(2),
-        .menu-circle:nth-child(3) 
-            display: none   
+        .menu-circle:nth-child(1)
+            transform: translateX(10px)
+        .menu-circle:nth-child(2)
+            transform: scale(2)
+        .menu-circle:nth-child(3)
+            transform: translateX(-10px)
         .text-close
             display: none
         .text-open
@@ -234,26 +234,8 @@
 
 .menu-trigger:hover
     .menu-circle:nth-child(1)
-        transform: translateX(1px)
+        transform: translateX(10px)
     .menu-circle:nth-child(2)
-        transform: scale(1.5)
+        transform: scale(2)
     .menu-circle:nth-child(3)
-        transform: translateX(-1px)
-
-// @keyframes bounce 
-//   from,
-//   20%,
-//   53%,
-//   80%,
-//   to 
-//     animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1)
-//     transform: translate3d(0, 0, 0)
-//   40%,
-//   43% 
-//     animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06)
-//     transform: translate3d(0, -2px, 0)
-//   70% 
-//     animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06)
-//      transform: translate3d(0, 0, 0)
-//   90% 
-//     transform: translate3d(0, 2px, 0)
+        transform: translateX(-10px)

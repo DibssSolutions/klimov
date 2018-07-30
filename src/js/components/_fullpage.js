@@ -11,6 +11,7 @@ $(document).ready(function() {
     var pg = $('.pagination');
     pg.text('Scroll');
 
+    var slides = $('.section');
     /* 
     * Init splitting text
     */
@@ -20,23 +21,32 @@ $(document).ready(function() {
     $('#fullpage').fullpage({
       responsiveWidth: 10,
       responsiveHeight: 10,
-      scrollingSpeed: 1000,
+      scrollingSpeed: 2000,
       sectionSelector: '.section',
       scrollOverflow: true,
       responsive: 768,
       resize: false,
+      fitToSection: true,
+      fitToSectionDelay: 1000,
 
       onLeave: function(origin, destination, direction) {
-        
         var loadedSection = this;
 
-        var resetSection = fpReset(loadedSection);
-        /* 
-        * Clering classes for animation
-        */
-        // $(loadedSection)
-        //   .find('[data-image*="parent"]')
-        //   .removeClass('is-active');
+        // $.fn.fullpage.setAllowScrolling(true);
+        // $.fn.fullpage.setKeyboardScrolling(true);
+
+        setTimeout(() => {
+          if (direction === 'down') {
+            var prevSlide = slides[destination - 2];
+            console.log(prevSlide);
+            fpReset(prevSlide);
+          }
+          if (direction === 'up') {
+            var nextSlide = slides[destination];
+            console.log(nextSlide);
+            fpReset(prevSlide);
+          }
+        }, 1000);
 
         /*
         * Changing pagination text and email/Russia in footer
@@ -60,26 +70,29 @@ $(document).ready(function() {
         }
       },
 
-      afterLoad: function() {
+      afterLoad: function(index, destination, direction) {
         var loadedSection = this;
 
-        /* 
-        * Image animation
-        */
-        // $(loadedSection)
-        //   .find('[data-image*="parent"]')
-        //   .addClass('is-active');
+        prohibitScroll();
+        
 
-        // var fpAn = fpAnimation(loadedSection);
         fpAnimation(loadedSection);
+        // alert(1);
       }
-
-      // afterResize: function(width, height) {
-      //   width = window.innerWidth;
-      //   if (width < 768) {
-      //     fullpage_api.destroy('all');
-      //   }
-      // }
     });
+    // $.fn.fullpage.setAllowScrolling(false);
+    // $.fn.fullpage.setKeyboardScrolling(false);
+    // fullpage_api.setKeyboardScrolling(false);
+    // $.fn.fullpage.setAllowScrolling(false);
   }
 });
+
+function prohibitScroll() {
+  $.fn.fullpage.setAllowScrolling(false);
+  $.fn.fullpage.setKeyboardScrolling(false);
+}
+
+function allowScroll() {
+  $.fn.fullpage.setAllowScrolling(true);
+  $.fn.fullpage.setKeyboardScrolling(true);
+}

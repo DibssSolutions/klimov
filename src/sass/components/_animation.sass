@@ -11,3 +11,20 @@
         [data-image*="child"]
             transition-delay: -0.3s
             +gpu
+
+.text-row
+    position: relative
+    transform: translateY(80px)
+    opacity: 0
+
+.js-title
+    .text-row
+        position: relative
+        transform: translateY(0)
+        opacity: 1
+    .letter
+        position: relative
+        transform: translateX(30px)
+        opacity: 0
+
+

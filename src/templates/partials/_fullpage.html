@@ -17,84 +17,84 @@
                                     {% endif %}
                                         {% if content.project_link_text %}
                                             <h2>
-                                                <a class="project_link" href="{{content.project_link_text}}">{{content.project_link_text | safe}}</a>
+                                                <a class="project_link js-text js-title" href="{{content.project_link_text}}">{{content.project_link_text | safe}}</a>
                                             </h2>
                                         {% endif %}
                                         {% if content.titleLarge %}
-                                        <h2 class="titleLarge">{{content.titleLarge | safe}}</h2>
-                                        {% endif %} {% if content.title %}
-                                        <h5 class="title">{{content.title | safe}}</h5>
+                                        <h2 class="titleLarge js-text js-title">{{content.titleLarge | safe}}</h2>
+                                        {% endif %}
+                                        {% if content.title %}
+                                        <h5 class="title js-text js-title">{{content.title | safe}}</h5>
                                         {% endif %} 
                                         {% if content.image %}
                                             <img src="img/{{content.image}}" alt="{{content.image}}" data-image="child" data-animation-direction="{{content.animation_direction}}">
                                         {% endif %} 
                                         {% if content.label %}
-                                        <div class="label">{{content.label | safe}}</div>
+                                        <div class="label text-row">{{content.label | safe}}</div>
                                         {% endif %} 
                                         {% if content.motto %}
-                                            <p>{{content.motto | safe}}</p>
+                                            <p class="js-text js-text-block">{{content.motto | safe}}</p>
                                         {% endif %} 
                                         {% if content.list_text %}
-                                            <div class="fp-list-text">{{content.list_text | safe}}</div>
+                                            <div class="js-text">{{content.list_text | safe}}</div>
                                         {% endif %} 
                                         {% if content.text %}
-                                            <p class="fp-text">{{content.text | safe}}</p>
+                                            <p class="js-text js-text-block">{{content.text | safe}}</p>
                                         {% endif %} 
                                         {% if content.adress %}
-                                        <div class="adress">{{content.adress | safe}}</div>
+                                        <div class="adress js-text">{{content.adress | safe}}</div>
                                         {% endif %}
                                         {% if content.email %}
-                                        <div class="email">
+                                        <div class="email js-text">
                                             <a href="{{content.email | safe}}">{{content.email | safe}}</a>
                                         </div>
                                         {% endif %}
                                         {% if content.phone %}
-                                        <div class="phone">{{content.phone | safe}}</div>
+                                        <div class="phone js-text">{{content.phone | safe}}</div>
                                         {% endif %}
                                         {% if content.link %}
-                                        <a class="link" href="{{content.link.link}}">{{content.link.text | safe}}</a>
+                                        <a class="link js-text" href="{{content.link.link}}">{{content.link.text | safe}}</a>
                                         {% endif %}
                                         </div>
                                     {% else %} 
                                         {% if content.project_link_text %}
                                             <h2>
-                                                <a class="project_link" href="{{content.project_link_text}}">{{content.project_link_text | safe}}</a>
-                                               
+                                                <a class="project_link js-text js-title" href="{{content.project_link_text}}">{{content.project_link_text | safe}}</a>
                                             </h2>
                                         {% endif %}
                                         {% if content.titleLarge %}
-                                        <h2 class="titleLarge">{{content.titleLarge | safe}}</h2>
+                                        <h2 class="titleLarge js-text js-title">{{content.titleLarge | safe}}</h2>
                                         {% endif %}
                                         {% if content.title %}
-                                            <h5 class="title">{{content.title | safe}}</h5>
+                                            <h5 class="title js-text js-title">{{content.title | safe}}</h5>
                                         {% endif %}
                                         {% if content.image %}
                                             <img src="img/{{content.image}}" alt="{{content.image}}" data-image="child"
                                             data-animation-direction="{{content.animation_direction}}">
                                         {% endif %}
                                         {% if content.label %}
-                                            <div class="label">{{content.label | safe}}</div>
+                                            <div class="label text-row">{{content.label | safe}}</div>
                                         {% endif %} 
                                         {% if content.motto %}
-                                            <p>{{content.motto | safe}}</p>
+                                            <p class="js-text js-text-block">{{content.motto | safe}}</p>
                                         {% endif %} 
                                         {% if content.text %}
-                                            <p class="fp-text">{{content.text | safe}}</p>
+                                            <p class="js-text js-text-block">{{content.text | safe}}</p>
                                         {% endif %} 
                                         {% if content.list_text %}
-                                            <div class="fp-list-text">{{content.list_text | safe}}</div>
+                                            <div class="js-text">{{content.list_text | safe}}</div>
                                         {% endif %} 
                                         {% if content.adress %}
-                                            <div class="adress">{{content.adress | safe}}</div>
+                                            <div class="adress js-text">{{content.adress | safe}}</div>
                                         {% endif %}
                                         {% if content.email %}
-                                            <div class="email">{{content.email | safe}}</div>
+                                            <div class="email js-text">{{content.email | safe}}</div>
                                         {% endif %} 
                                         {% if content.phone %}
-                                            <div class="phone">{{content.phone | safe}}</div>
+                                            <div class="phone js-text">{{content.phone | safe}}</div>
                                         {% endif %}
                                         {% if content.link %}
-                                            <a class="link" href="{{content.link.link}}">{{content.link.text | safe}}</a>
+                                            <a class="link js-text" href="{{content.link.link}}">{{content.link.text | safe}}</a>
                                         {% endif %} 
                                     {% endif %}
                                 {% endfor %}
