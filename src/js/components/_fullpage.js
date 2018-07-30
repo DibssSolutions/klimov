@@ -21,14 +21,12 @@ $(document).ready(function() {
     $('#fullpage').fullpage({
       responsiveWidth: 10,
       responsiveHeight: 10,
-      scrollingSpeed: 1000,
+      scrollingSpeed: 100,
       sectionSelector: '.section',
       scrollOverflow: true,
       responsive: 768,
       resize: false,
-      fitToSection: true,
-      fitToSectionDelay: 0,
-
+    
       afterRender: () => {
         $.fn.fullpage.setAllowScrolling(false);
         $.fn.fullpage.setKeyboardScrolling(false);
@@ -86,12 +84,12 @@ $(document).ready(function() {
   }
 });
 
-function prohibitScroll() {
-  $.fn.fullpage.setAllowScrolling(false);
-  $.fn.fullpage.setKeyboardScrolling(false);
-}
+// function prohibitScroll() {
+//   $.fn.fullpage.setAllowScrolling(false);
+//   $.fn.fullpage.setKeyboardScrolling(false);
+// }
 
-function allowScroll() {
-  $.fn.fullpage.setAllowScrolling(true);
-  $.fn.fullpage.setKeyboardScrolling(true);
-}
+// function allowScroll() {
+//   $.fn.fullpage.setAllowScrolling(true);
+//   $.fn.fullpage.setKeyboardScrolling(true);
+// }
