@@ -60,7 +60,7 @@
       ],
       [
         {
-          "rowClassName": "margin-bottom-45"
+          "rowClassName": "margin-bottom-45 sr-up"
         },
         {
           "className": "col-24 d-lg-none",
@@ -106,7 +106,7 @@
       ],
       [
         {
-          "rowClassName": "margin-bottom-45"
+          "rowClassName": "margin-bottom-45 sr-up"
         },
         {
           "className": "col-24 d-lg-none",
@@ -148,7 +148,7 @@
       ],
       [
         {
-          "rowClassName": "margin-bottom-80"
+          "rowClassName": "margin-bottom-80 sr-up"
         },
         {
           "className": "col-24 d-lg-none",
@@ -179,7 +179,7 @@
       ],
       [
         {
-          "rowClassName": "margin-bottom-68 d-sm-none"
+          "rowClassName": "margin-bottom-68 d-sm-none sr-up"
         },
         {
           "className": "col-50",
@@ -198,7 +198,7 @@
       ],
       [
         {
-          "rowClassName": "margin-bottom-65 d-sm-none"
+          "rowClassName": "margin-bottom-65 d-sm-none sr-up"
         },
         {
           "className": "col-24 d-lg-none",
@@ -239,7 +239,7 @@
       ],
       [
         {
-          "rowClassName": "margin-bottom-65 d-sm-none"
+          "rowClassName": "margin-bottom-65 d-sm-none sr-up"
         },
         {
           "className": "col-24 d-lg-none",
@@ -272,7 +272,7 @@
       ],
       [
         {
-          "rowClassName": "margin-bottom-65 d-sm-none"
+          "rowClassName": "margin-bottom-65 d-sm-none sr-up"
         },
         {
           "className": "col-24 d-lg-none",
@@ -309,7 +309,7 @@
       ],
       [
         {
-          "rowClassName": "margin-bottom-170 margin-bottom-lg-100 d-sm-none"
+          "rowClassName": "margin-bottom-170 margin-bottom-lg-100 d-sm-none sr-up"
         },
         {
           "className": "col-24 d-lg-none",

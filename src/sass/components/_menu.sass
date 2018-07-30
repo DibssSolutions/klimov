@@ -98,6 +98,22 @@
             margin-right: 30px !important
     &-item
         display: inline-block
+        position: relative
+        overflow: hidden
+        &:after
+            position: absolute
+            top: 80%
+            left: 0
+            right: 0
+            width: 100%
+            height: 1px
+            background-color: $text-dark
+            content: ''
+            transform: translateX(-100%)
+            transition: transform 1s
+        &:hover:after
+            transform: translateX(0)
+
     &-link.is-active 
         color: $orange
         .dark-theme &
@@ -174,6 +190,7 @@
     &__item:first-child
         margin-right: 38px
         
+
     
 
 // ===== MENU-TRIGGER =====

@@ -1,6 +1,7 @@
 import SplitIntoRows from '../libs/SplitIntoRows';
 import { TimelineMax } from 'gsap';
 import Splitter from 'split-html-to-chars';
+import ScrollReveal from 'scrollreveal';
 
 function init() {
   textIntoRows();
@@ -52,6 +53,7 @@ function fpAnimation(selector) {
             y: 0,
             opacity: 1,
             ease: Power3.easeOut
+            // onCompleteAll: allowScroll
           },
           0.1
         );
@@ -63,6 +65,22 @@ function fpAnimation(selector) {
   });
 
   $(images).addClass('is-active');
+
+  let tl = new TimelineMax().to('.section', 4, {
+    zIndex: 2,
+    onComplete: allowScroll
+  });
+}
+
+// function prohibitScroll() {
+//   $.fn.fullpage.setAllowScrolling(false);
+//   $.fn.fullpage.setKeyboardScrolling(false);
+// }
+
+function allowScroll() {
+  $.fn.fullpage.setAllowScrolling(true);
+  $.fn.fullpage.setKeyboardScrolling(true);
+  console.error(33);
 }
 
 function fpReset(selector) {
@@ -102,3 +120,28 @@ function textIntoChars() {
 }
 
 export { init, fpAnimation, fpReset };
+
+window.sr = ScrollReveal();
+
+/*
+*About page
+*/
+sr.reveal('.about .sr-up', {
+  scale: 1,
+  duration: 1200,
+  distance: '50px',
+  easing: 'cubic-bezier(0.645, 0.045, 0.355, 1)',
+  viewFactor: -0.1
+});
+
+/*
+*Project page
+*/
+
+sr.reveal('.project .sr-up', {
+  scale: 1,
+  duration: 2000,
+  distance: '10vh',
+  easing: 'cubic-bezier(0.455, 0.03, 0.515, 0.955);',
+  viewFactor: -0.1
+});

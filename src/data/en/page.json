@@ -103,7 +103,7 @@
               {
                 "className": "image",
                 "image": "1.jpg",
-                "animation_direction": "from_right"
+                "animation_direction": "from_left"
               }
             ]
           }

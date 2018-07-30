@@ -49,7 +49,7 @@
         ],
         [
           {
-            "rowClassName": "images-middle"
+            "rowClassName": "images-middle sr-up"
           },
           {
             "className": "col",
@@ -70,7 +70,7 @@
         ],
         [
           {
-            "rowClassName": "images-big"
+            "rowClassName": "images-big sr-up"
           },
           {
             "className": "col",
@@ -83,7 +83,7 @@
         ],
         [
           {
-            "rowClassName": "images-small"
+            "rowClassName": "images-small sr-up"
           },
           {
             "className": "col",
@@ -182,7 +182,7 @@
         ],
         [
           {
-            "rowClassName": "next-project"
+            "rowClassName": "next-project sr-up"
           },
           {
             "className": "col-24",

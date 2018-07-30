@@ -21,19 +21,24 @@ $(document).ready(function() {
     $('#fullpage').fullpage({
       responsiveWidth: 10,
       responsiveHeight: 10,
-      scrollingSpeed: 2000,
+      scrollingSpeed: 1000,
       sectionSelector: '.section',
       scrollOverflow: true,
       responsive: 768,
       resize: false,
       fitToSection: true,
-      fitToSectionDelay: 1000,
+      fitToSectionDelay: 0,
+
+      afterRender: () => {
+        $.fn.fullpage.setAllowScrolling(false);
+        $.fn.fullpage.setKeyboardScrolling(false);
+      },
 
       onLeave: function(origin, destination, direction) {
         var loadedSection = this;
 
-        // $.fn.fullpage.setAllowScrolling(true);
-        // $.fn.fullpage.setKeyboardScrolling(true);
+        $.fn.fullpage.setAllowScrolling(false);
+        $.fn.fullpage.setKeyboardScrolling(false);
 
         setTimeout(() => {
           if (direction === 'down') {
@@ -44,9 +49,9 @@ $(document).ready(function() {
           if (direction === 'up') {
             var nextSlide = slides[destination];
             console.log(nextSlide);
-            fpReset(prevSlide);
+            fpReset(nextSlide);
           }
-        }, 1000);
+        }, 0);
 
         /*
         * Changing pagination text and email/Russia in footer
@@ -72,18 +77,12 @@ $(document).ready(function() {
 
       afterLoad: function(index, destination, direction) {
         var loadedSection = this;
-
-        prohibitScroll();
-        
-
         fpAnimation(loadedSection);
+        console.warn(11111);
+        // setTimeout(allowScroll, 3000);
         // alert(1);
       }
     });
-    // $.fn.fullpage.setAllowScrolling(false);
-    // $.fn.fullpage.setKeyboardScrolling(false);
-    // fullpage_api.setKeyboardScrolling(false);
-    // $.fn.fullpage.setAllowScrolling(false);
   }
 });
 

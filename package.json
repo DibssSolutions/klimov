@@ -69,6 +69,7 @@
     "require-dir": "^0.3.2",
     "require-yaml": "^0.0.1",
     "run-sequence": "^1.1.5",
+    "scrollreveal": "^3.4.0",
     "slick-carousel": "^1.8.1",
     "split-html-to-chars": "^1.0.5",
     "svg4everybody": "^2.1.9",

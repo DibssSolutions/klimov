@@ -24,12 +24,10 @@
             padding-bottom: 60px
             +sm 
                 padding-bottom: 25px
-
     &-picture
         +cover
         +sm
             margin-bottom: 15px
-        
     &__links-group
         p 
             line-height: 1.4
@@ -37,6 +35,10 @@
             margin-bottom: 34px
     .project_link
         margin-bottom: 40px
+        &:hover .arrow 
+            visibility: visible
+            opacity: 1
+            transition: 0.8s opacity, 0.8s visibility
     .mt-30
         margin-top: 30px
 
