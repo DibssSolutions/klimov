@@ -86,6 +86,9 @@
 
 .menu-top-container
     align-items: center
+    &>* 
+        display: flex
+        align-items: center
 
 .nav 
     &-item:first-child
@@ -123,11 +126,13 @@
         opacity: 1
 
 .logo
-    display: block
+    display: flex
     max-width: 88px
+    max-height: 30px
     position: relative
     z-index: 10000
-    +vertical
+    svg
+        width: 88px
     &.logo-grey
         svg
             fill: $main-menu-color

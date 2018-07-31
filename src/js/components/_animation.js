@@ -24,12 +24,8 @@ function fpAnimation(selector) {
   var titleRows = $(selector).find('.js-title .text-row');
   var textBlocks = $(selector).find('.js-text-block');
   var images = $(selector).find('[data-image*="parent"]');
-  var sect = $('.section');
 
-  sect.each(function() {
-    var arr = [];
-    var tl = new TimelineMax();
-
+  function animateTitles() {
     titleRows.each(function(index, titleRow) {
       var letters = $(titleRow).find('.letter');
       var tl = new TimelineMax().call(
@@ -45,61 +41,47 @@ function fpAnimation(selector) {
         null,
         index / 2
       );
-      arr.push(tl);
-      console.log(arr);
-
+      return tl;
     });
-    for (var i=0; i <= arr.lenght - 1; i++) {
-      tl.add(arr[i]);
-    }
-  });
+  }
 
+  function animateText() {
+    textBlocks.each(function(index, textBlock) {
+      var rows = $(textBlock).find('.text-row');
+      var tl = new TimelineMax().call(
+        function() {
+          new TimelineMax().staggerTo(
+            $(rows),
+            1,
+            {
+              y: 0,
+              opacity: 1,
+              ease: Power3.easeOut
+              // onCompleteAll: allowScroll
+            },
+            0.1
+          );
+        },
+        null,
+        null,
+        1 + index / 4
+      );
+      return tl;
+    });
+  }
 
-  titleRows.each(function(index, titleRow) {
-    var letters = $(titleRow).find('.letter');
-    new TimelineMax().call(
-      function() {
-        new TimelineMax().staggerTo(
-          $(letters),
-          0.8,
-          { x: 0, opacity: 1, ease: Power3.easeOut },
-          0.08
-        );
-      },
-      null,
-      null,
-      index / 2
-    );
-  });
+  // $(images).addClass("is-active");
 
-  textBlocks.each(function(index, textBlock) {
-    var rows = $(textBlock).find('.text-row');
-    new TimelineMax().call(
-      function() {
-        new TimelineMax().staggerTo(
-          $(rows),
-          1,
-          {
-            y: 0,
-            opacity: 1,
-            ease: Power3.easeOut
-            // onCompleteAll: allowScroll
-          },
-          0.1
-        );
-      },
-      null,
-      null,
-      1 + index / 4
-    );
-  });
+  var masterTimeline = new TimelineMax({ onComplete: allowScroll });
+  masterTimeline
+    .add(animateTitles)
+    .add(animateText, '+=1')
+    .to(images, 0, { className: '+=is-active' }, '+=0.3');
 
-  $(images).addClass('is-active');
-
-  let tl = new TimelineMax().to('.section', 0.8, {
-    zIndex: 2,
-    onComplete: allowScroll
-  });
+  // let tl = new TimelineMax().to('.section', 0.8, {
+  //   zIndex: 2,
+  //   onComplete: allowScroll
+  // });
 }
 
 // function prohibitScroll() {
