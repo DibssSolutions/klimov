@@ -52,7 +52,7 @@
                 </div>
                 <div class="d-sm-block menu-trigger-text">
                     <span class='text-close'>Menu</span>
-                    <span class='text-open'>Close</span>         
+                    <span class='text-open'>Close</span>
                 </div>
             </button>
         </div>
@@ -65,57 +65,51 @@
                 <div class="row {{row[0].rowClassName}}">
                     {% for col in row %} {% if not col.rowClassName %}
                     <div class="{{col.className}}">
-                        {% if col.content %} 
-                            {% for content in col.content %}
-                            <div class="{{content.className}}">
-                                {% if content.className === "logo" %}
-                                <img src="img/{{content.img}}" alt="{{content.img}}"> 
-                                {% endif %} 
-
-                                {% if content.className === "menu__item" or content.className === "menu__item is-active"
-                                or content.className === "menu__item color-muted" %}
+                        {% if col.content %} {% for content in col.content %}
+                        <div class="{{content.className}}">
+                            {% if content.className === "logo" %}
+                                <img src="img/{{content.img}}" alt="{{content.img}}">
+                            {% endif %} 
+                            {% if "menu__item" in content.className %}
                                 <a href="{{content.link_link}}">{{content.link_text}}</a>
-                                {% endif %}
-                                
-                                {% if "lang " in content.className %}
+                            {% endif %} 
+                            {% if "lang " in content.className %}
                                 <a href="#" class="is-active lang__item">{{content.lang1}}</a> /
                                 <a href="#" class="lang__item">{{content.lang2}}</a>
-                                {% endif %} 
-
-                                {% if content.className === "social__item" %}
+                            {% endif %}
+                            {% if "social__item" in content.className %}
                                 <a href="{{content.link_link}}">{{content.link_text}}
                                     <span class="social__arrow">↗</span>
                                 </a>
-                                {% endif %} 
-
-                                {% if content.label %}
+                            {% endif %}
+                            {% if content.label %}
                                 <div class="label">{{content.label | safe}}</div>
-                                {% endif %} 
-                                {% if content.text %}
+                            {% endif %}
+                            {% if content.text %}
                                 <p>{{content.text | safe}}</p>
-                                {% endif %} 
-                                {% if content.adress %}
+                            {% endif %}
+                            {% if content.adress %}
                                 <div class="adress">{{content.adress | safe}}</div>
-                                {% endif %}
-                                 {% if content.email %}
-                                <div class="email">
-                                    <a href="{{content.email | safe}}">{{content.email | safe}}</a>
-                                </div>
-                                {% endif %} {% if content.phone %}
-                                <div class="phone">{{content.phone | safe}}</div>
-                                {% endif %}
+                            {% endif %}
 
-                                {% if "jobs" in content.className %}
-                                <h5>{{content.jobs_title}}</h5>
-                                <a href="{{content.jobs_link_link}}" class="jobs-email">{{content.jobs_link_text}}</a>
-                                {% endif %} 
-
+                            {% if content.email %}
+                            <div class="email">
+                                <a href="{{content.email | safe}}">{{content.email | safe}}</a>
                             </div>
-                            {% endfor %} 
-                        {% endif %}
+                            {% endif %} 
+
+                            {% if content.phone %}
+                                <div class="phone">{{content.phone | safe}}</div>
+                            {% endif %} 
+                            {% if "jobs" in content.className %}
+                            <h5>{{content.jobs_title}}</h5>
+                            <a href="{{content.jobs_link_link}}" class="jobs-email">{{content.jobs_link_text}}</a>
+                            {% endif %}
+
+                        </div>
+                        {% endfor %} {% endif %}
                     </div>
-                    {% endif %}
-                    {% endfor %}
+                    {% endif %} {% endfor %}
                 </div>
                 {% endfor %}
             </div>
@@ -128,25 +122,25 @@
                     <div class="{{item.className}}">
                         {% for content in item.content %}
                         <div class="{{content.className}}">
-                            
+
                             {% if content.className === "lang d-sm-none" %}
                                 <a href="#" class="is-active lang__item">{{content.lang1}}</a> /
                                 <a href="#" class="lang__item">{{content.lang2}}</a>
                             {% endif %} 
-
-                            {% if content.className === "social__item" %}
+                            
+                            {% if "social__item" in content.className %}
                                 <a href="{{content.link_link}}">{{content.link_text}}</a>
                                 <span class="arrow">↗</span>
-                            {% endif %} 
+                            {% endif %}
                             
                             {% if "email" in content.className %}
-                                <a href="{{content.email}}">{{content.email}}</a>
+                            <a href="{{content.email}}">{{content.email}}</a>
                             {% endif %}
                             
                             {% if "time" in content.className %}
-                                <p class="d-sm-none">{{content.time}}</p>
+                            <p class="d-sm-none">{{content.time}}</p>
                             {% endif %}
-                        
+
                         </div>
                         {% endfor %}
                     </div>

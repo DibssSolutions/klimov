@@ -8,7 +8,12 @@ body
     line-height: 1.5
     color: #000 
     letter-spacing: -0.2px
-    // +css-lock(14,20,767,1400)
+    +css-lock(14,20,767,1400)
+    transition: opacity 1s
+    opacity: 1
+    &.loading 
+        opacity: 0
+        transition: opacity 1s
 
 img
 	max-width: 100%	

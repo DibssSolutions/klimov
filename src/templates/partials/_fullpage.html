@@ -10,15 +10,25 @@
                     <div class="{{content.className}}" data-image="parent">
                         {% else %}
                         <div class="{{content.className}}">
-                            {% endif %} {% if content.project_link_text %}
-                            <h2>
-                                <a class="project_link js-text js-title" href="{{content.project_link_text}}">{{content.project_link_text | safe}}</a>
-                            </h2>
-                            {% endif %} {% if content.titleLarge %}
+                            {% endif %} 
+                            {% if content.project_link_text %}
+                                {% if content.project_link_text === 'All projects' %}
+                                <h2>
+                                    <a class="project_link js-text js-title-secondary" href="{{content.project_link_text}}">{{content.project_link_text | safe}}</a>
+                                </h2>
+                                {% else %}                                    
+                                <h2>
+                                    <a class="project_link js-text js-title" href="{{content.project_link_text}}">{{content.project_link_text | safe}}</a>
+                                </h2>
+                                {% endif %}
+                            {% endif %}
+                             {% if content.titleLarge %}
                             <h2 class="titleLarge js-text js-title">{{content.titleLarge | safe}}</h2>
-                            {% endif %} {% if content.title %}
+                            {% endif %}
+                            {% if content.title %}
                             <h5 class="title js-text js-title">{{content.title | safe}}</h5>
-                            {% endif %} {% if content.image %} 
+                            {% endif %}
+                             {% if content.image %} 
                             {% if content.image %}
                                 <div data-image="child" data-animation-direction="{{content.animation_direction}}">
                                     <img src="img/{{content.image}}" alt="{{content.image}}">
@@ -44,11 +54,19 @@
                             <a class="link js-text" href="{{content.link.link}}">{{content.link.text | safe}}</a>
                             {% endif %}
                         </div>
-                        {% else %} {% if content.project_link_text %}
-                        <h2>
-                            <a class="project_link js-text js-title" href="{{content.project_link_text}}">{{content.project_link_text | safe}}</a>
-                        </h2>
-                        {% endif %} {% if content.titleLarge %}
+                        {% else %}
+                        {% if content.project_link_text %}
+                            {% if content.project_link_text === 'All projects' %}
+                            <h2>
+                                <a class="project_link js-text js-title-secondary" href="{{content.project_link_text}}">{{content.project_link_text | safe}}</a>
+                            </h2>
+                            {% else %}                                    
+                            <h2>
+                                <a class="project_link js-text js-title" href="{{content.project_link_text}}">{{content.project_link_text | safe}}</a>
+                            </h2>
+                            {% endif %}
+                        {% endif %}
+                        {% if content.titleLarge %}
                         <h2 class="titleLarge js-text js-title">{{content.titleLarge | safe}}</h2>
                         {% endif %} {% if content.title %}
                         <h5 class="title js-text js-title">{{content.title | safe}}</h5>

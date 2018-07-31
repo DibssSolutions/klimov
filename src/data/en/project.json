@@ -5,7 +5,7 @@
       "project_header": [
         [
           {
-            "rowClassName": "m0"
+            "rowClassName": "sr-up"
           },
           {
             "className": "col-24",
@@ -36,7 +36,7 @@
       "project_content": [
         [
           {
-            "rowClassName": "images-big"
+            "rowClassName": "images-big sr-up"
           },
           {
             "className": "col",
@@ -115,7 +115,7 @@
       "project_footer": [
         [
           {
-            "rowClassName": "margin-bottom-30"
+            "rowClassName": "margin-bottom-30 sr-up"
           },
           {
             "className": "col-24 order-sm-1",

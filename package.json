@@ -61,6 +61,7 @@
     "husky": "^0.13.2",
     "jquery": "^3.1.1",
     "jquery-validation": "^1.17.0",
+    "letteringjs": "^0.7.0",
     "lint-staged": "^4.0.2",
     "lodash": "^4.3.0",
     "lost": "^7.1.0",
@@ -80,6 +81,7 @@
     "webpack-bundle-analyzer": "^1.5.3"
   },
   "dependencies": {
+    "charming": "^2.2.4",
     "gsap": "^1.20.3",
     "iscroll": "^5.2.0",
     "isotope-layout": "^3.0.6",

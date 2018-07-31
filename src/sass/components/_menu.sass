@@ -9,7 +9,6 @@
     padding-top: 60px
     padding-bottom: 30px
     background-color: $text-dark
-    color: $main-menu-color
     overflow: hidden
     +vertical
     +sm 
@@ -17,17 +16,15 @@
         height: 100vh
         padding-top: $main-margin-top-sm
         padding-bottom: 0
-    &__top
-        margin-top: 38px
-        margin-bottom: 6vh
-        position: relative
     &__container 
         height: 100%
     &__item 
         font-size: 50px
         line-height: 1
         margin-bottom: 2vh
+        color: $main-menu-color
         +css-lock(35,50,767,1400)
+        transition: color 1.8s
         +sm 
             font-size: 35px
         &.is-active
@@ -51,12 +48,43 @@
         color: $main-menu-color-muted
         +sm 
             font-size: 17px
-    .color-muted
-        color: $main-menu-color-muted
     .feature-list
         +sm 
             margin-bottom: 30px
-    
+    .email, 
+    .adress, 
+    .phone
+        color: $main-menu-color
+        transition: color 1.8s
+
+.hovered.menu
+    .lang
+        &__item.is-active 
+            color: $main-menu-color-muted
+            transition: color 1.8s
+    .menu__item,
+    .social__item, 
+    .time,
+    .email, 
+    .menu-bottom .email, 
+    .adress, 
+    .phone
+        color: $main-menu-color-muted
+        transition: color 1.8s
+
+.light
+    color: #fff !important
+    transition: color 1.8s
+    .menu__item,
+    .social__item, 
+    .time,
+    .email, 
+    .menu-bottom .email, 
+    .adress, 
+    .phone
+        color: #fff !important
+        transition: color 1.8s
+
 
 // ===== MAIN MENU ROWS =====
 
@@ -77,11 +105,11 @@
 .menu-top
     position: relative
     z-index: 10
-    transition: background-color 0.5
+    transition: background-color 0.5, color 1s
     +sm 
         .header.fixed &
             background-color: $text-dark
-            transition: background-color 0.5s
+            transition: background-color 0.5s, color 1s
             padding-bottom: 16px
 
 .menu-top-container
@@ -103,20 +131,6 @@
         display: inline-block
         position: relative
         overflow: hidden
-        &:after
-            position: absolute
-            top: 80%
-            left: 0
-            right: 0
-            width: 100%
-            height: 1px
-            background-color: $text-dark
-            content: ''
-            transform: translateX(-100%)
-            transition: transform 1s
-        &:hover:after
-            transform: translateX(0)
-
     &-link.is-active 
         color: $orange
         .dark-theme &
@@ -124,6 +138,27 @@
     &-item:hover .arrow
         visibility: visible
         opacity: 1
+
+.menu-top
+    .nav-item
+        &:after
+            position: absolute
+            top: 90%
+            left: 0
+            right: 0
+            width: 100%
+            height: 1px
+            background-color: $text-dark
+            content: ''
+            transform: translateX(-100%)
+            transition: transform 0.2s
+        &:hover:after
+            transform: translateX(0)
+            transition: transform 0.2s
+
+.nav-item + .nav-link.is-active
+    background-color: #f0f
+        
 
 .logo
     display: flex
@@ -143,36 +178,42 @@
     +sm 
         padding-top: $header-top-padding-sm
 
-.menu-bottom
-    position: absolute
-    z-index: 3000
-    bottom: 0
-    padding-bottom: 22px
-    left: 0
-    right: 0
-    color: $light-grey
-    font-size: 20px
-    text-align: left
-    // +css-lock(14,20,767,1400)
-    .email
-        text-decoration: underline
-    +sm 
-        position: relative
-        padding-bottom: 10px
-        padding-top: 105px
+.menu
+    .menu-bottom
+        position: absolute
+        z-index: 3000
+        bottom: 0
+        padding-bottom: 22px
+        left: 0
+        right: 0
+        font-size: 20px
+        text-align: left
+        // +css-lock(14,20,767,1400)
+        .email
+            text-decoration: underline
+            color: $light-grey
+            transition: color 1.8s
+        +sm 
+            position: relative
+            padding-bottom: 10px
+            padding-top: 105px
 
-.lang
-    font-size: 20px
-    color: $main-menu-color-muted
-    // +css-lock(14,20,767,1400)
-    &__item.is-active 
-        color: $main-menu-color
-    &--mob 
-        padding-bottom: 64px
-        padding-top: 10px
+    .lang
+        font-size: 20px
+        color: $main-menu-color-muted
+        transition: color 1.8s
+        // +css-lock(14,20,767,1400)
+        &__item.is-active 
+            color: $main-menu-color
+            transition: color 1.8s
+        &--mob 
+            padding-bottom: 64px
+            padding-top: 10px
 
 .time 
     font-size: 17px
+    color: $light-grey
+    transition: color 1.8s
     
 .margin-110
     margin-bottom: 10vh
@@ -186,7 +227,8 @@
 .social
     &__item
         display: inline-block
-        margin-right: 
+        color: $light-grey
+        transition: color 1.8s
         &:hover .arrow
             visibility: visible
             opacity: 1
@@ -195,8 +237,6 @@
     &__item:first-child
         margin-right: 38px
         
-
-    
 
 // ===== MENU-TRIGGER =====
 
@@ -243,16 +283,6 @@
 
 .text-open
     display: none
-
-// .menu-trigger:hover
-//     .menu-circle:nth-child(1)
-//         animation: bounce 0.7s
-//     .menu-circle:nth-child(2)
-//         animation: bounce 0.7s
-//         animation-delay: 0.2s
-//     .menu-circle:nth-child(3)
-//         animation: bounce 0.7s
-//         animation-delay: 0.2s
 
 .menu-trigger:hover
     .menu-circle:nth-child(1)
