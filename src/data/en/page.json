@@ -4,7 +4,7 @@
       "rows": [
         [
           {
-            "rowClassName": "margin-top-12vh"
+            "rowClassName": "margin-top-6vh margin-bottom-10vh"
           },
           {
             "className": "col-24",
@@ -81,7 +81,7 @@
         ],
         [
           {
-            "rowClassName": "margin-bottom-7vh"
+            "rowClassName": "margin-bottom-5vh"
           },
           {
             "className": "col-24 d-lg-none",
@@ -206,7 +206,7 @@
       "rows": [
         [
           {
-            "rowClassName": "margin-bottom-10vh"
+            "rowClassName": "margin-bottom-5vh"
           },
           {
             "className": "col-24",
@@ -277,7 +277,7 @@
       "rows": [
         [
           {
-            "rowClassName": "margin-top-5vh"
+            "rowClassName": "m-0"
           },
           {
             "className": "col-24 d-lg-none",
@@ -304,7 +304,7 @@
         ],
         [
           {
-            "rowClassName": "margin-top-20vh"
+            "rowClassName": "margin-top-12vh"
           },
           {
             "className": "col-24 d-lg-none",

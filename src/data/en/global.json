@@ -31,7 +31,7 @@
     "rows": [
       [
         {
-          "rowClassName": "menu__main margin-top-3vh"
+          "rowClassName": "menu__main"
         },
         {
           "className": "col-24 d-md-none",

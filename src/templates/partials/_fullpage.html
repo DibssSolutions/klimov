@@ -14,11 +14,11 @@
                             {% if content.project_link_text %}
                                 {% if content.project_link_text === 'All projects' %}
                                 <h2>
-                                    <a class="project_link js-text js-title-secondary" href="{{content.project_link_text}}">{{content.project_link_text | safe}}</a>
+                                    <a class="project_link js-text js-title-secondary" href="{{content.project_link_link}}">{{content.project_link_text | safe}}</a>
                                 </h2>
                                 {% else %}                                    
                                 <h2>
-                                    <a class="project_link js-text js-title" href="{{content.project_link_text}}">{{content.project_link_text | safe}}</a>
+                                    <a class="project_link js-text js-title" href="{{content.project_link_link}}">{{content.project_link_text | safe}}</a>
                                 </h2>
                                 {% endif %}
                             {% endif %}
@@ -58,11 +58,11 @@
                         {% if content.project_link_text %}
                             {% if content.project_link_text === 'All projects' %}
                             <h2>
-                                <a class="project_link js-text js-title-secondary" href="{{content.project_link_text}}">{{content.project_link_text | safe}}</a>
+                                <a class="project_link js-text js-title-secondary" href="{{content.project_link_link}}">{{content.project_link_text | safe}}</a>
                             </h2>
                             {% else %}                                    
                             <h2>
-                                <a class="project_link js-text js-title" href="{{content.project_link_text}}">{{content.project_link_text | safe}}</a>
+                                <a class="project_link js-text js-title" href="{{content.project_link_link}}">{{content.project_link_text | safe}}</a>
                             </h2>
                             {% endif %}
                         {% endif %}

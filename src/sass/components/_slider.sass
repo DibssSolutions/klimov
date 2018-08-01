@@ -13,7 +13,9 @@
     text-decoration: underline
     font-weight: 400
     margin-top: 140px
-    +sm 
+    +lg 
+        margin-top: 100px
+    +md
         display: none
 
 .slider
@@ -29,7 +31,6 @@
     &-container
         padding-top: 140px
         +vertical
-        height: 400px
         position: absolute
         top: 0
         left: 0
@@ -71,6 +72,8 @@
         +cover
         z-index: 3
         transition: transform 0.8s
+        +lg 
+            padding-bottom: 310px
         +sm
             padding-bottom: 270px
             width: 250px
@@ -90,13 +93,14 @@
             transition: transform 1.4s
             +sm 
                 transform: translateY(0)
+        +lg 
+            top: -310px
         +sm 
             top: 16px
             z-index: 100
             
 
 .owl-item
-    // width: auto !important
     min-width: 200px
     max-width: 613px
     +sm 

@@ -100,21 +100,17 @@
     font-size: 20px
     position: relative
     text-align: left
-    min-height: 630px
-    +css-lock(14,20,767,1400)
+    min-height: 550px
+    +css-lock(12,20,767,1400)
     padding-top: 90px
     padding-bottom: 90px
-    // +css-lock(90, 30, 1425, 768, 'padding-top')
-    // +css-lock(90, 30, 1425, 768, 'padding-bottom')
-    // +css-lock(30, 90, 768, 1425, 'padding-top')
-    // +css-lock(30, 90, 768, 1425, 'padding-bottom')
     display: inline-block
     vertical-align: middle
     +sm 
         padding: 0
     img
         display: block
-        +css-lock(250,700,767,1400,width)
+        width: calc(250px + (400 - 250)*((100vw - 767px)/(1280 - 767)))
         +sm 
             width: auto !important
         // +rh(700)
@@ -122,7 +118,8 @@
             
     
 .titleLarge
-    font-size: 30px
+    +css-lock(20,30,767,1400)
+    // font-size: 30px
     line-height: 1.5
     max-width: 220px
     +sm 
@@ -131,7 +128,8 @@
         margin-bottom: 40px
 
 .project_link
-    font-size: 20px
+    +css-lock(18,20,767,1400)
+    // font-size: 20px
     line-height: 1.5
     font-weight: 400
 
@@ -177,12 +175,17 @@
 
 // ===== MARGINS =====
 
-.margin-top-12vh
-    margin-bottom: 16vh
-    margin-top: 12vh
+.margin-top-6vh
+    margin-top: 6vh
+    
+.margin-bottom-10vh
+    margin-bottom: 10vh
 
 .margin-bottom-3vh
     margin-bottom: 3vh
+
+.margin-bottom-6vh
+    margin-bottom: 6vh
 
 .margin-bottom-7vh 
     margin-bottom: 7vh
@@ -203,9 +206,12 @@
 .margin-bottom-10vh
     margin-bottom: 10vh
     
+.margin-bottom-6vh
+    margin-bottom: 6vh
 
 .center-text-p47
     max-width: 245px
+    padding-bottom: 16px
 
 .padding-y-5vh
     padding-top: 5vh
@@ -220,11 +226,14 @@
 .margin-top-5vh
     margin-top: 5vh
 
+.margin-bottom-5vh
+    margin-bottom: 5vh
+
 .padding-top-5vh    
     padding-top: 3vh
 
-.margin-top-20vh
-    margin-top: 20vh
+.margin-top-12vh
+    margin-top: 12vh
     
 .margin-top-10vh
      margin-top: 10vh
@@ -241,7 +250,7 @@
 
 .label
     color: $light-grey
-    font-size: 18px
+    +css-lock(13,18,767,1400)
 
 .contacts-list .label
     font-size: 17px
