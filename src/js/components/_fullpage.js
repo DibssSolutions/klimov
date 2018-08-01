@@ -1,3 +1,4 @@
+/* eslint-disable */
 import IScroll from 'iscroll';
 window.IScroll = IScroll;
 var fullpage = require('../libs/jquery.fullpage.min.js');

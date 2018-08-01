@@ -1,3 +1,4 @@
+/* eslint-disable */
 import SplitIntoRows from '../libs/SplitIntoRows';
 import { TimelineMax } from 'gsap';
 import 'letteringjs';
