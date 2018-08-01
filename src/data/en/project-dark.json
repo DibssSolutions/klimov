@@ -1,0 +1,216 @@
+{
+    "page": "project",
+    "project": [
+      {
+        "project_header": [
+          [
+            {
+              "rowClassName": "sr-up"
+            },
+            {
+              "className": "col-24",
+              "content": [
+                {
+                  "project_link_text": "Studio Elforma. <br> Architectes ",
+                  "project_link_link": "#"
+                }
+              ]
+            },
+            {
+              "className": "col-31",
+              "content": ""
+            },
+            {
+              "className": "col-45",
+              "content": [
+                {
+                  "text":
+                    "We bring the results while helping you achieve cost and time savings without taking on risk or management overhead.",
+                  "label": "UI/UX"
+                }
+              ]
+            }
+          ]
+        ],
+  
+        "project_content": [
+          [
+            {
+              "rowClassName": "images-big sr-up"
+            },
+            {
+              "className": "col",
+              "content": [
+                {
+                  "img": "IMG_20170503_191412.jpg"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "rowClassName": "images-middle sr-up"
+            },
+            {
+              "className": "col",
+              "content": [
+                {
+                  "img": "IMG_20170503_191412.jpg"
+                }
+              ]
+            },
+            {
+              "className": "col",
+              "content": [
+                {
+                  "img": "IMG_20170503_191412.jpg"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "rowClassName": "images-big sr-up"
+            },
+            {
+              "className": "col",
+              "content": [
+                {
+                  "img": "IMG_20170503_191412.jpg"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "rowClassName": "images-small sr-up"
+            },
+            {
+              "className": "col",
+              "content": [
+                {
+                  "img": "IMG_20170503_191412.jpg"
+                }
+              ]
+            },
+            {
+              "className": "col",
+              "content": [
+                {
+                  "img": "IMG_20170503_191412.jpg"
+                }
+              ]
+            },
+            {
+              "className": "col",
+              "content": [
+                {
+                  "img": "IMG_20170503_191412.jpg"
+                }
+              ]
+            }
+          ]
+        ],
+  
+        "project_footer": [
+          [
+            {
+              "rowClassName": "margin-bottom-30 sr-up"
+            },
+            {
+              "className": "col-24 order-sm-1",
+              "content": [
+                {
+                  "className": "project__links-group",
+                  "label": "Project",
+                  "text": "UI/UX, Branding,<br>Website"
+                }
+              ]
+            },
+            {
+              "className": "col-31 order-sm-4",
+              "content": [
+                {
+                  "className": "project__links-group",
+                  "label": "Share on",
+                  "social_links": [
+                    {
+                      "social_link_text": "Facebook",
+                      "social_link_link": "#"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "className": "col-45 order-sm-2",
+              "content": [
+                {
+                  "className": "project__links-group",
+                  "label": "Look at",
+                  "social_links": [
+                    {
+                      "social_link_text": "Behance",
+                      "social_link_link": "#"
+                    },
+                    {
+                      "social_link_text": "Site",
+                      "social_link_link": "#"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "className": "col-24",
+              "content": ""
+            },
+            {
+              "className": "col-31 order-sm-3",
+              "content": [
+                {
+                  "className": "project__links-group mt-30",
+                  "label": "Featured",
+                  "text": "Behance Graphic <br> Design"
+                }
+              ]
+            },
+            {
+              "className": "col-45",
+              "content": ""
+            }
+          ],
+          [
+            {
+              "rowClassName": "next-project sr-up"
+            },
+            {
+              "className": "col-24",
+              "content": ""
+            },
+            {
+              "className": "col-31",
+              "content": [
+                {
+                  "img": "IMG_20170503_191412.jpg"
+                }
+              ]
+            },
+            {
+              "className": "col-45 next-project-text",
+              "content": [
+                {
+                  "label": "Next Project"
+                },
+                {
+                  "project_link_text": "Suzanne Furniture",
+                  "project_link_link": "#"
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    ]
+  }
+  

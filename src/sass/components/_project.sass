@@ -1,9 +1,17 @@
 .project
-    margin-top: 157px
-    margin-bottom: 134px
+    padding-top: 157px
+    padding-bottom: 134px
+    +css-lock(16,20,767,1400)
+    .dark-theme &
+        background-color: $text-dark
+        color: $main-menu-color
+        .label 
+            color: $main-menu-color-muted
+        .social__link
+            color: $main-menu-color
     +sm 
-        margin-top: $main-margin-top-sm
-        margin-bottom: 130px
+        padding-top: $main-margin-top-sm
+        padding-bottom: 130px
     &__top
         margin-bottom: 350px
         +lg 
@@ -41,6 +49,8 @@
             transition: 0.8s opacity, 0.8s visibility
     .mt-30
         margin-top: 30px
+        +sm 
+            margin-top: 0
 
 
 // ===== IMAGES =====
@@ -91,8 +101,6 @@
     .order-sm-4
         order: 4
 
-
-
 // ===== NEXT-PROJECT =====
 
 .next-project
@@ -128,4 +136,5 @@
     padding-bottom: 61%
     +cover
     +sm 
-        padding-bottom: 70%
+        padding-bottom: 200px
+

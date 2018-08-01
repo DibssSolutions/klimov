@@ -24,7 +24,7 @@
         margin-bottom: 2vh
         color: $main-menu-color
         +css-lock(35,50,767,1400)
-        transition: color 1.8s
+        transition: color 0.7s 0.2s
         +sm 
             font-size: 35px
         &.is-active
@@ -36,14 +36,14 @@
         font-size: 17px
         line-height: 23px
         color: $main-menu-color-muted
-    &__main-bottom
-        margin-bottom: 110px
-    &__bottom
-        position: absolute
-        max-width: 1430px
-        width: calc(100% - 36px)
-        margin: 0 auto
-        bottom: 60px
+    // &__main-bottom
+    //     margin-bottom: 110px
+    // &__bottom
+    //     position: absolute
+    //     max-width: 1430px
+    //     width: calc(100% - 36px)
+    //     margin: 0 auto
+    //     bottom: 60px
     .label
         color: $main-menu-color-muted
         +sm 
@@ -55,13 +55,13 @@
     .adress, 
     .phone
         color: $main-menu-color
-        transition: color 1.8s
+        transition: color 0.7s 0.2s
 
 .hovered.menu
     .lang
         &__item.is-active 
             color: $main-menu-color-muted
-            transition: color 1.8s
+            transition: color 0.7s 0.2s
     .menu__item,
     .social__item, 
     .time,
@@ -70,11 +70,11 @@
     .adress, 
     .phone
         color: $main-menu-color-muted
-        transition: color 1.8s
+        transition: color 0.7s 0.2s
 
 .light
     color: #fff !important
-    transition: color 1.8s
+    transition: color 0.7s 0.2s
     .menu__item,
     .social__item, 
     .time,
@@ -83,7 +83,7 @@
     .adress, 
     .phone
         color: #fff !important
-        transition: color 1.8s
+        transition: color 0.7s 0.2s
 
 
 // ===== MAIN MENU ROWS =====
@@ -105,12 +105,14 @@
 .menu-top
     position: relative
     z-index: 10
-    transition: background-color 0.5, color 1s
+    // transition: background-color 0.s 
+    // transition-delay: all 1s
     +sm 
         .header.fixed &
             background-color: $text-dark
-            transition: background-color 0.5s, color 1s
+            transition: background-color 0.1s 0.5s
             padding-bottom: 16px
+            // transition-delay: all 1s
 
 .menu-top-container
     align-items: center
@@ -131,16 +133,19 @@
         display: inline-block
         position: relative
         overflow: hidden
-    &-link.is-active 
-        color: $orange
-        .dark-theme &
-            color: $main-menu-color-muted
     &-item:hover .arrow
         visibility: visible
         opacity: 1
 
 .menu-top
     .nav-item
+        color: $text-dark
+        &.is-active 
+            color: $orange
+        .dark-theme &
+            color: $main-menu-color
+        .dark-theme &.is-active
+            color: $main-menu-color-muted
         &:after
             position: absolute
             top: 90%
@@ -155,10 +160,12 @@
         &:hover:after
             transform: translateX(0)
             transition: transform 0.2s
-
-.nav-item + .nav-link.is-active
-    background-color: #f0f
-        
+        &.is-active:after
+            background-color: $orange
+        .dark-theme &:after
+            background-color: $main-menu-color
+        .dark-theme &.is-active:after
+            background-color: $main-menu-color-muted
 
 .logo
     display: flex
@@ -177,6 +184,9 @@
             fill: $main-menu-color
     +sm 
         padding-top: $header-top-padding-sm
+        svg
+            height: 20px
+            width: 75px
 
 .menu
     .menu-bottom
@@ -188,11 +198,11 @@
         right: 0
         font-size: 20px
         text-align: left
-        // +css-lock(14,20,767,1400)
+        +css-lock(16,20,767,1400)
         .email
             text-decoration: underline
             color: $light-grey
-            transition: color 1.8s
+            transition: color 0.7s 0.2s
         +sm 
             position: relative
             padding-bottom: 10px
@@ -201,11 +211,11 @@
     .lang
         font-size: 20px
         color: $main-menu-color-muted
-        transition: color 1.8s
-        // +css-lock(14,20,767,1400)
+        transition: color 0.7s 0.2s
+        +css-lock(16,20,767,1400)
         &__item.is-active 
             color: $main-menu-color
-            transition: color 1.8s
+            transition: color 0.7s 0.2s
         &--mob 
             padding-bottom: 64px
             padding-top: 10px
@@ -213,7 +223,7 @@
 .time 
     font-size: 17px
     color: $light-grey
-    transition: color 1.8s
+    transition: color 0.7s 0.2s
     
 .margin-110
     margin-bottom: 10vh
@@ -228,7 +238,7 @@
     &__item
         display: inline-block
         color: $light-grey
-        transition: color 1.8s
+        transition: color 0.7s 0.2s
         &:hover .arrow
             visibility: visible
             opacity: 1
@@ -281,8 +291,14 @@
         .text-open
             display: block
 
+.dark-theme 
+    .text-close
+        color: $main-menu-color
+
+
 .text-open
     display: none
+    color: $main-menu-color
 
 .menu-trigger:hover
     .menu-circle:nth-child(1)

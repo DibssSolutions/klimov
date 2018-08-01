@@ -68,12 +68,8 @@ function fpAnimation(selector) {
     delay: 6,
     tl: tl2,
     mainDelay: 0.5
-    // staggerDelay: 0.03
+    
   });
-
-  console.log(arr[0]);
-  console.log(arr[1]);
-  console.log(arr.length - 1);
 
   for (var i = 0; i <= arr.length - 1; i++) {
     tl.add(arr[i]).eventCallback('onComplete', allowScroll);
@@ -167,15 +163,9 @@ function fpAnimation(selector) {
 // });
 // }
 
-function prohibitScroll() {
-  $.fn.fullpage.setAllowScrolling(false);
-  $.fn.fullpage.setKeyboardScrolling(false);
-}
-
 function allowScroll() {
   $.fn.fullpage.setAllowScrolling(true);
   $.fn.fullpage.setKeyboardScrolling(true);
-  console.warn('completed');
 }
 
 function fpReset(selector) {

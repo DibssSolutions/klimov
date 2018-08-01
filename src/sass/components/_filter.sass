@@ -1,11 +1,14 @@
 .filter
     margin: 168px auto 136px
+    +css-lock(16,20,767,1400)
     +sm 
         margin-top: $main-margin-top-sm
         margin-bottom: 0
     &__main
         position: relative
         padding-top: 60px
+        +sm 
+            padding-top: 0
     &__layout 
         text-align: center
         margin: 0 -80px

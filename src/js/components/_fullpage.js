@@ -26,26 +26,31 @@ $(document).ready(function() {
       scrollOverflow: true,
       responsive: 768,
       resize: false,
-    
+
       afterRender: () => {
         $.fn.fullpage.setAllowScrolling(false);
         $.fn.fullpage.setKeyboardScrolling(false);
+
+        if ($(window).width() < 768) {
+          fpAnimation($('.section:nth-child(2)'));
+        }
       },
 
       onLeave: function(origin, destination, direction) {
         var loadedSection = this;
 
-        setTimeout(() => {
-          if (direction === 'down') {
-            var prevSlide = slides[destination - 2];
-            fpReset(prevSlide);
-          }
-          if (direction === 'up') {
-            var nextSlide = slides[destination];
-            fpReset(nextSlide);
-          }
-        }, 500);
-
+        if ($(window).width() > 768) {
+          setTimeout(() => {
+            if (direction === 'down') {
+              var prevSlide = slides[destination - 2];
+              fpReset(prevSlide);
+            }
+            if (direction === 'up') {
+              var nextSlide = slides[destination];
+              fpReset(nextSlide);
+            }
+          }, 500);
+        }
         /*
         * Changing pagination text and email/Russia in footer
         */
@@ -69,7 +74,6 @@ $(document).ready(function() {
       },
 
       afterLoad: function(index, destination, direction) {
-
         $.fn.fullpage.setAllowScrolling(false);
         $.fn.fullpage.setKeyboardScrolling(false);
 
@@ -79,5 +83,3 @@ $(document).ready(function() {
     });
   }
 });
-
-

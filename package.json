@@ -27,7 +27,6 @@
     "browser-sync": "^2.10.0",
     "css-mqpacker": "^5.0.1",
     "del": "^2.2.0",
-    "do-slide": "^1.1.4",
     "eslint": "^4.3.0",
     "eslint-config-airbnb": "^15.1.0",
     "eslint-formatter-pretty": "^1.1.0",
@@ -72,7 +71,6 @@
     "run-sequence": "^1.1.5",
     "scrollreveal": "^3.4.0",
     "slick-carousel": "^1.8.1",
-    "split-html-to-chars": "^1.0.5",
     "svg4everybody": "^2.1.9",
     "through2": "^2.0.1",
     "underscore": "^1.8.3",
@@ -81,7 +79,6 @@
     "webpack-bundle-analyzer": "^1.5.3"
   },
   "dependencies": {
-    "charming": "^2.2.4",
     "gsap": "^1.20.3",
     "iscroll": "^5.2.0",
     "isotope-layout": "^3.0.6",

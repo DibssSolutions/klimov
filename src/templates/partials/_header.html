@@ -31,15 +31,15 @@
                     </a>
                 </div>
                 <div class="col-31">
-                    <div class="nav-item nav-item--wider d-sm-none">
-                        <a href="{{menu_top.nav_items[0][0].href}}" class="nav-link is-active">{{menu_top.nav_items[0][0].title}}</a>
+                    <div class="nav-item nav-item--wider d-sm-none {% if activePage === 'Discover' %}is-active{% endif %} ">
+                        <a href="{{menu_top.nav_items[0][0].href}}" class="nav-link">{{menu_top.nav_items[0][0].title}}</a>
                     </div>
-                    <div class="nav-item">
-                        <a href="{{menu_top.nav_items[0][1].href}}" class="nav-link d-sm-none">{{menu_top.nav_items[0][1].title}}</a>
+                    <div class="nav-item d-sm-none {% if activePage === 'Agency' %}is-active{% endif %}">
+                        <a href="{{menu_top.nav_items[0][1].href}}" class="nav-link">{{menu_top.nav_items[0][1].title}}</a>
                     </div>
                 </div>
                 <div class="col-45">
-                    <div class="nav-item d-sm-none">
+                    <div class="nav-item d-sm-none {% if activePage === 'Inspirations' %}is-active{% endif %}">
                         <a href="{{menu_top.nav_items[1].href}}" class="nav-link">{{menu_top.nav_items[1].title}}</a>
                     </div>
                 </div>
@@ -65,23 +65,32 @@
                 <div class="row {{row[0].rowClassName}}">
                     {% for col in row %} {% if not col.rowClassName %}
                     <div class="{{col.className}}">
-                        {% if col.content %} {% for content in col.content %}
+                        {% if col.content %} 
+                        {% for content in col.content %}
+                        {% if "menu__item" in content.className %}
+                            <div class="{{content.className}} {% if activePage === content.link_text %}is-active{% endif %}">
+                        {% else %}
                         <div class="{{content.className}}">
+                        {% endif %}
                             {% if content.className === "logo" %}
                                 <img src="img/{{content.img}}" alt="{{content.img}}">
                             {% endif %} 
+
                             {% if "menu__item" in content.className %}
                                 <a href="{{content.link_link}}">{{content.link_text}}</a>
                             {% endif %} 
+
                             {% if "lang " in content.className %}
                                 <a href="#" class="is-active lang__item">{{content.lang1}}</a> /
                                 <a href="#" class="lang__item">{{content.lang2}}</a>
                             {% endif %}
+
                             {% if "social__item" in content.className %}
                                 <a href="{{content.link_link}}">{{content.link_text}}
                                     <span class="social__arrow">↗</span>
                                 </a>
                             {% endif %}
+
                             {% if content.label %}
                                 <div class="label">{{content.label | safe}}</div>
                             {% endif %}

@@ -9,7 +9,7 @@
       [
         {
           "title": "Discover",
-          "href": "project.html"
+          "href": "page.html"
         },
         {
           "title": "Agency",
@@ -41,9 +41,9 @@
           "className": "col-31 col-md-55",
           "content": [
             {
-              "className": "menu__item is-active js-menu-hoverable",
+              "className": "menu__item js-menu-hoverable",
               "link_text": "Discover",
-              "link_link": "project.html"
+              "link_link": "page.html"
             },
             {
               "className": "menu__item js-menu-hoverable",
