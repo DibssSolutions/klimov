@@ -91,7 +91,7 @@
             "className": "col-31 col-lg-55",
             "content": [
               {
-                "className": "max-width-290",
+                "className": "max-width-290 d-sm-none",
                 "text":
                   "They are not afraid to defy time. Anticipating trends, they do not forget about the classical canons."
               }
@@ -187,7 +187,7 @@
             "className": "col-45 flex-column flex-end",
             "content": [
               {
-                "className": "margin-y-10vh",
+                "className": "margin-y-10vh d-sm-none",
                 "text":
                   "Suzanne Furniture is a small Australian based design and manufacturing firm, born in 2017 from designer Suzanne Angel exploration into the intersection between nature, craft, and the spirit of adventure."
               },
@@ -239,7 +239,7 @@
             "className": "col-46 flex-column flex-between padding-y-5vh",
             "content": [
               {
-                "className": "center-text-p47",
+                "className": "center-text-p47 d-sm-none",
                 "text":
                   "Suzanne Furniture is a small Australian based design and manufacturing firm."
               },
@@ -287,7 +287,7 @@
             "className": "col-31 col-lg-55",
             "content": [
               {
-                "className": "about_results js-text-block",
+                "className": "about_results js-text-block d-sm-none",
                 "text":
                   "We bring the results while helping you achieve cost and time savings without taking on risk or management overhead.",
                 "link": {

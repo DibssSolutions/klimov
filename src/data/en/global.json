@@ -99,7 +99,7 @@
       ],
       [
         {
-          "rowClassName": "menu__contacts  margin-top-8vh"
+          "rowClassName": "menu__contacts  margin-top-6vh"
         },
         {
           "className": "col-24 d-md-none",

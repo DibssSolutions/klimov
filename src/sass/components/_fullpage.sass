@@ -66,7 +66,7 @@
             .contacts-list,
             .title,
             .fp-text,
-            .about_results
+            .about_results,
                 display: none
         .section
             // .image
@@ -102,11 +102,16 @@
     text-align: left
     min-height: 630px
     +css-lock(14,20,767,1400)
-    +css-lock(90, 30, 1425, 768, 'padding-top')
-    +css-lock(90, 30, 1425, 768, 'padding-bottom')
+    padding-top: 90px
+    padding-bottom: 90px
+    // +css-lock(90, 30, 1425, 768, 'padding-top')
+    // +css-lock(90, 30, 1425, 768, 'padding-bottom')
+    // +css-lock(30, 90, 768, 1425, 'padding-top')
+    // +css-lock(30, 90, 768, 1425, 'padding-bottom')
     display: inline-block
     vertical-align: middle
-    
+    +sm 
+        padding: 0
     img
         display: block
         +css-lock(250,700,767,1400,width)

@@ -6,8 +6,6 @@
     top: 0
     width: 100%
     height: 100%
-    padding-top: 60px
-    padding-bottom: 30px
     background-color: $text-dark
     overflow: hidden
     +vertical
@@ -24,6 +22,7 @@
         margin-bottom: 2vh
         color: $main-menu-color
         +css-lock(35,50,767,1400)
+        // +css-lock-height(24,50,550,700)
         transition: color 0.7s 0.2s
         +sm 
             font-size: 35px
@@ -36,14 +35,7 @@
         font-size: 17px
         line-height: 23px
         color: $main-menu-color-muted
-    // &__main-bottom
-    //     margin-bottom: 110px
-    // &__bottom
-    //     position: absolute
-    //     max-width: 1430px
-    //     width: calc(100% - 36px)
-    //     margin: 0 auto
-    //     bottom: 60px
+        +css-lock(14,20,767,1400)
     .label
         color: $main-menu-color-muted
         +sm 
@@ -56,6 +48,8 @@
     .phone
         color: $main-menu-color
         transition: color 0.7s 0.2s
+        // +css-lock-height(14,20,550,700)
+        +css-lock(14,20,767,1400)
 
 .hovered.menu
     .lang
@@ -84,6 +78,7 @@
     .phone
         color: #fff !important
         transition: color 0.7s 0.2s
+        
 
 
 // ===== MAIN MENU ROWS =====
@@ -96,13 +91,13 @@
     min-height: 700px
     vertical-align: middle
     display: inline-block
-    // +css-lock-height(14,20,550,700)
+    
     
 .margin-top-3vh
     margin-top: 3vh
 
-.margin-top-8vh
-    margin-top: 8vh
+.margin-top-6vh
+    margin-top: 6vh
 
 // ===== TOP / BOTTOM MENUS =====
 
@@ -237,6 +232,8 @@
 
 .jobs
     margin-bottom: 54px
+    +css-lock(14,20,767,1400)
+    color: $main-menu-color
 
 .social
     &__item
