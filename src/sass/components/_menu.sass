@@ -88,6 +88,10 @@
 
 // ===== MAIN MENU ROWS =====
 
+.header .menu 
+    .container-inner 
+        padding: 0 36px
+
 .menu .wrapper
     min-height: 700px
     vertical-align: middle
@@ -193,12 +197,12 @@
         position: absolute
         z-index: 3000
         bottom: 0
-        padding-bottom: 22px
+        padding-bottom: 30px
         left: 0
         right: 0
         font-size: 20px
         text-align: left
-        +css-lock(16,20,767,1400)
+        +css-lock(14,20,767,1400)
         .email
             text-decoration: underline
             color: $light-grey
@@ -212,7 +216,7 @@
         font-size: 20px
         color: $main-menu-color-muted
         transition: color 0.7s 0.2s
-        +css-lock(16,20,767,1400)
+        +css-lock(14,20,767,1400)
         &__item.is-active 
             color: $main-menu-color
             transition: color 0.7s 0.2s

@@ -31,7 +31,7 @@ $(document).ready(function() {
         $.fn.fullpage.setAllowScrolling(false);
         $.fn.fullpage.setKeyboardScrolling(false);
 
-        if ($(window).width() < 768) {
+        if ($(window).width() < 767) {
           fpAnimation($('.section:nth-child(2)'));
         }
       },
@@ -39,7 +39,7 @@ $(document).ready(function() {
       onLeave: function(origin, destination, direction) {
         var loadedSection = this;
 
-        if ($(window).width() > 768) {
+        if ($(window).width() > 767) {
           setTimeout(() => {
             if (direction === 'down') {
               var prevSlide = slides[destination - 2];
