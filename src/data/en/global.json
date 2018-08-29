@@ -17,7 +17,7 @@
         }
       ],
       {
-        "title": "Inspiration",
+        "title": "Inspirations",
         "href": "filter.html"
       }
     ]
@@ -109,7 +109,7 @@
           "className": "col-31 col-md-55",
           "content": [
             {
-              "className": "feature-list",
+              "className": "contacts-list",
               "block": "block",
               "label": "General Inquiries",
               "email": "hey@klimov.agency",
@@ -121,7 +121,7 @@
           "className": "col-45",
           "content": [
             {
-              "className": "feature-list",
+              "className": "contacts-list",
               "block": "block",
               "label": "Location",
               "adress": "10, Niznia Siromyatnicheska st. <br> Moscow, Russia"
@@ -145,7 +145,7 @@
           "className": "col-45",
           "content": [
             {
-              "className": "feature-list",
+              "className": "contacts-list",
               "label": "New Business",
               "phone": "+7 (985) 171-76-32",
               "email": "partner@klimov.agency"
