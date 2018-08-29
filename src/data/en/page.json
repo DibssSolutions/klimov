@@ -88,7 +88,7 @@
             "content": ""
           },
           {
-            "className": "col-31 col-lg-55",
+            "className": "col-31 col-lg-55 container-center",
             "content": [
               {
                 "className": "max-width-290 d-sm-none",
@@ -101,7 +101,7 @@
             "className": "col-45",
             "content": [
               {
-                "className": "image",
+                "className": "image image_420",
                 "image": "1.jpg",
                 "animation_direction": "from_left"
               }
@@ -187,7 +187,7 @@
             "className": "col-45 flex-column flex-end",
             "content": [
               {
-                "className": "margin-y-10vh d-sm-none",
+                "className": "margin-bottom-10vh max-width-336 d-sm-none",
                 "text":
                   "Suzanne Furniture is a small Australian based design and manufacturing firm, born in 2017 from designer Suzanne Angel exploration into the intersection between nature, craft, and the spirit of adventure."
               },

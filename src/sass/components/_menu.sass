@@ -201,6 +201,19 @@
         &--mob 
             padding-bottom: 64px
             padding-top: 10px
+    .adress
+        position: relative
+        &:after
+            content: '↗'
+            margin-left: 4px
+            visibility: hidden
+            opacity: 0
+            transition: 0.8s opacity, 0.8s visibility
+        &:hover 
+            &:after
+                visibility: visible
+                opacity: 1
+                transition: 0.8s opacity, 0.8s visibility
 
 .time 
     font-size: 17px
@@ -247,8 +260,8 @@
         top: 0
     .menu-circle
         display: inline-block
-        height: 6px
-        width: 6px
+        height: 4px
+        width: 4px
         border-radius: 50%
         background-color: #000
         position: relative
@@ -263,11 +276,11 @@
         font-size: 20px
     &.menu-is-open
         .menu-circle 
-            background-color: #fff
+            background-color: #adabb4
         .menu-circle:nth-child(1)
             transform: translateX(10px)
         .menu-circle:nth-child(2)
-            transform: scale(2)
+            transform: scale(2.5)
         .menu-circle:nth-child(3)
             transform: translateX(-10px)
         .text-close
@@ -283,11 +296,3 @@
 .text-open
     display: none
     color: $main-menu-color
-
-.menu-trigger:hover
-    .menu-circle:nth-child(1)
-        transform: translateX(10px)
-    .menu-circle:nth-child(2)
-        transform: scale(2)
-    .menu-circle:nth-child(3)
-        transform: translateX(-10px)

@@ -57,6 +57,15 @@
 .image 
     display: inline-block
     font-size: 0
+    img
+        display: block
+        +r(1280)
+            +css-lock(350, 570, 768, 1280, 'width')
+        +sm 
+            width: auto !important
+.image.image_420
+    img
+        width: calc(250px + (400 - 250)*((100vw - 767px)/(1280 - 767)))
 
 +sm 
     #fullpage 
@@ -108,13 +117,6 @@
     vertical-align: middle
     +sm 
         padding: 0
-    img
-        display: block
-        width: calc(250px + (400 - 250)*((100vw - 767px)/(1280 - 767)))
-        +sm 
-            width: auto !important
-        // +rh(700)
-        //     width: calc(75% + (100 - 75) * ((100vh - 600px) / (700 - 600)))
             
     
 .titleLarge
@@ -137,15 +139,28 @@
     display: block
     max-width: 200px
 
-.project_link .text-row:last-child,
-.adress .text-row:last-child
+.project_link .text-row:last-child
     position: relative
     &:after
         content: '→'
         position: absolute
         top: 50%
-        left: calc(100% + 4px)
+        left: calc(100% + 2px)
         transform: translateY(-50%)
+        visibility: hidden
+        opacity: 0
+        transition: 0.8s opacity, 0.8s visibility
+    &:hover 
+        &:after
+            visibility: visible
+            opacity: 1
+            transition: 0.8s opacity, 0.8s visibility
+
+.adress .text-row:last-child
+    position: relative
+    &:after
+        content: '↗'
+        margin-left: 4px
         visibility: hidden
         opacity: 0
         transition: 0.8s opacity, 0.8s visibility
@@ -189,16 +204,18 @@
 
 .margin-bottom-7vh 
     margin-bottom: 7vh
-    align-items: center
 
 .max-width-290
+    width: 100%
     max-width: 275px
+
+.max-width-336
+    max-width: 336px
 
 .margin-bottom-5vh
     margin-bottom: 5vh
 
 .margin-y-10vh
-    max-width: 336px
     margin: 10vh 0
     +md 
         margin: 0 0 5vh 0
@@ -212,6 +229,11 @@
 .center-text-p47
     max-width: 245px
     padding-bottom: 16px
+
+.container-center
+    align-items: center
+    flex-wrap: wrap
+    display: flex
 
 .padding-y-5vh
     padding-top: 5vh
@@ -247,7 +269,7 @@
 
 .feature-list
     // max-width: 180px
-    max-width: 250px
+    max-width: 270px
 .label
     color: $light-grey
     +css-lock(13,18,767,1400)

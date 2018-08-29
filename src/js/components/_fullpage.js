@@ -68,9 +68,9 @@ $(document).ready(function() {
           $('.js-footer-hidden').addClass('is-hidden');
           $('.js-footer-visible').removeClass('is-hidden');
           if (destination < 9) {
-            pg.text('0' + (destination - 1) + '/');
+            pg.text('0' + (destination) + '/');
           } else {
-            pg.text((destination - 1) + '/');
+            pg.text((destination) + '/');
           }
         }
       },
