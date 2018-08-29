@@ -1,10 +1,10 @@
-$('.menu .js-menu-hoverable').hover(
+$('.js-menu-hoverable').hover(
   function(e) {
-    $('.menu').addClass('hovered');
+    $('.menu__main').addClass('hovered');
     $(this).addClass('light');
   },
   function(e) {
-    $('.menu').removeClass('hovered');
+    $('.menu__main').removeClass('hovered');
     $(this).removeClass('light');
   }
 );

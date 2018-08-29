@@ -22,7 +22,8 @@
         margin-bottom: 1vh
         color: $main-menu-color
         +css-lock(35,50,767,1400)
-        transition: color 0.7s 0.2s
+        // transition: color 0.7s 0.2s
+        transition: color 1.3s 0.2s
         +sm 
             font-size: 35px
         &.is-active
@@ -49,33 +50,17 @@
         transition: color 0.7s 0.2s
         +css-lock(12,20,767,1400)
 
-.hovered.menu
-    .lang
-        &__item.is-active 
-            color: $main-menu-color-muted
-            transition: color 0.7s 0.2s
-    .menu__item,
-    .social__item, 
-    .time,
-    .email, 
-    .menu-bottom .email, 
-    .adress, 
-    .phone
+.hovered
+    .menu__item
         color: $main-menu-color-muted
-        transition: color 0.7s 0.2s
+        transition: color 1.3s 0.2s
 
 .light
     color: #fff !important
-    transition: color 0.7s 0.2s
-    .menu__item,
-    .social__item, 
-    .time,
-    .email, 
-    .menu-bottom .email, 
-    .adress, 
-    .phone
+    transition: color 1.3s 0.2s
+    .menu__item
         color: #fff !important
-        transition: color 0.7s 0.2s
+        transition: color 1.3s 0.2s
         
 
 
@@ -83,7 +68,7 @@
 
 .header .menu 
     .container-inner 
-        padding: 0 36px
+        padding: 0 15px
 
 .menu .wrapper
     min-height: 700px
@@ -152,7 +137,7 @@
             height: 1px
             background-color: $text-dark
             content: ''
-            transform: translateX(-100%)
+            transform: translateX(-105%)
             transition: transform 0.2s
         &:hover:after
             transform: translateX(0)

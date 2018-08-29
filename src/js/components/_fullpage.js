@@ -52,6 +52,7 @@ $(document).ready(function() {
             }
           }, 500);
         }
+
         /*
         * Changing pagination text and email/Russia in footer
         */
@@ -67,9 +68,9 @@ $(document).ready(function() {
           $('.js-footer-hidden').addClass('is-hidden');
           $('.js-footer-visible').removeClass('is-hidden');
           if (destination < 9) {
-            pg.text('0' + destination + '/');
+            pg.text('0' + (destination - 1) + '/');
           } else {
-            pg.text(destination + '/');
+            pg.text((destination - 1) + '/');
           }
         }
       },

@@ -109,7 +109,7 @@
           "className": "col-31 col-md-55",
           "content": [
             {
-              "className": "feature-list js-menu-hoverable",
+              "className": "feature-list",
               "block": "block",
               "label": "General Inquiries",
               "email": "hey@klimov.agency",
@@ -121,7 +121,7 @@
           "className": "col-45",
           "content": [
             {
-              "className": "feature-list js-menu-hoverable",
+              "className": "feature-list",
               "block": "block",
               "label": "Location",
               "adress": "10, Niznia Siromyatnicheska st. <br> Moscow, Russia ↗"
@@ -145,7 +145,7 @@
           "className": "col-45",
           "content": [
             {
-              "className": "feature-list js-menu-hoverable",
+              "className": "feature-list",
               "label": "New Business",
               "phone": "+7 (985) 171-76-32",
               "email": "partner@klimov.agency"
@@ -182,12 +182,12 @@
       "className": "col-31 col-md-76 social",
       "content": [
         {
-          "className": "social__item js-menu-hoverable",
+          "className": "social__item",
           "link_text": "Behance",
           "link_link": "#"
         },
         {
-          "className": "social__item js-menu-hoverable",
+          "className": "social__item",
           "link_text": "Facebook",
           "link_link": "#"
         }
@@ -197,7 +197,7 @@
       "className": "col-45 d-md-none flex-between",
       "content": [
         {
-          "className": "email d-sm-none js-menu-hoverable",
+          "className": "email d-sm-none",
           "email": "hero@klimov.agency"
         },
         {
