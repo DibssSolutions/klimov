@@ -11,7 +11,7 @@ $(document).ready(function() {
       onInitialized: sliderVisible,
       loop: true,
       dots: false,
-      smartSpeed: 2000,
+      smartSpeed: 1000,
       responsive: {
         0: {
           center: false,
@@ -24,8 +24,7 @@ $(document).ready(function() {
           center: false,
           items: 2,
           autoWidth: true,
-          margin: 16,
-          smartSpeed: 1000
+          margin: 16
         },
         1024: {
           center: true,

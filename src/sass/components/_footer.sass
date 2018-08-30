@@ -19,8 +19,8 @@
         color: $light-grey
         background-color: $text-dark
     +sm 
-        padding-bottom: 10px
-
+        // padding-bottom: 10px
+        padding-bottom: 0
 .is-hidden
     display: none
 
@@ -38,26 +38,32 @@
 .nav-email
     position: relative
     display: block
+    min-width: 200px
+    overflow: visible
+    transition: transform 0.4s 
     &:after
         position: absolute
-        bottom: 100%
-        left: 50%
-        // width: 100%
+        top: -100%
+        left: 0
         opacity: 0
-        font-size: 16px
+        visibility: hidden
+        font-size: 20px
         content: attr(data-email)
-        transform: translate(-50%, 100px)
-        transition: transform 0.2s, opacity 0.9s
-        background-color: rgba(0,0,0,.2)
-        border-radius: 5px 
-        padding: 10px 
+        transition: opacity 0.9s, visibility 0.9s
+        // transition: opacity 0.9s, visibility 0.9s
+        
+    +hover
+        transform: translateY(100%)
+        &:after
+            opacity: 1
+            visibility: visible
         
 
-.nav-email:hover:after
-        display: block
-        transform: translate(-50%, -10px)
-        opacity: 1
-        transition: transform 0.2s, opacity 0.9s
+// .nav-email:hover:after
+//         display: block
+//         transform: translate(-50%, -10px)
+//         opacity: 1
+//         transition: transform 0.2s, opacity 0.9s
 
 .up 
     font-size: 17px

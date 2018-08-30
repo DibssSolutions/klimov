@@ -1,5 +1,5 @@
 .about
-    +css-lock(14,20,767,1400)
+    +css-lock(14,20,768,1400)
     margin-top: 156px
     margin-bottom: 134px
     +sm
@@ -22,6 +22,8 @@
         line-height: 1.5
     &__list
         line-height: 28px
+        +sm 
+            color: $light-grey
     &__text
         line-height: 1.4
         &--wide 
@@ -39,9 +41,13 @@
             margin-top: 40px
         +sm 
             display: none
-    .project_link:hover 
-        .arrow 
-            
+    .adress
+        &:hover 
+            .arrow 
+                visibility: visible
+                opacity: 0
+                transition: 0.8s opacity, 0.8s visibility
+                
 
 
 

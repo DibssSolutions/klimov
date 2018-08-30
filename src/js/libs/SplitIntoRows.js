@@ -1,3 +1,4 @@
+/* eslint-disable */
 export default class SplitIntoRows {
   constructor(props) {
     this._container = props.container;

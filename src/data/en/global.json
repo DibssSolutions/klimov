@@ -218,7 +218,7 @@
         "className": "col-31",
         "content": [
           {
-            "className": "feature-list",
+            "className": "contacts-list",
             "label": "General Inquiries",
             "email": "hey@klimov.agency",
             "phone": "+7 (915) 308-77-08"
@@ -229,9 +229,9 @@
         "className": "col-45",
         "content": [
           {
-            "className": "feature-list",
+            "className": "contacts-list",
             "label": "Location",
-            "adress": "10, Niznia Siromyatnicheska st. <br> Moscow, Russia ↗"
+            "adress": "10, Niznia Siromyatnicheska st. <br> Moscow, Russia"
           }
         ]
       }
@@ -249,7 +249,7 @@
         "className": "col-45",
         "content": [
           {
-            "className": "feature-list",
+            "className": "contacts-list",
             "label": "New Business",
             "phone": "+7 (985) 171-76-32",
             "email": "partner@klimov.agency"

@@ -19,10 +19,9 @@
     &__item 
         font-size: 50px
         line-height: 1
-        margin-bottom: 1vh
+        margin-bottom: 3vh
         color: $main-menu-color
         +css-lock(35,50,767,1400)
-        // transition: color 0.7s 0.2s
         transition: color 1.3s 0.2s
         +sm 
             font-size: 35px
@@ -35,12 +34,12 @@
         font-size: 17px
         line-height: 23px
         color: $main-menu-color-muted
-        +css-lock(12,20,767,1400)
+        // +css-lock(12,20,767,1400)
     .label
         color: $main-menu-color-muted
         +sm 
             font-size: 17px
-    .feature-list
+    .contacts-list
         +sm 
             margin-bottom: 30px
     .email, 
@@ -48,7 +47,9 @@
     .phone
         color: $main-menu-color
         transition: color 0.7s 0.2s
-        +css-lock(12,20,767,1400)
+        +css-lock(16,20,768,1400)
+        +sm 
+            font-size: 20px
 
 .hovered
     .menu__item
@@ -66,9 +67,9 @@
 
 // ===== MAIN MENU ROWS =====
 
-.header .menu 
-    .container-inner 
-        padding: 0 15px
+// .header .menu 
+//     .container-inner 
+//         padding: 0 36px
 
 .menu .wrapper
     min-height: 700px
@@ -115,6 +116,8 @@
         display: inline-block
         position: relative
         overflow: hidden
+        +sm 
+            line-height: 1
     &-item:hover .arrow
         visibility: visible
         opacity: 1
@@ -164,6 +167,8 @@
     .dark-theme &
         svg
             fill: $main-menu-color
+    // +md 
+    //     margin-left: -15px
     +sm 
         padding-top: $header-top-padding-sm
         svg
@@ -180,21 +185,25 @@
         right: 0
         font-size: 20px
         text-align: left
-        +css-lock(12,20,767,1400)
+        +css-lock(16,20,768,1400)
         .email
             text-decoration: underline
             color: $light-grey
             transition: color 0.7s 0.2s
         +sm 
             position: relative
-            padding-bottom: 10px
+            // padding-bottom: 10px
+            padding-bottom: 0
             padding-top: 105px
+            font-size: 20px
 
     .lang
         font-size: 20px
         color: $main-menu-color-muted
         transition: color 0.7s 0.2s
-        +css-lock(12,20,767,1400)
+        +css-lock(16,20,768,1400)
+        +sm 
+            font-size: 20px
         &__item.is-active 
             color: $main-menu-color
             transition: color 0.7s 0.2s
@@ -228,14 +237,22 @@
 
 .jobs
     margin-bottom: 54px
-    +css-lock(12,20,767,1400)
+    +css-lock(16,20,768,1400)
     color: $main-menu-color
+    +sm 
+        font-size: 20px
+    h5 
+        font-size: 1em
+        font-weight: 400 
+        color: $main-menu-color-muted
 
 .social
     &__item
         display: inline-block
         color: $light-grey
         transition: color 0.7s 0.2s
+        +sm 
+            line-height: 1
         &:hover .arrow
             visibility: visible
             opacity: 1
@@ -258,6 +275,14 @@
         margin-right: -$header-top-padding-sm 
         padding: $header-top-padding-sm 
         top: 0
+        padding-right: 0
+        &:after
+            position: absolute
+            content: ''
+            top: 0
+            bottom: 0
+            width: 15px
+            left: 100%
     .menu-circle
         display: inline-block
         height: 4px
@@ -269,14 +294,17 @@
         color: #fff
         transition: transform 0.2s ease-out
         .dark-theme &
-            background-color: $light-grey
+            // background-color: $light-grey
+            background-color: $white
         &:nth-child(2)
             margin: 0 6px
     &-text 
         font-size: 20px
+        
     &.menu-is-open
         .menu-circle 
-            background-color: #adabb4
+            background-color: $white
+            // background-color: #adabb4
         .menu-circle:nth-child(1)
             transform: translateX(10px)
         .menu-circle:nth-child(2)

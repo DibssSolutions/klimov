@@ -1,6 +1,5 @@
-/* eslint-disable */
+import { TimelineMax } from '../libs/gsap/esm';
 import SplitIntoRows from '../libs/SplitIntoRows';
-import { TimelineMax } from 'gsap';
 import 'letteringjs';
 
 function init() {
