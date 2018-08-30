@@ -38,6 +38,5 @@ sr.reveal('.filter__item', {
   distance: '10vh',
   easing: 'ease',
   viewFactor: -0.1,
-  reset: true,
   opacity: 0
 });

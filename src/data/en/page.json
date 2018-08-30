@@ -132,7 +132,7 @@
               {
                 "className": "feature-list js-text-block",
                 "label": "Project",
-                "list_text": "UI/UX, Branding, <br> Websitte"
+                "list_text": "UI/UX, Branding, <br> Website"
               }
             ]
           }
@@ -245,7 +245,7 @@
               },
               {
                 "className": "feature-list js-text-block",
-                "label": "Featured",
+                "label": "Project",
                 "list_text": "Architecture, UI/UX <br> Branding"
               }
             ]
