@@ -2,7 +2,7 @@ import owlCarousel from 'owl.carousel';
 import { HTMLBODY } from '../_constants';
 
 $(document).ready(function() {
-  var sliderTrigger = document.getElementById('slider');
+  var sliderTrigger = document.querySelector('.slider');
 
   if (sliderTrigger !== null) {
     var slider = $('.slider');

@@ -46,4 +46,7 @@ if (filter !== null) {
     $('.filter__filter').removeClass('is-active');
 
   });
+  $('.filter__filter').on('click', function(){
+    $(this).removeClass('is-active');
+  })
 }
