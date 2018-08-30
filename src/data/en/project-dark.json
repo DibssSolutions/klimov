@@ -36,7 +36,7 @@
         "project_content": [
           [
             {
-              "rowClassName": "images-big sr-up"
+              "rowClassName": "images-big"
             },
             {
               "className": "col",
@@ -49,7 +49,7 @@
           ],
           [
             {
-              "rowClassName": "images-middle sr-up"
+              "rowClassName": "images-middle"
             },
             {
               "className": "col",
@@ -70,7 +70,7 @@
           ],
           [
             {
-              "rowClassName": "images-big sr-up"
+              "rowClassName": "images-big"
             },
             {
               "className": "col",
@@ -83,7 +83,7 @@
           ],
           [
             {
-              "rowClassName": "images-small sr-up"
+              "rowClassName": "images-small"
             },
             {
               "className": "col",

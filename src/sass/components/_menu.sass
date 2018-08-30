@@ -16,19 +16,20 @@
         padding-bottom: 0
     &__container 
         height: 100%
-    &__item 
+    &__item
         font-size: 50px
         line-height: 1
         margin-bottom: 3vh
         color: $main-menu-color
-        +css-lock(35,50,767,1400)
+        +css-lock(35,50,768,1400)
         transition: color 1.3s 0.2s
         +sm 
-            font-size: 35px
+            a
+                font-size: 35px 
         &.is-active
             a
                 color: $orange
-                border-bottom: 2px solid $orange
+                border-bottom: 1px solid $orange
     &__motto
         max-width: 320px
         font-size: 17px
@@ -88,14 +89,12 @@
 .menu-top
     position: relative
     z-index: 10
-    // transition: background-color 0.s 
-    // transition-delay: all 1s
     +sm 
         .header.fixed &
             background-color: $text-dark
             transition: background-color 0.1s 0.5s
             padding-bottom: 16px
-            // transition-delay: all 1s
+            
 
 .menu-top-container
     align-items: center
@@ -121,6 +120,7 @@
     &-item:hover .arrow
         visibility: visible
         opacity: 1
+        +arrowTrans
 
 .menu-top
     .nav-item
@@ -180,23 +180,32 @@
         position: absolute
         z-index: 3000
         bottom: 0
-        padding-bottom: 30px
+        padding-bottom: 32px
         left: 0
         right: 0
         font-size: 20px
         text-align: left
         +css-lock(16,20,768,1400)
         .email
-            text-decoration: underline
+            // text-decoration: underline
             color: $light-grey
             transition: color 0.7s 0.2s
+            position: relative
+            &:after
+                position: absolute
+                top: 85%
+                left: 0
+                right: 0
+                width: 100%
+                height: 1px
+                background-color: $light-grey
+                content: ''
         +sm 
             position: relative
-            // padding-bottom: 10px
-            padding-bottom: 0
+            padding-bottom: 10px
             padding-top: 105px
             font-size: 20px
-
+            line-height: 1
     .lang
         font-size: 20px
         color: $main-menu-color-muted
@@ -217,12 +226,12 @@
             margin-left: 4px
             visibility: hidden
             opacity: 0
-            transition: 0.8s opacity, 0.8s visibility
+            +arrowTrans
         &:hover 
             &:after
                 visibility: visible
                 opacity: 1
-                transition: 0.8s opacity, 0.8s visibility
+                
 
 .time 
     font-size: 17px
@@ -267,22 +276,24 @@
 .menu-trigger
     position: absolute
     top: -8px
-    right: 24px
+    right: 30px
     cursor: pointer
     z-index: 10000
     padding: 20px
+    padding-right: 0
+    &:after
+        position: absolute
+        content: ''
+        top: 0
+        bottom: 0
+        width: 15px
+        left: 100%
     +sm 
         margin-right: -$header-top-padding-sm 
         padding: $header-top-padding-sm 
         top: 0
-        padding-right: 0
-        &:after
-            position: absolute
-            content: ''
-            top: 0
-            bottom: 0
-            width: 15px
-            left: 100%
+        
+        
     .menu-circle
         display: inline-block
         height: 4px

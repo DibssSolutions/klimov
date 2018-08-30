@@ -23,8 +23,14 @@ $(document).ready(function() {
         678: {
           center: false,
           items: 2,
-          autoWidth: true,
+          // autoWidth: true,
           margin: 16
+        },
+        840: {
+          // autoWidth: true,
+          center: true,
+          items: 3,
+          margin: 40
         },
         1024: {
           center: true,

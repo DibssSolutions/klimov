@@ -50,36 +50,26 @@
         width: 100%
         +r(1429)
             max-width: 100% !important
-    // &:before
-    //     position: absolute
-    //     top: 0
-    //     bottom: 0
-    //     right: calc(100% - 65px)
-    //     background-color: $text-dark
-    //     z-index: 100
-    //     content: ''
-    //     width: 20%
-    //     +sm 
-    //         display: none
-
 .slide
-    transition: transform 1.4s
+    transition: transform 0.5s
     font-size: 20px
     +sm 
-        padding: 0 8px 40px
+        padding: 0 8px 0
     +hover
-        transform: translateY(42px) 
-        +sm 
-            transform: translateY(0)
-        .slide__text
-            transform: translateY(-42px)
+        .slide__img
+            transform: translateY(42px) 
             +sm 
                 transform: translateY(0)
+        // .slide__text
+        //     transform: translateY(-42px)
+        //     +sm 
+        //         transform: translateY(0)
     &__img
         padding-bottom: 410px
+        position: relative
         +cover
         z-index: 3
-        transition: transform 0.8s
+        transition: transform 0.5s
         +lg 
             padding-bottom: 310px
         +sm
@@ -87,20 +77,19 @@
             width: 250px
     &__text
         display: block
-        position: relative
-        top: -410px
+        position: absolute
+        top: 0
         left: 0
-        z-index: -1
+        z-index: 2
         color: $light-grey
         text-align: left
-        transition: transform 1.4s
+        // transition: transform 0.7s
         &:hover .arrow
             visibility: visible
             opacity: 1
-        +lg 
-            top: -310px
         +sm 
-            top: 16px
+            top: calc(100% + 16px)
+            left: 8px
             z-index: 100
             
 

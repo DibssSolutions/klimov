@@ -63,7 +63,7 @@ $(document).ready(function() {
         } else if (destination === $('.section').length) {
           $('.js-footer-hidden').removeClass('is-hidden');
           $('.js-footer-visible').addClass('is-hidden');
-          pg.text('Up ↑');
+          pg.html('<button class="up" id="up">Up↑</button>');
         } else {
           $('.js-footer-hidden').addClass('is-hidden');
           $('.js-footer-visible').removeClass('is-hidden');
@@ -78,6 +78,13 @@ $(document).ready(function() {
       afterLoad: function(index, destination, direction) {
         $.fn.fullpage.setAllowScrolling(false);
         $.fn.fullpage.setKeyboardScrolling(false);
+
+        var up = document.getElementById('up');
+        if (up) {
+          up.addEventListener('click', (e) => {
+            $.fn.fullpage.moveTo(1);
+          })
+        }
 
         var loadedSection = this;
         fpAnimation(loadedSection);
