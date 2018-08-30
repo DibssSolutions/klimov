@@ -10,9 +10,11 @@
 .slider-title
     font-size: 20px
     color: $orange
-    text-decoration: underline
+    border-bottom: 1px solid 
     font-weight: 400
     margin-top: 140px
+    line-height: 0.7
+    display: inline-block
     +lg 
         margin-top: 100px
     +md
@@ -28,6 +30,8 @@
     +sm
         width: calc(100% + 15px)
         margin: 0
+    .owl-stage-outer
+        overflow: visible
     &-container
         padding-top: 140px
         +vertical
@@ -62,11 +66,16 @@
     font-size: 20px
     +sm 
         padding: 0 8px 40px
-    .active.center &
+    +hover
         transform: translateY(42px) 
         transition: transform 1.4s
         +sm 
             transform: translateY(0)
+        .slide__text
+            transform: translateY(-42px)
+            transition: transform 1.4s
+            +sm 
+                transform: translateY(0)
     &__img
         padding-bottom: 410px
         +cover
@@ -84,15 +93,11 @@
         left: 0
         z-index: -1
         color: $light-grey
+        text-align: left
         transition: transform 1.4s
         &:hover .arrow
             visibility: visible
             opacity: 1
-        .active.center &
-            transform: translateY(-42px)
-            transition: transform 1.4s
-            +sm 
-                transform: translateY(0)
         +lg 
             top: -310px
         +sm 
