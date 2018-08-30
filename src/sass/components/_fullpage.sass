@@ -137,12 +137,12 @@
         transform: translateY(-50%)
         visibility: hidden
         opacity: 0
-        transition: 0.8s opacity, 0.8s visibility
+        +arrowTrans
     &:hover 
         &:after
             visibility: visible
             opacity: 1
-            transition: 0.8s opacity, 0.8s visibility
+            
 
 .adress .text-row:last-child,
     position: relative
@@ -151,12 +151,12 @@
         margin-left: 4px
         visibility: hidden
         opacity: 0
-        transition: 0.8s opacity, 0.8s visibility
+        +arrowTrans
     &:hover 
         &:after
             visibility: visible
             opacity: 1
-            transition: 0.8s opacity, 0.8s visibility
+            
 
 .motto
     +sm 

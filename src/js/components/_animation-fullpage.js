@@ -1,10 +1,10 @@
 import { TimelineMax } from '../libs/gsap/esm';
 import SplitIntoRows from '../libs/SplitIntoRows';
-import 'letteringjs';
+// import 'letteringjs';
 
 function init() {
   textIntoRows();
-  textIntoChars();
+  // textIntoChars();
 }
 
 function tlTemplate(props) {
@@ -25,9 +25,10 @@ function tlTemplate(props) {
 }
 
 function fpAnimation(selector) {
-  var titleRows = $(selector).find('.js-title .text-row');
-  var titleRowsSecondary = $(selector).find('.js-title-secondary .text-row');
+  // var titleRows = $(selector).find('.js-title .text-row');
+  // var titleRowsSecondary = $(selector).find('.js-title-secondary .text-row');
   var textBlocks = $(selector).find('.js-text-block');
+  // var textBlocks = $(selector).find('.js-text-block');
   var images = $(selector).find('[data-image*="parent"]');
 
   var arr = [];
@@ -36,24 +37,24 @@ function fpAnimation(selector) {
   var tl = new TimelineMax();
   var tl2 = new TimelineMax();
 
-  tlTemplate({
-    parentSelector: titleRows,
-    childSelector: 'span',
-    duration: 0.8,
-    arr: arr,
-    tl: tl,
-    staggerDelay: 0.05
-  });
+  // tlTemplate({
+  //   parentSelector: titleRows,
+  //   childSelector: 'span',
+  //   duration: 0.8,
+  //   arr: arr,
+  //   tl: tl,
+  //   staggerDelay: 0.05
+  // });
 
-  tlTemplate({
-    parentSelector: titleRowsSecondary,
-    childSelector: 'span',
-    duration: 0.4,
-    arr: arr,
-    tl: tl,
-    mainDelay: -0.4,
-    minus: 0.5
-  });
+  // tlTemplate({
+  //   parentSelector: titleRowsSecondary,
+  //   childSelector: 'span',
+  //   duration: 0.4,
+  //   arr: arr,
+  //   tl: tl,
+  //   mainDelay: -0.4,
+  //   minus: 0.5
+  // });
 
   var tlImg = new TimelineMax().to(images, 0, {
     className: '+=is-active'
@@ -63,9 +64,9 @@ function fpAnimation(selector) {
   tlTemplate({
     parentSelector: textBlocks,
     childSelector: '.text-row',
-    arr: arr2,
+    arr: arr,
     delay: 6,
-    tl: tl2,
+    tl: tl,
     mainDelay: 0.5
   });
 
@@ -82,19 +83,19 @@ function allowScroll() {
 function fpReset(selector) {
   let tlReset = new TimelineMax();
 
-  var letters1 = $(selector).find('.js-title span');
-  var letters2 = $(selector).find('.js-title-secondary span');
+  // var letters1 = $(selector).find('.js-title span');
+  // var letters2 = $(selector).find('.js-title-secondary span');
   var text = $(selector).find('.text-row');
-  var rowWithLetters1 = $(selector).find('.js-title .text-row');
-  var rowWithLetters2 = $(selector).find('.js-title-secondary .text-row');
+  // var rowWithLetters1 = $(selector).find('.js-title .text-row');
+  // var rowWithLetters2 = $(selector).find('.js-title-secondary .text-row');
   var images = $(selector).find('[data-image*="parent"]');
 
   tlReset
-    .set(letters1, { opacity: 0, x: 30 })
-    .set(letters2, { opacity: 0, x: 30 })
+    // .set(letters1, { opacity: 0, x: 30 })
+    // .set(letters2, { opacity: 0, x: 30 })
     .set(text, { opacity: 0, y: 80 })
-    .set(rowWithLetters1, { opacity: 1, y: 0, x: 0 })
-    .set(rowWithLetters2, { opacity: 1, y: 0, x: 0 })
+    // .set(rowWithLetters1, { opacity: 1, y: 0, x: 0 })
+    // .set(rowWithLetters2, { opacity: 1, y: 0, x: 0 })
     .set(images, { className: 'image' });
 }
 
@@ -110,17 +111,17 @@ function textIntoRows() {
   split(textItems);
 }
 
-function textIntoChars() {
-  $('.js-title .text-row')
-    .lettering('words')
-    .children('span')
-    .lettering();
+// function textIntoChars() {
+//   $('.js-title .text-row')
+//     .lettering('words')
+//     .children('span')
+//     .lettering();
 
-  $('.js-title-secondary .text-row')
-    .lettering('words')
-    .children('span')
-    .lettering();
-}
+//   $('.js-title-secondary .text-row')
+//     .lettering('words')
+//     .children('span')
+//     .lettering();
+// }
 
 export { init, fpAnimation, fpReset };
 

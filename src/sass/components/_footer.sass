@@ -10,8 +10,11 @@
     left: 0
     right: 0
     margin-right: 8px
+    +css-lock(16,20,768,1400)
+    +sm 
+        font-size: 20px
     .container-inner 
-        padding: 0 28px 0 36px
+        // padding: 0 28px 0 36px
         +sm 
             padding: 0 7px 0 15px
     // margin-right: 7px
@@ -21,6 +24,7 @@
     +sm 
         // padding-bottom: 10px
         padding-bottom: 0
+
 .is-hidden
     display: none
 
@@ -30,17 +34,19 @@
 .pagination
     position: absolute
     top: 0
-    right: 42px
+    right: 30px
     z-index: 300
     font-size: 18px
     color: $light-grey
-    
+    #slider &
+        +md
+            top: -30px
+            z-index: 100
 .nav-email
     position: relative
     display: block
     min-width: 200px
     overflow: visible
-    transition: transform 0.4s 
     &:after
         position: absolute
         top: -100%
@@ -49,21 +55,12 @@
         visibility: hidden
         font-size: 20px
         content: attr(data-email)
-        transition: opacity 0.9s, visibility 0.9s
-        // transition: opacity 0.9s, visibility 0.9s
-        
+        // transition: opacity 0.4s 0.2s, visibility 0.4s 0.2s
     +hover
         transform: translateY(100%)
         &:after
             opacity: 1
             visibility: visible
-        
-
-// .nav-email:hover:after
-//         display: block
-//         transform: translate(-50%, -10px)
-//         opacity: 1
-//         transition: transform 0.2s, opacity 0.9s
 
 .up 
     font-size: 17px
