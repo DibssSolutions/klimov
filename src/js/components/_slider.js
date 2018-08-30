@@ -8,7 +8,7 @@ $(document).ready(function() {
 
     slider.owlCarousel({
       onInitialized: sliderVisible,
-      loop: true,
+      // loop: true,
       dots: false,
       smartSpeed: 2000,
       // autoWidth: true,
