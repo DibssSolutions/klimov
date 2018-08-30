@@ -1,103 +1,127 @@
 {% for item in slider %}
-<div class="section" data-slide={{loop.index}}>
-    <div class="wrapper">
-        <div class="container-inner">
-            {% for row in item.rows %}
-            <div class="row {{row[0].rowClassName}}">
-                {% for col in row %} {% if not col.rowClassName %}
-                <div class="{{col.className}}">
-                    {% if col.content %} {% for content in col.content %} {% if content.className %} {% if "image" in content.className %}
-                    <div class="{{content.className}}" data-image="parent">
-                        {% else %}
-                        <div class="{{content.className}}">
-                            {% endif %} 
-                            {% if content.project_link_text %}
-                                {% if content.project_link_text === 'All projects' %}
-                                <h2>
-                                    <a class="project_link js-text js-title-secondary" href="{{content.project_link_link}}">{{content.project_link_text | safe}}</a>
-                                </h2>
-                                {% else %}                                    
-                                <h2>
-                                    <a class="project_link js-text js-title" href="{{content.project_link_link}}">{{content.project_link_text | safe}}</a>
-                                </h2>
+    <div class="section" data-slide={{loop.index}}>
+        <div class="wrapper">
+            <div class="container-inner">
+                {% for row in item.rows %}
+                    <div class="row {{row[0].rowClassName}}">
+                        {% for col in row %}
+                            {% if not col.rowClassName %}
+                                <div class="{{col.className}}">
+                                    {% if col.content %}
+                                        {% for content in col.content %}
+                                            {% if content.className %}
+                                                {% if "image" in content.className %}
+                                                    <div class="{{content.className}}" data-image="parent">
+                                                    {% else %}
+                                                        <div class="{{content.className}}">
+                                                        {% endif %}
+                                                        {% if content.project_link_text %}
+                                                            {% if content.project_link_text === 'All projects' %}
+                                                                <h2>
+                                                                    <a class="project_link js-text" href="{{content.project_link_link}}">{{content.project_link_text | safe}}</a>
+                                                                </h2>
+                                                            {% else %}
+                                                                <h2>
+                                                                    <a class="project_link js-text" href="{{content.project_link_link}}">{{content.project_link_text | safe}}</a>
+                                                                </h2>
+                                                            {% endif %}
+                                                        {% endif %}
+                                                        {% if content.titleLarge %}
+                                                            <h2 class="titleLarge js-text js-text-block">{{content.titleLarge | safe}}</h2>
+                                                        {% endif %}
+                                                        {% if content.title %}
+                                                            <h5 class="title js-text js-text-block">{{content.title | safe}}</h5>
+                                                        {% endif %}
+                                                        {% if content.image %}
+                                                            {% if content.image %}
+                                                                <div data-image="child" data-animation-direction="{{content.animation_direction}}">
+                                                                    <img src="img/{{content.image}}" alt="{{content.image}}">
+                                                                </div>
+                                                            {% endif %}
+                                                        {% endif %}
+                                                        {% if content.label %}
+                                                            <div class="label text-row">{{content.label | safe}}</div>
+                                                        {% endif %}
+                                                        {% if content.motto %}
+                                                            <p class="js-text js-text-block">{{content.motto | safe}}</p>
+                                                        {% endif %}
+                                                        {% if content.list_text %}
+                                                            <div class="js-text">{{content.list_text | safe}}</div>
+                                                        {% endif %}
+                                                        {% if content.text %}
+                                                            <p class="js-text js-text-block">{{content.text | safe}}</p>
+                                                        {% endif %}
+                                                        {% if content.adress %}
+                                                            <div class="adress js-text">{{content.adress | safe}}</div>
+                                                        {% endif %}
+                                                        {% if content.email %}
+                                                            <div class="email js-text">
+                                                                <a href="{{content.email | safe}}">{{content.email | safe}}</a>
+                                                            </div>
+                                                        {% endif %}
+                                                        {% if content.phone %}
+                                                            <div class="phone js-text">{{content.phone | safe}}</div>
+                                                        {% endif %}
+                                                        {% if content.link %}
+                                                            <a class="link js-text" href="{{content.link.link}}">{{content.link.text | safe}}</a>
+                                                        {% endif %}
+                                                    </div>
+                                                {% else %}
+                                                    {% if content.project_link_text %}
+                                                        {% if content.project_link_text === 'All projects' %}
+                                                            <h2>
+                                                                <a class="project_link js-text-block js-text" href="{{content.project_link_link}}">{{content.project_link_text | safe}}</a>
+                                                            </h2>
+                                                        {% else %}
+                                                            <h2>
+                                                                <a class="project_link js-text-block js-text" href="{{content.project_link_link}}">{{content.project_link_text | safe}}</a>
+                                                            </h2>
+                                                        {% endif %}
+                                                    {% endif %}
+                                                    {% if content.titleLarge %}
+                                                        <h2 class="titleLarge js-text-block js-text">{{content.titleLarge | safe}}</h2>
+                                                    {% endif %}
+                                                    {% if content.title %}
+                                                        <h5 class="title js-text-block js-text">{{content.title | safe}}</h5>
+                                                    {% endif %}
+                                                    {% if content.image %}
+                                                        <div data-image="child" data-animation-direction="{{content.animation_direction}}">
+                                                            <img src="img/{{content.image}}" alt="{{content.image}}">
+                                                        </div>
+                                                    {% endif %}
+                                                    {% if content.label %}
+                                                        <div class="label text-row">{{content.label | safe}}</div>
+                                                    {% endif %}
+                                                    {% if content.motto %}
+                                                        <p class="js-text js-text-block">{{content.motto | safe}}</p>
+                                                    {% endif %}
+                                                    {% if content.text %}
+                                                        <p class="js-text js-text-block">{{content.text | safe}}</p>
+                                                    {% endif %}
+                                                    {% if content.list_text %}
+                                                        <div class="js-text">{{content.list_text | safe}}</div>
+                                                    {% endif %}
+                                                    {% if content.adress %}
+                                                        <div class="adress js-text">{{content.adress | safe}}</div>
+                                                    {% endif %}
+                                                    {% if content.email %}
+                                                        <div class="email js-text">{{content.email | safe}}</div>
+                                                    {% endif %}
+                                                    {% if content.phone %}
+                                                        <div class="phone js-text">{{content.phone | safe}}</div>
+                                                    {% endif %}
+                                                    {% if content.link %}
+                                                        <a class="link js-text" href="{{content.link.link}}">{{content.link.text | safe}}</a>
+                                                    {% endif %}
+                                                {% endif %}
+                                            {% endfor %}
+                                        {% endif %}
+                                    </div>
                                 {% endif %}
-                            {% endif %}
-                             {% if content.titleLarge %}
-                            <h2 class="titleLarge js-text js-title">{{content.titleLarge | safe}}</h2>
-                            {% endif %}
-                            {% if content.title %}
-                            <h5 class="title js-text js-title">{{content.title | safe}}</h5>
-                            {% endif %}
-                             {% if content.image %} 
-                            {% if content.image %}
-                                <div data-image="child" data-animation-direction="{{content.animation_direction}}">
-                                    <img src="img/{{content.image}}" alt="{{content.image}}">
-                                </div>
-                            {% endif %} 
-                            {% endif %} {% if content.label %}
-                            <div class="label text-row">{{content.label | safe}}</div>
-                            {% endif %} {% if content.motto %}
-                            <p class="js-text js-text-block">{{content.motto | safe}}</p>
-                            {% endif %} {% if content.list_text %}
-                            <div class="js-text">{{content.list_text | safe}}</div>
-                            {% endif %} {% if content.text %}
-                            <p class="js-text js-text-block">{{content.text | safe}}</p>
-                            {% endif %} {% if content.adress %}
-                            <div class="adress js-text">{{content.adress | safe}}</div>
-                            {% endif %} {% if content.email %}
-                            <div class="email js-text">
-                                <a href="{{content.email | safe}}">{{content.email | safe}}</a>
-                            </div>
-                            {% endif %} {% if content.phone %}
-                            <div class="phone js-text">{{content.phone | safe}}</div>
-                            {% endif %} {% if content.link %}
-                            <a class="link js-text" href="{{content.link.link}}">{{content.link.text | safe}}</a>
-                            {% endif %}
+                            {% endfor %}
                         </div>
-                        {% else %}
-                        {% if content.project_link_text %}
-                            {% if content.project_link_text === 'All projects' %}
-                            <h2>
-                                <a class="project_link js-text js-title-secondary" href="{{content.project_link_link}}">{{content.project_link_text | safe}}</a>
-                            </h2>
-                            {% else %}                                    
-                            <h2>
-                                <a class="project_link js-text js-title" href="{{content.project_link_link}}">{{content.project_link_text | safe}}</a>
-                            </h2>
-                            {% endif %}
-                        {% endif %}
-                        {% if content.titleLarge %}
-                        <h2 class="titleLarge js-text js-title">{{content.titleLarge | safe}}</h2>
-                        {% endif %} {% if content.title %}
-                        <h5 class="title js-text js-title">{{content.title | safe}}</h5>
-                        {% endif %} 
-                        {% if content.image %}
-                            <div data-image="child" data-animation-direction="{{content.animation_direction}}">
-                                <img src="img/{{content.image}}" alt="{{content.image}}">
-                            </div>
-                        {% endif %}
-                         {% if content.label %}
-                        <div class="label text-row">{{content.label | safe}}</div>
-                        {% endif %} {% if content.motto %}
-                        <p class="js-text js-text-block">{{content.motto | safe}}</p>
-                        {% endif %} {% if content.text %}
-                        <p class="js-text js-text-block">{{content.text | safe}}</p>
-                        {% endif %} {% if content.list_text %}
-                        <div class="js-text">{{content.list_text | safe}}</div>
-                        {% endif %} {% if content.adress %}
-                        <div class="adress js-text">{{content.adress | safe}}</div>
-                        {% endif %} {% if content.email %}
-                        <div class="email js-text">{{content.email | safe}}</div>
-                        {% endif %} {% if content.phone %}
-                        <div class="phone js-text">{{content.phone | safe}}</div>
-                        {% endif %} {% if content.link %}
-                        <a class="link js-text" href="{{content.link.link}}">{{content.link.text | safe}}</a>
-                        {% endif %} {% endif %} {% endfor %} {% endif %}
-                    </div>
-                    {% endif %} {% endfor %}
+                    {% endfor %}
                 </div>
-                {% endfor %}
             </div>
         </div>
-    </div>
     {% endfor %}
