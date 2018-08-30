@@ -1,4 +1,5 @@
 import owlCarousel from 'owl.carousel';
+import { HTMLBODY } from '../_constants';
 
 $(document).ready(function() {
   var sliderTrigger = document.getElementById('slider');
@@ -39,13 +40,22 @@ $(document).ready(function() {
     function sliderVisible() {
       $('.slider').css({ opacity: '1', visibility: 'visible' });
     }
-
-    slider.on('mousewheel', '.owl-stage', function(e) {
+    let timeout;
+    let timeoutFlug = true;
+    const sliderTrigger = (e) => {
+      if (!timeoutFlug) return;
       if (e.originalEvent.deltaY > 0) {
         slider.trigger('next.owl');
       } else {
         slider.trigger('prev.owl');
       }
+    };
+    HTMLBODY.on('mousewheel', function(e) {
+      if (!sliderTrigger) return;
+      sliderTrigger(e);
+      timeoutFlug = false;
+      clearTimeout(timeout);
+      timeout = setTimeout(() => { timeoutFlug = true; }, 100);
       e.preventDefault();
     });
   }
