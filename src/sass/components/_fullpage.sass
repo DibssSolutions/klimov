@@ -13,14 +13,6 @@
         margin-top: $main-margin-top-sm
         height: auto !important
         position: relative !important
-    // .fp-scrollable
-    //     +vertical
-    //     margin-top: -90px
-    // .fp-scroller
-    //     display: inline-block
-    //     vertical-align: middle
-    //     font-size: 20px
-    //     width: 100%
 
 .section
     position: absolute !important
@@ -32,19 +24,10 @@
     visibility: hidden
     transition: opacity 0.5s ease-out, visibility 0.5s ease-out
     overflow: auto
-    // &:first-child
-    //     padding-top: 30px
-    //     .fp-scrollable
-    //         margin-top: -30px
-    // +sm 
-    //     padding: 0
     &.active 
         opacity: 1
         visibility: visible
     .fp-tableCell
-        // +css-lock(30, 80, 768, 1425, 'padding-top')
-        // padding-top: 90px
-        // padding-bottom: 90px
         +sm 
             display: block
             height: auto !important
@@ -71,6 +54,8 @@
     #fullpage 
         .section
             margin-bottom: 70px
+            &:last-child
+                margin-bottom: 20px
             .feature-list,
             .contacts-list,
             .title,
@@ -78,8 +63,6 @@
             .about_results,
                 display: none
         .section
-            // .image
-            //     display: block
             .project_link
                 display: block
                 margin-bottom: 18px
@@ -93,7 +76,7 @@
             display: block
     .all-projects-sm
         margin-top: 24px
-        margin-bottom: 30px
+        margin-bottom: 0
 
 
 .letter 
@@ -110,30 +93,33 @@
     position: relative
     text-align: left
     min-height: 550px
-    +css-lock(12,20,767,1400)
+    +css-lock(16,20,768,1400)
     padding-top: 90px
     padding-bottom: 90px
     display: inline-block
     vertical-align: middle
     +sm 
         padding: 0
+        font-size: 20px
             
     
 .titleLarge
-    +css-lock(14,20,767,1400)
+    +css-lock(16,20,768,1400)
     // font-size: 30px
     line-height: 1.5
     max-width: 220px
     font-weight: 400
     +sm 
-        // font-size: 20px
+        font-size: 20px
         margin-bottom: 40px
 
 .project_link
-    +css-lock(18,20,767,1400)
+    +css-lock(18,20,768,1400)
     // font-size: 20px
     line-height: 1.5
     font-weight: 400
+    +sm 
+        font-size: 20px
 
 .project_link
     display: block
@@ -157,8 +143,6 @@
             transition: 0.8s opacity, 0.8s visibility
 
 .adress .text-row:last-child,
-.adress
-// .contacts-list .text-row:last-child
     position: relative
     &:after
         content: '↗'
@@ -269,15 +253,15 @@
 .contacts-list
     line-height: 1.5
 
-
-
 .feature-list
     max-width: 180px
     +md
         max-width: 140px
 .label
     color: $light-grey
-    +css-lock(13,18,767,1400)
+    +css-lock(13,18,768,1400)
+    +sm 
+        font-size: 18px
 
 .contacts-list .label
     font-size: 17px

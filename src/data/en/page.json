@@ -264,7 +264,7 @@
             "className": "col-100 d-sm-block all-projects-sm",
             "content": [
               {
-                "project_link_text": "All projects",
+                "project_link_text": "All Projects",
                 "project_link_link": "slider.html"
               }
             ]
