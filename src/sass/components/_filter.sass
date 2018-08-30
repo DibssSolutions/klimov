@@ -66,11 +66,16 @@
             
     &__image
         +cover
-        padding-bottom: 247px
+        height: 247px
         position: relative
         z-index: 3
         transition: 2.5s transform
         background-color: #eee 
+        +md
+            height: 190px
+        img
+            height: 100%
+            display: block
         // &:hover
         //     transform: translateY(42px)
         //     transition: 0.7s transform

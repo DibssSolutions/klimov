@@ -12,17 +12,20 @@ $(document).ready(function() {
       loop: true,
       dots: false,
       smartSpeed: 2000,
-      // autoWidth: true,
       responsive: {
         0: {
-          center: true,
+          center: false,
           items: 1,
-          margin: 16
+          autoWidth: true,
+          margin: 16,
+          smartSpeed: 500
         },
         678: {
-          center: true,
+          center: false,
           items: 2,
-          margin: 50
+          autoWidth: true,
+          margin: 16,
+          smartSpeed: 1000
         },
         1024: {
           center: true,

@@ -28,7 +28,7 @@
     visibility: hidden
     transition: opacity 2s, visibility 2s
     +sm
-        width: calc(100% + 15px)
+        width: 100%
         margin: 0
     .owl-stage-outer
         overflow: visible
@@ -47,6 +47,7 @@
         vertical-align: middle
         position: relative
         max-width: 1430px
+        width: 100%
         +r(1429)
             max-width: 100% !important
     // &:before
@@ -68,12 +69,10 @@
         padding: 0 8px 40px
     +hover
         transform: translateY(42px) 
-        transition: transform 1.4s
         +sm 
             transform: translateY(0)
         .slide__text
             transform: translateY(-42px)
-            transition: transform 1.4s
             +sm 
                 transform: translateY(0)
     &__img
