@@ -8,7 +8,7 @@
           "rowClassName": "margin-bottom-200 margin-bottom-lg-100 m-sm-10 sr-up"
         },
         {
-          "className": "col-24 col-lg-55",
+          "className": "col-24",
           "content": [
             {
               "className": "about__text--wide about__main-title",
@@ -17,7 +17,7 @@
           ]
         },
         {
-          "className": "col-31 d-lg-none",
+          "className": "col-31",
           "content": ""
         },
         {
@@ -36,7 +36,7 @@
           "rowClassName": "margin-bottom-94 d-sm-none sr-up"
         },
         {
-          "className": "col-24 d-lg-none",
+          "className": "col-24",
           "content": ""
         },
         {

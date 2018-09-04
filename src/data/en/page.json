@@ -1,363 +1,198 @@
 {
-  "slider": [
-    {
-      "rows": [
-        [
+  "main": [
+    [
+      {
+        "rowClassName": "m"
+      },
+      {
+        "className": "col-24",
+        "content": ""
+      },
+      {
+        "className": "col-76",
+        "content": [
           {
-            "rowClassName": "margin-top-6vh margin-bottom-10vh"
-          },
-          {
-            "className": "col-24",
-            "content": ""
-          },
-          {
-            "className": "col-31",
-            "content": [
-              {
-                "titleLarge": "Creative Digital <br> Agency"
-              }
-            ]
-          },
-          {
-            "className": "col-45 ",
-            "content": ""
-          }
-        ],
-        [
-          {
-            "rowClassName": "m0"
-          },
-          {
-            "className": "col-24",
-            "content": ""
-          },
-          {
-            "className": "col-31",
-            "content": ""
-          },
-          {
-            "className": "col-45 ",
-            "content": [
-              {
-                "className": "start-right motto js-text-block",
-                "motto":
-                  "We design world-class digital experiences for forward thinking startups, companies and ourselves."
-              }
-            ]
+            "titleLarge": "We design world-class digital experiences for forward thinking startups, companies and ourselves."
           }
         ]
-      ]
-    },
-    {
-      "title": "project_1",
-      "className": "p-100",
-      "rows": [
-        [
+      }
+    ],
+    [
+      {
+        "rowClassName": "m"
+      },
+      {
+        "className": "col-24",
+        "content": ""
+      },
+      {
+        "className": "col-31",
+        "content": ""
+      },
+      {
+        "className": "col-45 ",
+        "content": [
           {
-            "rowClassName": "margin-bottom-3vh"
-          },
-          {
-            "className": "col-24 main-title",
-            "content": [
-              {
-                "project_link_text": "Studio Elforma. <br> Architectes ",
-                "project_link_link": "#"
-              }
-            ]
-          },
-          {
-            "className": "col-31",
-            "content": ""
-          },
-          {
-            "className": "col-45 d-sm-none",
-            "content": [
-              {
-                "project_link_text": "All projects",
-                "project_link_link": "slider.html"
-              }
-            ]
-          }
-        ],
-        [
-          {
-            "rowClassName": "margin-bottom-5vh"
-          },
-          {
-            "className": "col-24 d-lg-none",
-            "content": ""
-          },
-          {
-            "className": "col-31 col-lg-55 container-center",
-            "content": [
-              {
-                "className": "max-width-290 d-sm-none",
-                "text":
-                  "They are not afraid to defy time. Anticipating trends, they do not forget about the classical canons."
-              }
-            ]
-          },
-          {
-            "className": "col-45",
-            "content": [
-              {
-                "className": "image image_420",
-                "image": "1.jpg",
-                "animation_direction": "from_left"
-              }
-            ]
-          }
-        ],
-        [
-          {
-            "rowClassName": "s0"
-          },
-          {
-            "className": "col-24 d-lg-none",
-            "content": ""
-          },
-          {
-            "className": "col-31 col-lg-55",
-            "content": [
-              {
-                "className": "feature-list js-text-block",
-                "label": "Featured",
-                "list_text": "Behance Graphic <br> Design"
-              }
-            ]
-          },
-          {
-            "className": "col-45 ",
-            "content": [
-              {
-                "className": "feature-list js-text-block",
-                "label": "Project",
-                "list_text": "UI/UX, Branding, <br> Website"
-              }
-            ]
+            "className": "",
+            "text": "We are a Creative Digital Agency <br> for the Digital Era."
           }
         ]
-      ]
-    },
-    {
-      "title": "project_2",
-      "rows": [
-        [
+      }
+    ],
+
+    [
+      {
+        "rowClassName": "m0"
+      },
+      {
+        "className": "col-56",
+        "content": [
           {
-            "rowClassName": "margin-bottom-5vh"
+            "className": "image",
+            "image": "2.jpg",
+            "animation_direction": "from_left"
           },
           {
-            "className": "col-24",
-            "content": [
-              {
-                "project_link_text": "Suzanne Furniture",
-                "project_link_link": "#"
-              }
-            ]
-          },
-          {
-            "className": "col-31",
-            "content": ""
-          },
-          {
-            "className": "col-45 d-sm-none",
-            "content": [
-              {
-                "project_link_text": "All projects",
-                "project_link_link": "slider.html"
-              }
-            ]
-          }
-        ],
-        [
-          {
-            "rowClassName": "m0"
-          },
-          {
-            "className": "col-56 items-flex-end ",
-            "content": [
-              {
-                "className": "image",
-                "image": "2.jpg", 
-                "animation_direction": "from_left"
-              }
-            ]
-          },
-          {
-            "className": "col-45 flex-column flex-end",
-            "content": [
-              {
-                "className": "margin-bottom-10vh max-width-336 d-sm-none",
-                "text":
-                  "Suzanne Furniture is a small Australian based design and manufacturing firm, born in 2017 from designer Suzanne Angel exploration into the intersection between nature, craft, and the spirit of adventure."
-              },
-              {
-                "className": "feature-list js-text-block",
-                "label": "Featured",
-                "list_text": "Architecture, UI/UX <br> Branding"
-              }
-            ]
+            "className": "title",
+            "project_link_text": "All Projects",
+            "project_link_link": "slider.html"
           }
         ]
-      ]
-    },
-    {
-      "title": "project_3",
-      "rows": [
-        [
+      },
+      {
+        "className": "col-45 flex-column flex-end",
+        "content": [
           {
-            "rowClassName": "margin-bottom-5vh"
+            "className": "margin-bottom-10vh max-width-336 d-sm-none",
+            "text": "Suzanne Furniture is a small Australian based design and manufacturing firm, born in 2017 from designer Suzanne Angel exploration into the intersection between nature, craft, and the spirit of adventure."
           },
           {
-            "className": "col-24",
-            "content": [
-              {
-                "project_link_text": "Tiffany & Co.",
-                "project_link_link": "#"
-              }
-            ]
-          },
-          {
-            "className": "col-31",
-            "content": ""
-          },
-          {
-            "className": "col-45 d-sm-none",
-            "content": [
-              {
-                "project_link_text": "All projects",
-                "project_link_link": "slider.html"
-              }
-            ]
-          }
-        ],
-        [
-          {
-            "rowClassName": "m0"
-          },
-          {
-            "className": "col-46 flex-column flex-between padding-y-5vh",
-            "content": [
-              {
-                "className": "center-text-p47 d-sm-none",
-                "text":
-                  "Suzanne Furniture is a small Australian based design and manufacturing firm."
-              },
-              {
-                "className": "feature-list js-text-block",
-                "label": "Project",
-                "list_text": "Architecture, UI/UX <br> Branding"
-              }
-            ]
-          },
-          {
-            "className": "col-50",
-            "content": [
-              {
-                "className": "image",
-                "image": "3.jpg", 
-                "animation_direction": "from_right"
-              }
-            ]
-          },
-          {
-            "className": "col-100 d-sm-block all-projects-sm",
-            "content": [
-              {
-                "project_link_text": "All Projects",
-                "project_link_link": "slider.html"
-              }
-            ]
+            "className": "feature-list js-text-block",
+            "label": "Featured",
+            "list_text": "Architecture, UI/UX <br> Branding"
           }
         ]
-      ]
-    },
-    {
-      "title": "contacts",
-      "rows": [
-        [
+      }
+    ],
+
+    [
+      {
+        "rowClassName": "m0"
+      },
+      {
+        "className": "col-46 flex-column flex-between padding-y-5vh",
+        "content": [
           {
-            "rowClassName": "m-0"
+            "className": "center-text-p47 d-sm-none",
+            "text": "Suzanne Furniture is a small Australian based design and manufacturing firm."
           },
           {
-            "className": "col-24 d-lg-none",
-            "content": ""
-          },
-          {
-            "className": "col-31 col-lg-55",
-            "content": [
-              {
-                "className": "about_results js-text-block d-sm-none",
-                "text":
-                  "We bring the results while helping you achieve cost and time savings without taking on risk or management overhead.",
-                "link": {
-                  "text": "Find out more",
-                  "link": "#"
-                }
-              }
-            ]
-          },
-          {
-            "className": "col-45 ",
-            "content": ""
-          }
-        ],
-        [
-          {
-            "rowClassName": "margin-top-12vh"
-          },
-          {
-            "className": "col-24 d-lg-none",
-            "content": ""
-          },
-          {
-            "className": "col-31 col-lg-55",
-            "content": [
-              {
-                "className": "contacts-list js-text-block",
-                "label": "General Inquiries",
-                "email": "hey@klimov.agency",
-                "phone": "+7 (915) 308-77-08"
-              }
-            ]
-          },
-          {
-            "className": "col-45 ",
-            "content": [
-              {
-                "className": "contacts-list js-text-block",
-                "label": "Location",
-                "adress":
-                  "10, Niznia Siromyatnicheska st. <br> Moscow, Russia"
-              }
-            ]
-          }
-        ],
-        [
-          {
-            "rowClassName": "margin-top-5vh"
-          },
-          {
-            "className": "col-24",
-            "content": ""
-          },
-          {
-            "className": "col-31",
-            "content": ""
-          },
-          {
-            "className": "col-31",
-            "content": [
-              {
-                "className": "contacts-list js-text-block",
-                "label": "New Business",
-                "phone": "+7 (985) 171-76-32",
-                "email": "partner@klimov.agency"
-              }
-            ]
+            "className": "feature-list js-text-block",
+            "label": "Project",
+            "list_text": "Architecture, UI/UX <br> Branding"
           }
         ]
-      ]
-    }
+      },
+      {
+        "className": "col-50",
+        "content": [
+          {
+            "className": "image",
+            "image": "3.jpg",
+            "animation_direction": "from_right"
+          }
+        ]
+      },
+      {
+        "className": "col-100 d-sm-block all-projects-sm",
+        "content": [
+          {
+            "project_link_text": "All Projects",
+            "project_link_link": "slider.html"
+          }
+        ]
+      }
+    ],
+
+    [
+      {
+        "rowClassName": "m-0"
+      },
+      {
+        "className": "col-24 d-lg-none",
+        "content": ""
+      },
+      {
+        "className": "col-31 col-lg-55",
+        "content": [
+          {
+            "className": "about_results js-text-block d-sm-none",
+            "text": "We bring the results while helping you achieve cost and time savings without taking on risk or management overhead.",
+            "link": {
+              "text": "Find out more",
+              "link": "#"
+            }
+          }
+        ]
+      },
+      {
+        "className": "col-45 ",
+        "content": ""
+      }
+    ],
+    [
+      {
+        "rowClassName": "margin-top-12vh"
+      },
+      {
+        "className": "col-24 d-lg-none",
+        "content": ""
+      },
+      {
+        "className": "col-31 col-lg-55",
+        "content": [
+          {
+            "className": "contacts-list js-text-block",
+            "label": "General Inquiries",
+            "email": "hey@klimov.agency",
+            "phone": "+7 (915) 308-77-08"
+          }
+        ]
+      },
+      {
+        "className": "col-45 ",
+        "content": [
+          {
+            "className": "contacts-list js-text-block",
+            "label": "Location",
+            "adress": "10, Niznia Siromyatnicheska st. <br> Moscow, Russia"
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "rowClassName": "margin-top-5vh"
+      },
+      {
+        "className": "col-24",
+        "content": ""
+      },
+      {
+        "className": "col-31",
+        "content": ""
+      },
+      {
+        "className": "col-31",
+        "content": [
+          {
+            "className": "contacts-list js-text-block",
+            "label": "New Business",
+            "phone": "+7 (985) 171-76-32",
+            "email": "partner@klimov.agency"
+          }
+        ]
+      }
+    ]
   ]
 }
