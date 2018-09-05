@@ -9,11 +9,16 @@
     background-color: $text-dark
     overflow: hidden
     +vertical
+    text-align: left
+    &.is-open
+        display: none !important
     +sm 
         overflow: scroll
         height: 100vh
         padding-top: $main-margin-top-sm
         padding-bottom: 0
+        &.is-open
+            display: block !important
     &__container 
         height: 100%
     &__item
@@ -35,7 +40,6 @@
         font-size: 17px
         line-height: 23px
         color: $main-menu-color-muted
-        // +css-lock(12,20,767,1400)
     .label
         color: $main-menu-color-muted
         +sm 
@@ -48,7 +52,6 @@
     .phone
         color: $main-menu-color
         transition: color 0.7s 0.2s
-        +css-lock(16,20,768,1400)
         +sm 
             font-size: 20px
 
@@ -162,9 +165,10 @@
     svg
         width: 88px
     &.logo-grey
-        svg
-            fill: $main-menu-color
-            display: inline-block
+        +sm 
+            svg
+                fill: $main-menu-color
+                display: inline-block
     .dark-theme &
         svg
             fill: $main-menu-color
@@ -186,7 +190,6 @@
         right: 0
         font-size: 20px
         text-align: left
-        +css-lock(16,20,768,1400)
         .email
             line-height: 0.8
             color: $light-grey
@@ -206,7 +209,6 @@
         font-size: 20px
         color: $main-menu-color-muted
         transition: color 0.7s 0.2s
-        +css-lock(16,20,768,1400)
         +sm 
             font-size: 20px
         &__item.is-active 
@@ -242,7 +244,6 @@
 
 .jobs
     margin-bottom: 54px
-    +css-lock(16,20,768,1400)
     color: $main-menu-color
     +sm 
         font-size: 20px
@@ -289,36 +290,10 @@
         padding: $header-top-padding-sm 
         padding-right: 0
         top: 0
-        
-        
-    .menu-circle
-        display: inline-block
-        height: 4px
-        width: 4px
-        border-radius: 50%
-        background-color: #000
-        position: relative
-        z-index: 10000
-        color: #fff
-        transition: transform 0.2s ease-out
-        .dark-theme &
-            // background-color: $light-grey
-            background-color: $white
-        &:nth-child(2)
-            margin: 0 6px
     &-text 
         font-size: 20px
         
     &.menu-is-open
-        .menu-circle 
-            background-color: $white
-            // background-color: #adabb4
-        .menu-circle:nth-child(1)
-            transform: translateX(10px)
-        .menu-circle:nth-child(2)
-            transform: scale(2.5)
-        .menu-circle:nth-child(3)
-            transform: translateX(-10px)
         .text-close
             display: none
         .text-open
@@ -327,7 +302,6 @@
 .dark-theme 
     .text-close
         color: $main-menu-color
-
 
 .text-open
     display: none

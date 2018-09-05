@@ -1,9 +1,7 @@
 import './_body-onload.js';
 import './_menu-toggle.js';
 import './_menu-hover.js';
-import './_fullpage.js';
-import './_animation-fullpage.js';
 import './_animation-scroll.js';
 import './_top.js';
 import './_filter.js';
-import './_slider.js';
+

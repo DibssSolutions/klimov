@@ -4,22 +4,21 @@
     left: 0
     right: 8px
     padding: 36px 0 10px
-    z-index: 1000
+    z-index: 3000
     background-color: #fff
+    .dark-theme &
+        background-color: $text-dark
     +sm
         position: relative
     .container-inner 
-        // padding: 0 28px 0 36px
         +sm 
             padding: 0 7px 0 15px
-            // padding: 0 36px 0 29px
     .container-inner
         position: relative
         z-index: 500
-    .dark-theme &
-        background-color: transparent
     &.fixed
         position: fixed
+        right: 0
     +sm 
         padding-top: 0
 

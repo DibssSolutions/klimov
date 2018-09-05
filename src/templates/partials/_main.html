@@ -1,31 +1,96 @@
-<div class="container-inner">
-    {% for row in main %}
-        <div class="row {{row[0].rowClassName}}">
-            {% for col in row %}
-                {% if not col.rowClassName %}
+<div class="main">
+    <div class="main__container container-inner">
+        {% for row in main %}
+            <div class="row {{row[0].rowClassName}}">
+                {% for col in row %}
+                    {% if not col.rowClassName %}
+                        <div class="{{col.className}}">
+                            {% if col.content %}
+                                {% if col.project_link %}
+                                    <a class="project-container" href="{{col.project_link}}">
+                                        {% for content in col.content %}
+                                            {% if content.mainTitle %}
+                                                <h2 class="main-title">{{content.mainTitle | safe}}</h2>
+                                            {% endif %}
+                                            {% if content.project_link_text %}
+                                                <h5 class="project_link">
+                                                    {{content.project_link_text}}
+                                                    <span class="arrow">→</span>
+                                                </h5>
+                                            {% endif %}
+                                            {% if content.text %}
+                                                <p>{{content.text | safe}}</p>
+                                            {% endif %}
+                                            {% if content.image %}
+                                                <div class="{{content.className}}">
+                                                    <img src="img/{{content.image}}" alt="{{content.image}}">
+                                                </div>
+                                            {% endif %}
+
+                                        {% endfor %}
+                                    </a>
+                                {% else %}
+                                    {% for content in col.content %}
+                                        <div class="{{content.className}}">
+                                            {% if content.mainTitle %}
+                                                <h2 class="main-title">{{content.mainTitle | safe}}</h2>
+                                            {% endif %}
+                                            {% if content.project_link_text %}
+                                                <a class="project_link" href="{{content.project_link_text}}">{{content.project_link_text}}
+                                                </a>
+                                            {% endif %}
+                                            {% if content.text %}
+                                                <p>{{content.text | safe}}</p>
+                                            {% endif %}
+                                            {% if content.image %}
+                                                <img src="img/{{content.image}}" alt="{{content.image}}">
+                                            {% endif %}
+                                        </div>
+                                    {% endfor %}
+                                {% endif %}
+                            {% endif %}
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        {% endfor %}
+        {# CONTACTS  #}
+        {% for row in main_contacts %}
+            <div class="row main__contacts {{row[0].rowClassName}}">
+                {% for col in row %}
                     <div class="{{col.className}}">
+
                         {% if col.content %}
                             {% for content in col.content %}
                                 <div class="{{content.className}}">
-                                    {% if content.title %}
-                                        <h3>{{content.title | safe}}</h3>
+                                    {% if content.label %}
+                                        <div class="label">{{content.label | safe}}</div>
+                                    {% endif %}
+                                    {% if content.adress %}
+                                        <div class="adress">{{content.adress | safe}}
+                                            <span class="arrow">↗</span></div>
+                                    {% endif %}
+                                    {% if content.email %}
+                                        <div class="email">
+                                            <a href="{{content.email | safe}}">{{content.email | safe}}</a>
+                                        </div>
+                                    {% endif %}
+                                    {% if content.phone %}
+                                        <div class="phone">{{content.phone | safe}}</div>
                                     {% endif %}
                                     {% if content.text %}
                                         <p>{{content.text | safe}}</p>
                                     {% endif %}
-                                    {% if content.list %}
-                                        <ul>
-                                            {% for li in content.list %}
-                                                <li>{{li | safe}}</li>
-                                            {% endfor %}
-                                        </ul>
+                                    {% if content.link %}
+                                        <a class="{{content.link.className}}" href="{{content.link.link}}">{{content.link.text | safe}}</a>
                                     {% endif %}
                                 </div>
                             {% endfor %}
                         {% endif %}
+
                     </div>
-                {% endif %}
-            {% endfor %}
-        </div>
-    {% endfor %}
+                {% endfor %}
+            </div>
+        {% endfor %}
+    </div>
 </div>

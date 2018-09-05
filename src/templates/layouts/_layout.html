@@ -1,5 +1,5 @@
 {% import "partials/_mixins.html" as mixins %}
-{% import "partials/_footer.html" as footer %}
+
 <!doctype html>
 <html>
   <head>
@@ -14,11 +14,13 @@
     {% include "../partials/_media-tags.html" %}
     <script id="facebook-jssdk" src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script>
   </head>
-  <body class="loading">
+  <body class="loading {% if dark %}dark-theme{% endif %}">
 
     <!-- BEGIN content -->
     <div class="out">
+    {% include "partials/_header.html" %}
       {% block content %}{% endblock %}
+    {% include "partials/_footer.html" %}
     </div>
     <!-- END content -->
 

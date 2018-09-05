@@ -1,79 +1,76 @@
 {% set title = "Agency" %}
 {% set activePage = 'Agency' %}
 
-{% extends "layouts/_layout.html" %} 
+{% extends "layouts/_layout.html" %}
 
 {% block content %}
 
-{% include "partials/_header.html" %}
+    <div class="about">
 
-<div class="about">
-    
-    <div class="container-inner">
-        {% for row in about.rows %}
-            <div class="row {{row[0].rowClassName}}">
-                {% for col in row %} 
-                    {% if not col.rowClassName %}
-                        <div class="{{col.className}}">
-                            {% if col.content %} 
-                                {% for content in col.content %} 
-                                    <div class="{{content.className}}">
-                                        {% if content.title %}
-                                            <h3>{{content.title | safe}}</h3>
-                                        {% endif %} 
-                                        {% if content.text %}
-                                            <p>{{content.text | safe}}</p>
-                                        {% endif %}
-                                        {% if content.list %}
+        <div class="container-inner">
+            {% for row in about.rows %}
+                <div class="row {{row[0].rowClassName}}">
+                    {% for col in row %}
+                        {% if not col.rowClassName %}
+                            <div class="{{col.className}}">
+                                {% if col.content %}
+                                    {% for content in col.content %}
+                                        <div class="{{content.className}}">
+                                            {% if content.title %}
+                                                <h3>{{content.title | safe}}</h3>
+                                            {% endif %}
+                                            {% if content.text %}
+                                                <p>{{content.text | safe}}</p>
+                                            {% endif %}
+                                            {% if content.list %}
                                                 <ul>
                                                     {% for li in content.list %}
                                                         <li>{{li | safe}}</li>
                                                     {% endfor %}
                                                 </ul>
+                                            {% endif %}
+                                        </div>
+                                    {% endfor %}
+                                {% endif %}
+                            </div>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            {% endfor %}
+
+            {% for row in contacts %}
+                <div class="row about__contacts">
+                    {% for col in row %}
+                        <div class="{{col.className}}">
+
+                            {% if col.content %}
+                                {% for content in col.content %}
+                                    <div class="{{content.className}}">
+                                        {% if content.label %}
+                                            <div class="label">{{content.label | safe}}</div>
+                                        {% endif %}
+                                        {% if content.adress %}
+                                            <div class="adress">{{content.adress | safe}}
+                                                <span class="arrow">↗</span></div>
+                                        {% endif %}
+                                        {% if content.email %}
+                                            <div class="email">
+                                                <a href="{{content.email | safe}}">{{content.email | safe}}</a>
+                                            </div>
+                                        {% endif %}
+                                        {% if content.phone %}
+                                            <div class="phone">{{content.phone | safe}}</div>
                                         {% endif %}
                                     </div>
                                 {% endfor %}
                             {% endif %}
+
                         </div>
-                    {% endif %}
-                {% endfor %}
-            </div>
-        {% endfor %}
-    
-        {% for row in contacts %}
-        <div class="row about__contacts">
-            {% for col in row %}
-                <div class="{{col.className}}">
-                       
-                    {% if col.content %} 
-                        {% for content in col.content %}
-                            <div class="{{content.className}}">
-                                {% if content.label %}
-                                    <div class="label">{{content.label | safe}}</div>
-                                {% endif %} 
-                                {% if content.adress %}
-                                    <div class="adress">{{content.adress | safe}}<span class="arrow">↗</span></div>
-                                {% endif %}
-                                {% if content.email %}
-                                    <div class="email">
-                                        <a href="{{content.email | safe}}">{{content.email | safe}}</a>
-                                    </div>
-                                {% endif %}
-                                {% if content.phone %}
-                                    <div class="phone">{{content.phone | safe}}</div>
-                                {% endif %}
-                            </div>
-                            {% endfor %}
-                   {% endif %}
-                   
+                    {% endfor %}
                 </div>
             {% endfor %}
-        </div>
-        {% endfor %}
-        
-    </div>
-</div>
 
-{{ footer.fPosition('', true) }}
+        </div>
+    </div>
 
 {% endblock %}

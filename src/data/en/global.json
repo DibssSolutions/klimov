@@ -44,11 +44,6 @@
               "className": "menu__item js-menu-hoverable",
               "link_text": "Discover",
               "link_link": "page.html"
-            },
-            {
-              "className": "menu__item js-menu-hoverable",
-              "link_text": "All Projects",
-              "link_link": "slider.html"
             }
           ]
         },
@@ -91,8 +86,7 @@
           "content": [
             {
               "className": "menu__motto d-sm-none",
-              "text":
-                "We create digital services and interactive experiences that help your business thrive and delight your customers."
+              "text": "We create digital services and interactive experiences that help your business thrive and delight your customers."
             }
           ]
         }
@@ -158,8 +152,7 @@
             },
             {
               "className": "menu__motto d-sm-block",
-              "text":
-                "We create digital services and interactive experiences that help your business thrive and delight your customers."
+              "text": "We create digital services and interactive experiences that help your business thrive and delight your customers."
             }
           ]
         }

@@ -12,6 +12,11 @@ var scrollOptions = {
 };
 
 /*
+*Main page
+*/
+sr.reveal('.main .sr-up', scrollOptions);
+
+/*
 *About page
 */
 sr.reveal('.about .sr-up', scrollOptions);
@@ -40,3 +45,4 @@ sr.reveal('.filter__item', {
   viewFactor: -0.1,
   opacity: 0
 });
+

@@ -1,12 +1,7 @@
-{% macro fPosition(class, button, socHideMob) %}
-<footer class="footer{% if class %} {{class}}{% endif %}">
+<footer class="footer">
     <div class="container-inner">
         <div class="row">
-            <div class="col-24 d-md-none">
-                <a href="hey@klimov.agency" class=" email-footer js-footer-visible ">hey@klimov.agency</a>
-                <a href="#" class="js-footer-hidden is-hidden ">Russia</a>
-            </div>
-            <div class="col-31 col-md-100 {% if socHideMob %} d-md-none{% endif %}">
+            <div class="col-24 col-lg-55">
                 <div class="nav-item">
                     <a href="#" class="nav-link">Behance
                         <span class="arrow">↗</span>
@@ -18,17 +13,10 @@
                     </a>
                 </div>
             </div>
-            <div class="col-45 d-md-none">
-                <div class="nav-item">
-                    <a href="mailto:hero@klimov.agency" class="nav-link nav-email" data-email="hero@klimov.agency">Jobs</a>
-                </div>
+            <div class="col-31 col-lg-45 d-sm-none">
+                <button class="up" id="up">Top ↑</button>
             </div>
-        </div>
-        <div class="pagination d-sm-none">
-            {% if button %}
-            <button class="up" id="up">Up↑</button>
-            {% else %} Scroll {% endif %}
+            <div class="col-45"></div>
         </div>
     </div>
 </footer>
-{% endmacro %}

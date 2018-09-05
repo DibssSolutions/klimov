@@ -1,17 +1,9 @@
---- 
 {% set activePage = 'Discover' %}
---- 
 
-{% extends "layouts/_layout.html" %} 
+{% extends "layouts/_layout.html" %}
 
 {% block content %}
 
-{% include "partials/_header.html" %}
-
-<div id="fullpage">
-    {% include "partials/_main.html" %} 
-</div>
-
-{{ footer.fPosition('fixed', null) }}
+    {% include "partials/_main.html" %}
 
 {% endblock %}

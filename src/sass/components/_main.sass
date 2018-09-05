@@ -1,0 +1,103 @@
+.main
+    .row--first
+        margin-top: 200px
+        margin-bottom: 120px
+        +sm 
+            margin-top: 60px
+            margin-bottom: 30px
+            // padding-right: 30px
+    .row--motto-top
+        margin-bottom: 96px
+        +sm 
+            margin-bottom: 60px
+    .row--project
+        margin-bottom: 140px
+        +lg 
+            margin-bottom: 100px
+        +md 
+            margin-bottom: 80px
+        +sm 
+            margin-bottom: 0
+    &__motto-bottom
+        max-width: 350px
+        margin-bottom: 100px
+        +lg 
+            margin-bottom: 60px
+        +md 
+            margin-bottom: 40px
+        p 
+            margin-bottom: 30px
+    &__motto-link
+        color: $light-grey
+    &__contacts
+        margin-bottom: 40px
+        &:last-of-type
+            margin-bottom: 100px
+            +md
+                margin-bottom: 80px
+            
+        +sm 
+            margin-bottom: 70px
+    
+.feature-list,
+.contacts-list
+    line-height: 1.5
+
+.project_link
+    position: relative
+    font-size: 20px
+    font-weight: 400
+    +hover 
+        .arrow
+            visibility: visible
+            opacity: 1
+.align-center
+    align-items: center
+
+.project-container
+    display: inline-block
+    +hover 
+        .arrow
+            visibility: visible
+            opacity: 1
+    +sm 
+        margin-bottom: 75px
+
+.label
+    color: $light-grey
+    font-size: 18px
+
+.adress 
+    position: relative
+    cursor: default
+    +hover 
+        .arrow
+            visibility: visible
+            opacity: 1
+
+.image 
+    display: inline-block
+    font-size: 0
+    background-color: #EEE 
+    +sm 
+        text-align: center
+    img
+        display: block
+        // +r(1280)
+        //     +css-lock(350, 570, 768, 1280, 'width')
+        +sm 
+            width: auto !important
+
+.main-title
+    font-size: 40px
+    font-weight: 400
+    line-height: 1.25
+    max-width: 740px
+    +sm 
+        font-size: 30px
+        line-height: 1.5
+
+.padding-top-300
+    padding-top: 300px
+    +sm 
+        padding-top: 0
