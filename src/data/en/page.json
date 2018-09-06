@@ -184,7 +184,7 @@
         "content": ""
       },
       {
-        "className": "col-31 sr-up",
+        "className": "col-31",
         "content": [
           {
             "className": "main__motto-bottom",
@@ -204,7 +204,7 @@
     ],
     [
       {
-        "rowClassName": "sr-up"
+        "rowClassName": ""
       },
       {
         "className": "col-24",
