@@ -3,7 +3,7 @@ var Isotope = require('isotope-layout');
 
 var filter = document.getElementById('filter');
 
-if (filter !== null) {
+if (filter) {
 
   /*
   CALLING POPUP
@@ -20,6 +20,9 @@ if (filter !== null) {
     layoutMode: 'fitRows',
     transitionDuration: '0'
   });
+  $('.js-filter-category-selected').on('click', function(){
+    $(this).addClass('is-change')
+  })
 
   $('[data-filter]').click(function() {
 
