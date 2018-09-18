@@ -131,6 +131,9 @@
         color: $text-dark
         &.is-active 
             color: $orange
+            &:after
+                transform: translateX(0)
+                transition: transform 0.2s
         .dark-theme &
             color: $main-menu-color
         .dark-theme &.is-active
