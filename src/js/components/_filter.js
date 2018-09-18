@@ -53,3 +53,7 @@ if (filter) {
     $(this).removeClass('is-active');
   })
 }
+$(window).on('scroll', function(){
+  if (!$('#filter').length) return;
+  let offsetTop = $('body, html').scrollTop()
+})

@@ -32,7 +32,7 @@
         left: 0
         display: flex
         flex-flow: column
-        z-index: 5
+        z-index: 1
         &--main
             user-select: none
             +sm 
@@ -123,21 +123,20 @@
     // ===== BUTTONS POPUP =====
 
     &__filter
+        top: 0
+        left: 0
+        height: 100%
+        width: 100%
         opacity: 0
         visibility: hidden
-        transition: opacity 1s, visibility 1s
+        position: fixed
+        z-index: 100
+        transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out
+        background-color: $text-dark
         &.is-active
             opacity: 1
             visibility: visible
-            position: fixed
-            top: 0
-            left: 0
-            height: 100%
-            width: 100%
-            z-index: 10000
-            background-color: $text-dark
             overflow: hidden
-            transition: opacity 1s, visibility 1s
 
 
 
