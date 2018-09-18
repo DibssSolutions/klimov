@@ -55,5 +55,12 @@ if (filter) {
 }
 $(window).on('scroll', function(){
   if (!$('#filter').length) return;
-  let offsetTop = $('body, html').scrollTop()
+  let offsetTop = $(window).scrollTop();
+  let filterOffset = $('.filter__inner').offset().top;
+  let docHeigth = $('.filter__inner').outerHeight();
+  let winHeight = $(window).outerHeight()
+  if (offsetTop + winHeight >= filterOffset + docHeigth) {
+
+  }
+  
 })
