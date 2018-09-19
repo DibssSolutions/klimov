@@ -72,7 +72,7 @@ function load_more(offset){
           ? $('body [data-filter].is-active').trigger('click')
           : $('body [data-filter="*"]').trigger('click');
 
-          $('body .filter__item').removeClass('is-animate');
+          $('body').find('.filter__item').removeClass('is-animate');
         }
       } else {
         $(".loader").addClass('stop');
