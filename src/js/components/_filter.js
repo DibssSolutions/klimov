@@ -16,7 +16,7 @@ if (filter) {
   INITIALIZING FILTER
    */
   var iso = new Isotope('.filter__layout', {
-    itemSelector: '.filter__item',
+    itemSelector: 'body .filter__item',
     layoutMode: 'fitRows',
     transitionDuration: '0'
   });
@@ -63,29 +63,33 @@ function load_more(offset){
     url: admin_ajax,
     data,
     success: function(data){
-      var $data = $(data);
-      if($data.length){
-        $(".filter__layout").append($data);
+      if(data) {
+        var $data = $(data);
+        if($data.length){
+          $(".filter__layout").append($data);
+          $(".loader").hide();
+          ($('body [data-filter]').hasClass('is-active')) 
+          ? $('body [data-filter].is-active').trigger('click')
+          : $('body [data-filter="*"]').trigger('click');
+        }
+      } else {
+        $(".loader").addClass('stop');
         $(".loader").hide();
-        ($('[data-filter]').hasClass('is-active')) 
-          ? $('[data-filter].is-active').trigger('click')
-          : $('[data-filter="*"]').trigger('click');
       }
+    },
+    error: function(e) {
+      console.log('error ' + e);
     }
   });
   return false;
 }
-$(window).on('scroll', function(){
-  if (!$('#filter').length) return;
-  let offsetTop = $(window).scrollTop();
-  let filterOffset = $('.filter__inner').offset().top;
-  let docHeigth = $('.filter__inner').outerHeight();
-  let winHeight = $(window).outerHeight();
-  let imageLength = $('#filter img').length - 1 ;
 
-  if (offsetTop + winHeight >= filterOffset + docHeigth) {
-    $(".loader").show();
-    load_more(imageLength)
+$(window).on('scroll', function(){
+  if(parseInt($(window).scrollTop()) + parseInt($(window).height()) == parseInt($(document).height())) {
+    let imageLength = $('#filter img').length - 1 ;
+    if(!$(".loader").hasClass('stop')) {
+      $(".loader").show();
+      load_more(imageLength)
+    }
   }
-  
-})
+});
