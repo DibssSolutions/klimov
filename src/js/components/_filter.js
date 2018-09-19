@@ -68,15 +68,17 @@ function load_more(offset){
         if($data.length){
           $(".filter__layout").append($data);
           $(".loader").hide();
-          ($('body [data-filter]').hasClass('is-active')) 
-          ? $('body [data-filter].is-active').trigger('click')
-          : $('body [data-filter="*"]').trigger('click');
+          ($('body').find('[data-filter]').hasClass('is-active')) 
+          ? $('body').find('[data-filter].is-active').trigger('click')
+          : $('body').find('[data-filter="*"]').trigger('click');
 
           $('body').find('.filter__item').removeClass('is-animate');
         }
       } else {
         $(".loader").addClass('stop');
-        $(".loader").hide();
+        setTimeout(()=>{
+          $(".loader").slideUp();
+        }, 300)
       }
     },
     error: function(e) {
@@ -88,7 +90,7 @@ function load_more(offset){
 
 $(window).on('scroll', function(){
   if(parseInt($(window).scrollTop()) + parseInt($(window).height()) == parseInt($(document).height())) {
-    let imageLength = $('#filter img').length - 1 ;
+    let imageLength = $('body').find('#filter img').length - 1 ;
     if(!$(".loader").hasClass('stop')) {
       $(".loader").show();
       load_more(imageLength)
