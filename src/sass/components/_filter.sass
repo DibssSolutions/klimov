@@ -68,11 +68,16 @@
                 background-color: $light-grey
                 content: ''
     &__item
+        position: relative
         display: inline-block
         padding: 0 80px 60px
         position: static !important
         top: auto !important
         left: auto !important
+        transition: opacity .5s ease-in-out, transform .5s ease-in-out
+        &.is-animate
+            opacity: 0
+            transform: translateY(50px)
         +sm 
             padding: 0 15px 10px
             max-width: 100%
