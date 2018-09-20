@@ -55,9 +55,11 @@ button
     background-color: #ff6600 
     border-radius: 50% 
     animation: pulsing 2s infinite
-    transition: opacity .3s
-    .stop
+    transition: opacity .5s, visibility .5s
+    opacity: 1
+    &.stop
         opacity: 0
+        visibility: hidden
         
 
 @keyframes pulsing

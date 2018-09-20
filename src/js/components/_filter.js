@@ -76,7 +76,6 @@ function load_more(offset){
         }
       } else {
         $(".loader").addClass('stop');
-        $(".loader").fadeOut(500);
       }
     },
     error: function(e) {
