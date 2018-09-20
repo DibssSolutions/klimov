@@ -15,17 +15,17 @@ if (filter) {
   /*
   INITIALIZING FILTER
    */
-  var iso = new Isotope('.filter__layout', {
-    itemSelector: 'body .filter__item',
-    layoutMode: 'fitRows',
-    transitionDuration: '0'
-  });
+ 
   $('.js-filter-category-selected').on('click', function(){
     $(this).addClass('is-change')
   })
 
   $('[data-filter]').click(function() {
-
+    var iso = new Isotope('.filter__layout', {
+      itemSelector: 'body .filter__item',
+      layoutMode: 'fitRows',
+      transitionDuration: '0'
+    });
     /*
     FILTERING
     */
@@ -76,9 +76,7 @@ function load_more(offset){
         }
       } else {
         $(".loader").addClass('stop');
-        setTimeout(()=>{
-          $(".loader").slideUp();
-        }, 300)
+        $(".loader").fadeOut(500);
       }
     },
     error: function(e) {
