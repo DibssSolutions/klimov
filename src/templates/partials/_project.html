@@ -55,7 +55,7 @@
 
         <div class="project__images">
         {% for row in project[0].project_content %}
-        <div class="row {{row[0].rowClassName}}">
+        <div class="row">
             {% for col in row %} 
                 {% if not col.rowClassName %}
                     <div class="{{col.className}}">
@@ -76,7 +76,7 @@
                                 <p>{{content.text | safe}}</p>
                                 {% endif %} 
                                 {% if content.img %}
-                                    <div class="project-picture" style="background-image: url('img/{{content.imge}}')"></div>
+                                    <div class="project-picture"><img src="./img/{{content.img}}" alt="img"></div>
                                 {% endif %} 
                             </div>
                             {% else %} 
@@ -93,7 +93,7 @@
                                 <p>{{content.text | safe}}</p>
                                 {% endif %} 
                                 {% if content.img %}
-                                    <div class="project-picture" style="background-image: url('img/{{content.img}}')"></div>
+                                    <div class="project-picture"><img src="./img/{{content.img}}" alt="img"></div>
                                 {% endif %} 
                             {% endif %} 
                         {% endfor %}

@@ -29,8 +29,12 @@
         margin-bottom: 20px
         .row
             padding-bottom: 60px
+            margin: 0 -10px
             +sm 
                 padding-bottom: 25px
+        .col
+            +md
+                padding: 0 10px
     &-picture
         +cover
         +sm
@@ -55,7 +59,11 @@
     background-color: $text-dark
 
 // ===== IMAGES =====
-
+.project-picture
+    img
+        width: 100% !important
+        display: block
+        max-width: none !important
 .images-small
     .project-picture
         padding-bottom: 126%
