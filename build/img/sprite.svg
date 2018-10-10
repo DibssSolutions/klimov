@@ -2,7 +2,12 @@
         <style>
             .cls-1{fill:#1e8bf0}
         </style>
-    </defs><symbol id="icon-arrow" viewBox="0 0 54.02 57.98">
+    </defs><symbol id="icon-arr" viewBox="0 0 8.96 9.04">
+    <title>
+        arr
+    </title>
+    <path d="M2.08 1.2V0H9v6.88H7.76V2l-.63.69-.63.67q-.3.32-.55.55l-.51.49L.88 9 0 8.08l4.56-4.56.44-.43.64-.65q.29-.3.64-.62L7 1.2H2.08z"/>
+</symbol><symbol id="icon-arrow" viewBox="0 0 54.02 57.98">
     
     <title>
         arrow
