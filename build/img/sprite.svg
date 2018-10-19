@@ -7,6 +7,11 @@
         arr
     </title>
     <path d="M2.08 1.2V0H9v6.88H7.76V2l-.63.69-.63.67q-.3.32-.55.55l-.51.49L.88 9 0 8.08l4.56-4.56.44-.43.64-.65q.29-.3.64-.62L7 1.2H2.08z"/>
+</symbol><symbol id="icon-arrow-right" viewBox="0 0 21.14 17.08">
+    <title>
+        arrow-left
+    </title>
+    <path d="M12.6 17.08L11 15.61l6.16-6.09-1.61.07-1.61.05H0V7.42h13.93l1.61.05 1.61.07L11 1.47 12.6 0l8.54 8.54z"/>
 </symbol><symbol id="icon-arrow" viewBox="0 0 54.02 57.98">
     
     <title>

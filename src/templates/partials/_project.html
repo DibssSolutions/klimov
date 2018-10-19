@@ -158,7 +158,7 @@
                                 {% endfor %}
                             {% endif %}
                             {% if content.project_link_text %}
-                                <a class="next-project-link" href="{{content.project_link_text}}">{{content.project_link_text}}<span class='arrow'> → </span></a>
+                                <a class="next-project-link" href="{{content.project_link_text}}">{{content.project_link_text}}<span class='arrow'>{{ mixins.icon('arrow-right') }}</span></a>
                             {% endif %}
                             {% if content.img %}
                                 <div class="next-project-picture" style="background-image: url('img/{{content.img}}')"></div>
