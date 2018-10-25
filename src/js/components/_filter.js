@@ -1,85 +1,89 @@
 /* eslint-disable */
-var Isotope = require('isotope-layout');
+var Isotope = require("isotope-layout");
 
-var filter = document.getElementById('filter');
+var filter = document.getElementById("filter");
 
-if (filter) {
-
+if (filter !== null) {
   /*
   CALLING POPUP
    */
-  $('.filter__buttons--main').click(() => {
-    $('.filter__filter').addClass('is-active');
+  $(".filter__buttons--main").click(() => {
+    $(".filter__filter").addClass("is-active");
   });
 
   /*
   INITIALIZING FILTER
    */
- 
-  $('.js-filter-category-selected').on('click', function(){
-    $(this).addClass('is-change')
-  })
+  var iso = new Isotope(".filter__layout", {
+    itemSelector: "body .filter__item",
+    layoutMode: "fitRows",
+    transitionDuration: "0"
+  });
 
-  $('[data-filter]').click(function() {
-    var iso = new Isotope('.filter__layout', {
-      itemSelector: 'body .filter__item',
-      layoutMode: 'fitRows',
-      transitionDuration: '0'
-    });
+  $("[data-filter]").click(function() {
     /*
     FILTERING
     */
-    var filterValue = $(this).attr('data-filter');
+    var filterValue = $(this).attr("data-filter");
     iso.arrange({ filter: filterValue });
-    
+
     /*
     CHANGING FILTER BUTTON CLASS
     */
-    $('.filter__buttons').find('.is-active').removeClass('is-active');
-    $(this).addClass('is-active');
+    $(".filter__buttons")
+      .find(".is-active")
+      .removeClass("is-active");
+    $(this).addClass("is-active");
 
     /*
     CHANGING TEXT IN FILTER BUTTON ON MAIN PAGE 
     */
-    $('.js-filter-category-selected').text($(this).text());
+    $(".js-filter-category-selected").text($(this).text());
 
     /* 
     FADING POPUP 
     */
-    $('.filter__filter').removeClass('is-active');
-
+    $(".filter__filter").removeClass("is-active");
   });
-  $('.filter__filter').on('click', function(){
-    $(this).removeClass('is-active');
-  })
+  $(".filter__filter").on("click", function() {
+    $(this).removeClass("is-active");
+  });
 }
 
-function load_more(offset){
-  const data = 'offset=' + offset + '&action=more_post_ajax';
-  const admin_ajax = $('#filter').data('ajax-url');
+function load_more(offset) {
+  const data = "offset=" + offset + "&action=more_post_ajax";
+  const admin_ajax = $("#filter").data("ajax-url");
   $.ajax({
     type: "POST",
     dataType: "html",
     url: admin_ajax,
     data,
-    success: function(data){
-      if(data) {
+    success: function(data) {
+      if (data) {
         var $data = $(data);
-        if($data.length){
+        if ($data.length) {
           $(".filter__layout").append($data);
           $(".loader").hide();
-          ($('body').find('[data-filter]').hasClass('is-active')) 
-          ? $('body').find('[data-filter].is-active').trigger('click')
-          : $('body').find('[data-filter="*"]').trigger('click');
+          $("body")
+            .find("[data-filter]")
+            .hasClass("is-active")
+            ? $("body")
+                .find("[data-filter].is-active")
+                .trigger("click")
+            : $("body")
+                .find('[data-filter="*"]')
+                .trigger("click");
 
-          $('body').find('.filter__item').removeClass('is-animate');
+          $("body")
+            .find(".filter__item")
+            .removeClass("is-animate");
         }
       } else {
-        $(".loader").addClass('stop');
+        $(".loader").addClass("stop");
       }
     },
     error: function(e) {
-      console.log('error ' + e);
+      console.log("error " + e);
     }
   });
   return false;
