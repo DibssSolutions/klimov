@@ -1,11 +1,11 @@
-import { OPEN, HIDDEN } from '../_constants';
+import { OPEN, HIDDEN, BODY } from '../_constants';
 
 var open = false;
 
 $('.menu-trigger').click(function() {
   if (open) {
     $('.menu-trigger').removeClass('menu-is-open');
-
+    $(BODY).removeClass('mobile-fixed');
     $('.menu')
       .fadeOut(500)
       .removeClass(OPEN);
@@ -16,6 +16,7 @@ $('.menu-trigger').click(function() {
     open = false;
   } else {
     $('.menu-trigger').addClass('menu-is-open');
+    $(BODY).addClass('mobile-fixed');
     $('.menu')
       .addClass(OPEN)
       .fadeIn(500);
