@@ -48,6 +48,8 @@ if (filter) {
     */
     $('.filter__filter').removeClass('is-active');
 
+    $(window).trigger('resize');
+
   });
   $('.filter__filter').on('click', function(){
     $(this).removeClass('is-active');
